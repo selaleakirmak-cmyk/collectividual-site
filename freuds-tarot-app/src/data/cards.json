@@ -1,0 +1,140 @@
+[
+  {
+    "id": "major_00_semptom",
+    "title": { "tr": "Semptom", "en": "Symptom" },
+    "freudianName": { "tr": "Semptom", "en": "Symptom" },
+    "group": "major",
+    "classicName": "The Fool",
+    "meaning": {
+      "tr": "Görünürdeki durum, daha derin bir çatışmanın dolaylı ifadesi olabilir.",
+      "en": "The visible situation may be an indirect expression of a deeper conflict."
+    },
+    "psychoanalyticFrame": {
+      "tr": "Semptom, söylenemeyenin başka bir biçimde geri dönüşüdür.",
+      "en": "A symptom is the return of something that cannot yet be spoken directly."
+    },
+    "coreQuestion": {
+      "tr": "Şu an yaşanan bu durum, başka türlü söylenemeyen neyin yerine geçiyor?",
+      "en": "What is this situation standing in for that cannot be said directly?"
+    },
+    "bridge": {
+      "tr": "Bu kart bu pozisyonda, meselenin doğrudan değil dolaylı biçimde ortaya çıktığını düşündürebilir.",
+      "en": "In this position, this card may suggest that the issue is emerging indirectly rather than directly."
+    }
+  },
+  {
+    "id": "major_01_ruya_yapici",
+    "title": { "tr": "Rüya-Yapıcı", "en": "Dream-Worker" },
+    "freudianName": { "tr": "Rüya-Yapıcı", "en": "Dream-Worker" },
+    "group": "major",
+    "classicName": "The Magician",
+    "meaning": {
+      "tr": "Birden fazla tema tek bir imge ya da düşüncede toplanıyor olabilir.",
+      "en": "Multiple themes may be gathering into a single image or thought."
+    },
+    "psychoanalyticFrame": {
+      "tr": "Yoğunlaştırma ve yer değiştirme, yüzeyde görünen şeyi dönüştürür.",
+      "en": "Condensation and displacement transform what appears on the surface."
+    },
+    "coreQuestion": {
+      "tr": "Şu an gördüğün şey, hangi başka malzemenin dönüştürülmüş hali olabilir?",
+      "en": "What other material might what you see now be a transformed version of?"
+    },
+    "bridge": {
+      "tr": "Bu pozisyonda kart, yüzeydeki malzemenin altında birden fazla hattın çalıştığını düşündürebilir.",
+      "en": "In this position, the card may suggest that more than one line is working beneath the surface material."
+    }
+  },
+  {
+    "id": "major_02_bastirma",
+    "title": { "tr": "Bastırma", "en": "Repression" },
+    "freudianName": { "tr": "Bastırma", "en": "Repression" },
+    "group": "major",
+    "classicName": "The High Priestess",
+    "meaning": {
+      "tr": "Belli bir materyal bilinçte tutulmuyor olabilir, ama etkisi sürüyor olabilir.",
+      "en": "Certain material may be kept from consciousness while its effects continue."
+    },
+    "psychoanalyticFrame": {
+      "tr": "Bastırılan şey yok olmaz; başka yollardan geri döner.",
+      "en": "What is repressed does not disappear; it returns through other routes."
+    },
+    "coreQuestion": {
+      "tr": "Şu an söylemekten, düşünmekten ya da görmekten kaçındığın ne olabilir?",
+      "en": "What might you be avoiding saying, thinking, or seeing right now?"
+    },
+    "bridge": {
+      "tr": "Bu pozisyonda kart, doğrudan erişilemeyen ama etkisini sürdüren bir temaya işaret edebilir.",
+      "en": "In this position, the card may point toward a theme that is not directly accessible but still active."
+    }
+  },
+  {
+    "id": "kaygi_02_projection",
+    "title": { "tr": "Yansıtma", "en": "Projection" },
+    "freudianName": { "tr": "Yansıtma", "en": "Projection" },
+    "group": "kaygi",
+    "classicName": "Two of Swords",
+    "meaning": {
+      "tr": "İçeride tutulamayan bir özellik ya da duygu dışarıda görülüyor olabilir.",
+      "en": "A quality or feeling that cannot be held inside may be appearing outside."
+    },
+    "psychoanalyticFrame": {
+      "tr": "Kabul edilemeyen şey başkasında görülür hale gelebilir.",
+      "en": "What cannot be accepted may become visible in someone else."
+    },
+    "coreQuestion": {
+      "tr": "Seni dışarıda bu kadar etkileyen şeyin sende de bir izi olabilir mi?",
+      "en": "Could what affects you so strongly outside also have a trace inside you?"
+    },
+    "bridge": {
+      "tr": "Bu pozisyonda kart, gerilimin dışarıya taşındığını ve orada yaşandığını düşündürebilir.",
+      "en": "In this position, the card may suggest that the tension has been moved outward and is being lived there."
+    }
+  },
+  {
+    "id": "arzu_01_ace",
+    "title": { "tr": "Arzunun Uyanışı", "en": "Awakening of Desire" },
+    "freudianName": { "tr": "Arzunun Uyanışı", "en": "Awakening of Desire" },
+    "group": "arzu",
+    "classicName": "Ace of Wands",
+    "meaning": {
+      "tr": "Henüz tam biçim kazanmamış bir dürtü ya da yön ortaya çıkıyor olabilir.",
+      "en": "A drive or direction that is not yet fully formed may be emerging."
+    },
+    "psychoanalyticFrame": {
+      "tr": "Birincil hareket çoğu zaman henüz söze dönüşmemiştir.",
+      "en": "The initial movement often has not yet turned into words."
+    },
+    "coreQuestion": {
+      "tr": "Burada uyanmakta olan şey ne olabilir?",
+      "en": "What might be beginning to awaken here?"
+    },
+    "bridge": {
+      "tr": "Bu pozisyonda kart, henüz erken ama canlı bir dürtü hattını görünür kılabilir.",
+      "en": "In this position, the card may make visible an early but living line of desire."
+    }
+  },
+  {
+    "id": "gerceklik_10_integration",
+    "title": { "tr": "Bütünleşme", "en": "Integration" },
+    "freudianName": { "tr": "Bütünleşme", "en": "Integration" },
+    "group": "gerceklik",
+    "classicName": "Ten of Pentacles",
+    "meaning": {
+      "tr": "Çatışan malzeme, daha taşınabilir bir yapıya doğru yerleşiyor olabilir.",
+      "en": "Conflicting material may be settling into a more bearable structure."
+    },
+    "psychoanalyticFrame": {
+      "tr": "Gerçeklikle uzlaşma, arzunun silinmesi değil; onun daha yaşanabilir bir biçim almasıdır.",
+      "en": "Integration with reality does not erase desire; it gives it a more livable form."
+    },
+    "coreQuestion": {
+      "tr": "Burada daha yaşanabilir olan biçim ne olabilir?",
+      "en": "What might the more livable form be here?"
+    },
+    "bridge": {
+      "tr": "Bu pozisyonda kart, malzemenin daha bütünlüklü bir taşınma biçimine yaklaşabileceğini düşündürebilir.",
+      "en": "In this position, the card may suggest that the material can move toward a more integrated form."
+    }
+  }
+]
