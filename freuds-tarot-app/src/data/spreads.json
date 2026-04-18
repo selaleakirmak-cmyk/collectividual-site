@@ -1,0 +1,259 @@
+[
+  {
+    "id": "gun-artigi",
+    "title": { "tr": "Gün Artığı", "en": "Day Residue" },
+    "depth": { "tr": "Yüzey", "en": "Surface" },
+    "cardCount": 1,
+    "concept": {
+      "tr": "Önemsiz görünen bir anın altındaki psişik ağırlığı araştırır.",
+      "en": "Explores the psychic weight beneath a seemingly minor moment."
+    },
+    "whenToUse": {
+      "tr": "Bir olay, söz ya da imge akıldan gitmiyorsa.",
+      "en": "When an event, phrase, or image does not leave your mind."
+    },
+    "intro": {
+      "tr": "Bu açılım, küçük görünen bir şeyin neden akılda kaldığını düşünmek için kullanılır.",
+      "en": "This spread is used to think about why something small keeps staying in mind."
+    },
+    "closing": {
+      "tr": "Buradaki soru, olayın önemli olup olmadığı değil; neden taşındığıdır.",
+      "en": "The question here is not whether the event was important, but why it is still being carried."
+    },
+    "positions": [
+      {
+        "index": 1,
+        "id": "residue",
+        "label": { "tr": "Gün artığı", "en": "Day residue" },
+        "question": {
+          "tr": "Bu önemsiz anın altındaki psişik ağırlık nedir?",
+          "en": "What psychic weight lies beneath this seemingly minor moment?"
+        },
+        "functionText": {
+          "tr": "Aklında kalan küçük malzemenin ne taşıdığını açar.",
+          "en": "Opens what the small leftover material may be carrying."
+        },
+        "hint": {
+          "tr": "Bu pozisyonda kart, küçük görünen şeyin hangi daha büyük hatta bağlı olduğunu düşündürür.",
+          "en": "In this position, the card suggests what larger line the small moment may be attached to."
+        }
+      }
+    ],
+    "reflectionQuestions": {
+      "tr": [
+        "Bu olay neden önemsiz görünmesine rağmen sende kaldı?",
+        "Bu kartın kavramı o anla nasıl bağ kuruyor?"
+      ],
+      "en": [
+        "Why did this moment stay with you despite seeming minor?",
+        "How does the concept of this card connect to that moment?"
+      ]
+    }
+  },
+  {
+    "id": "uc-ajansin-mahkemesi",
+    "title": { "tr": "Üç Ajansın Mahkemesi", "en": "The Court of the Three Agencies" },
+    "depth": { "tr": "Orta Derinlik", "en": "Medium Depth" },
+    "cardCount": 3,
+    "concept": {
+      "tr": "İd, Süperego ve Ego arasındaki çatışmayı görünür kılar.",
+      "en": "Makes visible the conflict between the Id, Superego, and Ego."
+    },
+    "whenToUse": {
+      "tr": "Bir karar verememe ya da içsel çatışma yaşandığında.",
+      "en": "When facing indecision or internal conflict."
+    },
+    "intro": {
+      "tr": "Bu açılım, arzu, yasak ve uzlaşma arasındaki yapıyı açar.",
+      "en": "This spread opens the structure between desire, prohibition, and compromise."
+    },
+    "closing": {
+      "tr": "Amaç çatışmayı kapatmak değil, onun düzenini biraz daha görmek.",
+      "en": "The aim is not to close the conflict, but to see its arrangement more clearly."
+    },
+    "positions": [
+      {
+        "index": 1,
+        "id": "id",
+        "label": { "tr": "İd", "en": "Id" },
+        "question": {
+          "tr": "Ne istiyorsun? Tamamen çıplak istek ne?",
+          "en": "What do you want? What is the bare desire?"
+        },
+        "functionText": {
+          "tr": "Dürtüsel talebi görünür kılar.",
+          "en": "Makes the instinctual demand visible."
+        },
+        "hint": {
+          "tr": "Bu pozisyonda kart, isteğin doğrudan ya da dolaylı biçimini gösterebilir.",
+          "en": "In this position, the card may show a direct or displaced form of desire."
+        }
+      },
+      {
+        "index": 2,
+        "id": "superego",
+        "label": { "tr": "Süperego", "en": "Superego" },
+        "question": {
+          "tr": "Hangi iç ses yasak koyuyor ya da yargılıyor?",
+          "en": "Which inner voice is prohibiting or judging?"
+        },
+        "functionText": {
+          "tr": "Yasağı, yargıyı ya da iç otoriteyi görünür kılar.",
+          "en": "Makes prohibition, judgment, or inner authority visible."
+        },
+        "hint": {
+          "tr": "Bu pozisyonda kart, iç yargının nasıl çalıştığını düşündürebilir.",
+          "en": "In this position, the card may suggest how inner judgment is operating."
+        }
+      },
+      {
+        "index": 3,
+        "id": "ego",
+        "label": { "tr": "Ego", "en": "Ego" },
+        "question": {
+          "tr": "Bu iki güç arasında hangi uzlaşma üretiliyor?",
+          "en": "What compromise is being produced between these two forces?"
+        },
+        "functionText": {
+          "tr": "Şu anki taşıma ya da yönetme biçimini gösterir.",
+          "en": "Shows the current way the conflict is being carried or managed."
+        },
+        "hint": {
+          "tr": "Bu pozisyonda kart, çatışmanın nasıl tutulduğunu, çevrildiğini ya da semptomlaştırıldığını gösterebilir.",
+          "en": "In this position, the card may show how the conflict is being held, translated, or turned symptomatic."
+        }
+      }
+    ],
+    "reflectionQuestions": {
+      "tr": [
+        "Üç kart arasındaki en büyük gerilim nerede?",
+        "Üretilen uzlaşma seni koruyor mu, yoksa sıkıştırıyor mu?"
+      ],
+      "en": [
+        "Where is the strongest tension between the three cards?",
+        "Does the compromise protect you, or does it constrict you?"
+      ]
+    }
+  },
+  {
+    "id": "ruyanin-krali-yolu",
+    "title": { "tr": "Rüyanın Krali Yolu — Tam Seans", "en": "The Royal Road of the Dream — Full Session" },
+    "depth": { "tr": "Derin", "en": "Deep" },
+    "cardCount": 5,
+    "concept": {
+      "tr": "Yüzey malzemeden latent yapıya ve entegrasyona doğru ilerleyen daha derin bir seans açılımı.",
+      "en": "A deeper session spread that moves from surface material toward latent structure and integration."
+    },
+    "whenToUse": {
+      "tr": "Daha uzun bir seansa ve daha derin çalışmaya hazır olduğunda.",
+      "en": "When you are ready for a longer session and deeper work."
+    },
+    "intro": {
+      "tr": "Bu açılım, yüzeyde görünen şeyle alttaki yapıyı aynı anda düşünmek için kurulur.",
+      "en": "This spread is built to think both the visible surface and the underlying structure together."
+    },
+    "closing": {
+      "tr": "Buradaki amaç çözüm üretmek değil; malzemeyi biraz daha okunur kılmaktır.",
+      "en": "The aim here is not to solve the material, but to make it more readable."
+    },
+    "positions": [
+      {
+        "index": 1,
+        "id": "manifest",
+        "label": { "tr": "Manifest içerik", "en": "Manifest content" },
+        "question": {
+          "tr": "Yüzeyde ne görünüyor?",
+          "en": "What appears on the surface?"
+        },
+        "functionText": {
+          "tr": "İlk bakışta görünen sahneyi açar.",
+          "en": "Opens the scene that appears at first glance."
+        },
+        "hint": {
+          "tr": "Bu pozisyonda kart, görünürdeki hikâyeyi kurar.",
+          "en": "In this position, the card establishes the visible story."
+        }
+      },
+      {
+        "index": 2,
+        "id": "condensation",
+        "label": { "tr": "Yoğunlaştırma", "en": "Condensation" },
+        "question": {
+          "tr": "Burada hangi birden fazla tema bir araya geliyor?",
+          "en": "What multiple themes are coming together here?"
+        },
+        "functionText": {
+          "tr": "Birden çok hattın tek bir düğümde toplandığını gösterir.",
+          "en": "Shows multiple lines gathering into a single knot."
+        },
+        "hint": {
+          "tr": "Bu pozisyonda kart, yüzeydeki imgenin ne kadar sıkıştırılmış olduğunu düşündürebilir.",
+          "en": "In this position, the card may suggest how condensed the surface image is."
+        }
+      },
+      {
+        "index": 3,
+        "id": "displacement",
+        "label": { "tr": "Yer değiştirme", "en": "Displacement" },
+        "question": {
+          "tr": "Duygusal ağırlık nereye taşınmış olabilir?",
+          "en": "Where might the emotional charge have been moved?"
+        },
+        "functionText": {
+          "tr": "Yükün asıl hedefinden sapmasını görünür kılar.",
+          "en": "Makes visible how the charge may have shifted away from its original target."
+        },
+        "hint": {
+          "tr": "Bu pozisyonda kart, asıl yerin yerine geçen yeri gösterebilir.",
+          "en": "In this position, the card may show the place that is standing in for the original one."
+        }
+      },
+      {
+        "index": 4,
+        "id": "latent",
+        "label": { "tr": "Latent istek / korku", "en": "Latent wish / fear" },
+        "question": {
+          "tr": "Tüm yapının altında hangi temel istek ya da korku olabilir?",
+          "en": "What fundamental wish or fear may lie beneath the whole structure?"
+        },
+        "functionText": {
+          "tr": "Alt düzeyde örgütleyici ekseni görünür kılar.",
+          "en": "Makes the underlying organizing axis visible."
+        },
+        "hint": {
+          "tr": "Bu pozisyonda kart, tüm açılımın alttan taşıdığı ana hattı düşündürebilir.",
+          "en": "In this position, the card may suggest the main line carried underneath the whole spread."
+        }
+      },
+      {
+        "index": 5,
+        "id": "integration",
+        "label": { "tr": "Gerçeklikle uzlaşma", "en": "Integration with reality" },
+        "question": {
+          "tr": "Bu malzeme daha bilinçli bir ilişkiye nasıl taşınabilir?",
+          "en": "How might this material be brought into more conscious relation?"
+        },
+        "functionText": {
+          "tr": "Malzemeyi daha taşınabilir bir yapıya doğru çevirir.",
+          "en": "Turns the material toward a more bearable structure."
+        },
+        "hint": {
+          "tr": "Bu pozisyonda kart, çözüm değil ama daha yaşanabilir bir taşıma biçimi gösterebilir.",
+          "en": "In this position, the card may suggest not a solution, but a more livable way of carrying the material."
+        }
+      }
+    ],
+    "reflectionQuestions": {
+      "tr": [
+        "En çok hangi pozisyon yüklü görünüyor?",
+        "En zor kabul edilen şey hangisi?",
+        "Burada acele çözmeden üzerinde kalınabilecek şey ne?"
+      ],
+      "en": [
+        "Which position feels most charged?",
+        "What is hardest to accept here?",
+        "What here asks to be stayed with rather than solved quickly?"
+      ]
+    }
+  }
+]
