@@ -34,18 +34,18 @@
   {
     "original_file": "5.png",
     "classic_tarot_name": "The Emperor",
-    "freudian_name": null,
+    "freudian_name": "Baba",
     "group": "major",
-    "slug": "the-emperor",
-    "final_file_name": "major_04_the-emperor.png"
+    "slug": "baba",
+    "final_file_name": "major_04_baba.png"
   },
   {
     "original_file": "6.png",
     "classic_tarot_name": "The Hierophant",
-    "freudian_name": null,
+    "freudian_name": "Analist",
     "group": "major",
-    "slug": "the-hierophant",
-    "final_file_name": "major_05_the-hierophant.png"
+    "slug": "analist",
+    "final_file_name": "major_05_analist.png"
   },
   {
     "original_file": "7.png",
@@ -162,18 +162,18 @@
   {
     "original_file": "21.png",
     "classic_tarot_name": "Judgement",
-    "freudian_name": null,
+    "freudian_name": "Yorumlama",
     "group": "major",
-    "slug": "judgement",
-    "final_file_name": "major_20_judgement.png"
+    "slug": "yorumlama",
+    "final_file_name": "major_20_yorumlama.png"
   },
   {
     "original_file": "22.png",
     "classic_tarot_name": "The World",
-    "freudian_name": null,
+    "freudian_name": "Çalışma-Yoluyla-Geçme",
     "group": "major",
-    "slug": "the-world",
-    "final_file_name": "major_21_the-world.png"
+    "slug": "calisma-yoluyla-gecme",
+    "final_file_name": "major_21_calisma-yoluyla-gecme.png"
   },
   {
     "original_file": "23.png",
