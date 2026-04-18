@@ -136,7 +136,7 @@
                 <button class="btn secondary" type="button" onclick="signIn()">Log in</button>
                 <button class="btn secondary" type="button" onclick="logoutUser()">Log out</button>
               </div>
-              <p id="auth-status" class="join-note">Configure your Supabase project URL and anon key in <code>index.html</code> to activate auth.</p>
+              <p id="auth-status" class="join-note">Add your Supabase anon key in <code>index.html</code> to activate auth.</p>
               <p class="join-note">Optional: replace the old contact email once the membership flow is fully in use.</p>
             </div>
           </div>
@@ -153,7 +153,7 @@
   <footer><div class="container"><p class="footer-copy">Collectividual — psycho-social and cultural formats for reflection, experimentation, and shared language.</p></div></footer>
 
   <script>
-    const SUPABASE_URL = 'https://YOUR_PROJECT.supabase.co';
+    const SUPABASE_URL = 'https://qngyhxxxvaueyxqtwkzc.supabase.co';
     const SUPABASE_ANON_KEY = 'YOUR_ANON_KEY';
     const authStatusEl = document.getElementById('auth-status');
     const hasSupabaseConfig = SUPABASE_URL !== 'https://YOUR_PROJECT.supabase.co' && SUPABASE_ANON_KEY !== 'YOUR_ANON_KEY';
@@ -165,7 +165,7 @@
 
     function setAuthStatus(message){if(authStatusEl){authStatusEl.textContent=message}}
     function getAuthInputs(){return{email:(document.getElementById('auth-email')||{}).value||'',password:(document.getElementById('auth-password')||{}).value||''}}
-    function requireSupabase(){if(!supabaseClient){setAuthStatus('Add your Supabase project URL and anon key in index.html to activate sign up and login.');return false}return true}
+    function requireSupabase(){if(!supabaseClient){setAuthStatus('Add your Supabase anon key in index.html to activate sign up and login.');return false}return true}
 
     async function signUp(){
       if(!requireSupabase()) return;
