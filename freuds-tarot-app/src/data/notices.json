@@ -1,0 +1,35 @@
+[
+  {
+    "id": "core-hypothesis",
+    "title": {
+      "tr": "Kart bir hipotez sunar",
+      "en": "A card offers a hypothesis"
+    },
+    "body": {
+      "tr": "Bu sistem tanı koymaz. Kartın sunduğu şey kesinlik değil, düşünmeye davet eden bir yöndür.",
+      "en": "This system does not diagnose. What a card offers is not certainty, but a direction for reflection."
+    }
+  },
+  {
+    "id": "not-therapy",
+    "title": {
+      "tr": "Bu terapi değildir",
+      "en": "This is not therapy"
+    },
+    "body": {
+      "tr": "Derine giden materyal yoğunlaştığında açılımı durdurmak, ara vermek ya da profesyonel destek aramak doğru olabilir.",
+      "en": "If deeper material becomes overwhelming, it may be right to stop the reading, pause, or seek professional support."
+    }
+  },
+  {
+    "id": "two-person-boundary",
+    "title": {
+      "tr": "İki kişilik açılımlarda sınır",
+      "en": "Boundary in two-person spreads"
+    },
+    "body": {
+      "tr": "Herkes yalnızca kendi kartından sorumludur. Başkasının kartını onun adına yorumlama.",
+      "en": "Each person is responsible only for their own cards. Do not interpret someone else’s cards for them."
+    }
+  }
+]
