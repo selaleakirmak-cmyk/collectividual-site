@@ -136,7 +136,7 @@
                 <button class="btn secondary" type="button" onclick="signIn()">Log in</button>
                 <button class="btn secondary" type="button" onclick="logoutUser()">Log out</button>
               </div>
-              <p id="auth-status" class="join-note">Add your Supabase anon key in <code>index.html</code> to activate auth.</p>
+              <p id="auth-status" class="join-note">Membership is configured. You can sign up or log in here.</p>
               <p class="join-note">Optional: replace the old contact email once the membership flow is fully in use.</p>
             </div>
           </div>
@@ -154,7 +154,7 @@
 
   <script>
     const SUPABASE_URL = 'https://qngyhxxxvaueyxqtwkzc.supabase.co';
-    const SUPABASE_ANON_KEY = 'YOUR_ANON_KEY';
+    const SUPABASE_ANON_KEY = 'sb_publishable_XDgGxv0CJ2Lr2DyVWlLTVA_E_49_J1L';
     const authStatusEl = document.getElementById('auth-status');
     const hasSupabaseConfig = SUPABASE_URL !== 'https://YOUR_PROJECT.supabase.co' && SUPABASE_ANON_KEY !== 'YOUR_ANON_KEY';
     const supabaseClient = hasSupabaseConfig ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
