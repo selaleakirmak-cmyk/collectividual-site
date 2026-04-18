@@ -6,6 +6,7 @@
   <title>Collectividual</title>
   <meta name="description" content="Collectividual is a psycho-social and cultural project for reflection, experimentation, shared language, and symbolic tools.">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
 <body>
   <header>
@@ -123,11 +124,20 @@
               </ul>
             </div>
             <div class="join-panel">
-              <div class="eyebrow">Current contact</div>
-              <h3 style="margin-top:16px;">Launch-ready, intentionally minimal.</h3>
-              <p class="join-copy">A full membership flow can be added later. At this stage, the site keeps the invitation clear and professional without adding unnecessary infrastructure.</p>
-              <div class="button-row" style="margin-top:22px;"><a class="btn primary" href="mailto:hello@collectividual.com">Contact Collectividual</a></div>
-              <p class="join-note">Replace the email address with your preferred contact when you are ready.</p>
+              <div class="eyebrow">Member access</div>
+              <h3 style="margin-top:16px;">A light membership layer.</h3>
+              <p class="join-copy">Create an account or log in to restore a simple membership flow without changing the calm editorial feel of the site.</p>
+              <div style="margin-top:18px;display:grid;gap:10px;">
+                <input id="auth-email" type="email" placeholder="Email" class="auth-input">
+                <input id="auth-password" type="password" placeholder="Password" class="auth-input">
+              </div>
+              <div class="button-row" style="margin-top:16px;">
+                <button class="btn primary" type="button" onclick="signUp()">Sign up</button>
+                <button class="btn secondary" type="button" onclick="signIn()">Log in</button>
+                <button class="btn secondary" type="button" onclick="logoutUser()">Log out</button>
+              </div>
+              <p id="auth-status" class="join-note">Configure your Supabase project URL and anon key in <code>index.html</code> to activate auth.</p>
+              <p class="join-note">Optional: replace the old contact email once the membership flow is fully in use.</p>
             </div>
           </div>
         </div>
@@ -143,9 +153,52 @@
   <footer><div class="container"><p class="footer-copy">Collectividual — psycho-social and cultural formats for reflection, experimentation, and shared language.</p></div></footer>
 
   <script>
+    const SUPABASE_URL = 'https://YOUR_PROJECT.supabase.co';
+    const SUPABASE_ANON_KEY = 'YOUR_ANON_KEY';
+    const authStatusEl = document.getElementById('auth-status');
+    const hasSupabaseConfig = SUPABASE_URL !== 'https://YOUR_PROJECT.supabase.co' && SUPABASE_ANON_KEY !== 'YOUR_ANON_KEY';
+    const supabaseClient = hasSupabaseConfig ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
+
     function showPage(name){document.querySelectorAll('.page').forEach(function(page){page.classList.remove('active')});var target=document.getElementById(name+'-page');if(target){target.classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}}
     function goToSection(sectionId){showPage('home');setTimeout(function(){var el=document.getElementById(sectionId);if(el){el.scrollIntoView({behavior:'smooth',block:'start'})}},30)}
     function toggleMobileNav(forceState){var nav=document.getElementById('mobile-nav');var nextState=typeof forceState==='boolean'?forceState:nav.style.display!=='block';nav.style.display=nextState?'block':'none'}
+
+    function setAuthStatus(message){if(authStatusEl){authStatusEl.textContent=message}}
+    function getAuthInputs(){return{email:(document.getElementById('auth-email')||{}).value||'',password:(document.getElementById('auth-password')||{}).value||''}}
+    function requireSupabase(){if(!supabaseClient){setAuthStatus('Add your Supabase project URL and anon key in index.html to activate sign up and login.');return false}return true}
+
+    async function signUp(){
+      if(!requireSupabase()) return;
+      const creds=getAuthInputs();
+      const email=creds.email.trim();
+      const password=creds.password;
+      if(!email||!password){setAuthStatus('Enter an email and password first.');return}
+      const { error } = await supabaseClient.auth.signUp({ email, password, options:{ data:{ full_name:'' } } });
+      setAuthStatus(error ? error.message : 'Check your email to confirm your account.');
+    }
+
+    async function signIn(){
+      if(!requireSupabase()) return;
+      const creds=getAuthInputs();
+      const email=creds.email.trim();
+      const password=creds.password;
+      if(!email||!password){setAuthStatus('Enter an email and password first.');return}
+      const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
+      setAuthStatus(error ? error.message : 'Logged in as ' + data.user.email + '.');
+    }
+
+    async function logoutUser(){
+      if(!requireSupabase()) return;
+      const { error } = await supabaseClient.auth.signOut();
+      setAuthStatus(error ? error.message : 'Logged out.');
+    }
+
+    if(supabaseClient){
+      supabaseClient.auth.getSession().then(function(result){
+        const session = result && result.data ? result.data.session : null;
+        if(session && session.user){setAuthStatus('Logged in as ' + session.user.email + '.')} else {setAuthStatus('No active session yet. You can sign up or log in here.')}
+      });
+    }
   </script>
 </body>
 </html>
