@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collectividual</title>
+  <meta name="description" content="Collectividual is a psycho-social and cultural project for reflection, experimentation, shared language, and symbolic tools.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="#" class="brand" onclick="showPage('home'); return false;"><span class="a">c</span><span class="dot"></span><span class="a">llecti</span>vidual</a>
+      <nav>
+        <a href="#manifesto" onclick="goToSection('manifesto'); return false;">Manifesto</a>
+        <a href="#laboratories" onclick="goToSection('laboratories'); return false;">Laboratories</a>
+        <a href="#tools" onclick="goToSection('tools'); return false;">Tools</a>
+        <a href="#join" onclick="goToSection('join'); return false;">Join</a>
+      </nav>
+      <button class="menu-toggle" type="button" onclick="toggleMobileNav()">Menu</button>
+    </div>
+  </header>
+
+  <div id="mobile-nav" class="container">
+    <div class="card" style="padding:16px 18px;">
+      <div class="link-row">
+        <a class="btn secondary" href="#manifesto" onclick="goToSection('manifesto'); toggleMobileNav(false); return false;">Manifesto</a>
+        <a class="btn secondary" href="#laboratories" onclick="goToSection('laboratories'); toggleMobileNav(false); return false;">Laboratories</a>
+        <a class="btn secondary" href="#tools" onclick="goToSection('tools'); toggleMobileNav(false); return false;">Tools</a>
+        <a class="btn secondary" href="#join" onclick="goToSection('join'); toggleMobileNav(false); return false;">Join</a>
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <div id="home-page" class="page active">
+      <section class="hero">
+        <div class="orb one"></div><div class="orb two"></div><div class="orb three"></div>
+        <div class="container hero-grid">
+          <div>
+            <div class="eyebrow">psycho-social · cultural · creative</div>
+            <h1>For the life that refuses to remain private.</h1>
+            <p class="hero-copy">Collectividual is a psycho-social and cultural project for reflection, experimentation, shared language, and symbolic tools. It begins from a simple belief: resilience, meaning, imagination, and livability are not produced alone. They are made in relation, in tension, in memory, and in shared life.</p>
+            <div class="button-row">
+              <a class="btn primary" href="#join" onclick="goToSection('join'); return false;">Join the correspondence</a>
+              <a class="btn secondary" href="#laboratories" onclick="goToSection('laboratories'); return false;">Begin with the labs</a>
+            </div>
+          </div>
+          <div class="card">
+            <div class="eyebrow">manifesto fragment</div>
+            <div class="manifesto-fragment">We are not only individuals. We are not only collectives. We are collectividuals.</div>
+            <p class="body-copy" style="margin-top:18px;">A project about relational resilience, symbolic life, public thinking, and formats that help thought move between people.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="manifesto" class="section">
+        <div class="container section-grid">
+          <div><div class="eyebrow">Manifesto</div><h2>Against isolated survival. Toward shared language.</h2></div>
+          <div class="body-copy">
+            <p>Collectividual begins from a simple proposition: much of what we are taught to endure alone is not a private failure. It is a relational wound, a historical condition, a collective difficulty without enough public language.</p>
+            <p>This project turns psychological insight into public language, symbolic tools, experimental forms, and cultural practices people can return to, carry, and share.</p>
+            <p>Not a wellness brand. Not a therapy clinic. Not a corporate language of resilience. A place to think, make, and test forms that resist the pressure to become only an individual.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="laboratories" class="section section-soft">
+        <div class="container">
+          <div class="section-top">
+            <div><div class="eyebrow">Laboratories</div><h2>Questions that need structure, not slogans.</h2></div>
+            <p class="section-copy">Each laboratory takes a question seriously enough to give it form, tempo, method, and output. Labs are where things are developed; the tools area is where some of those forms become usable, portable, and ready to circulate.</p>
+          </div>
+          <div class="grid-4">
+            <article class="lab-card"><div class="icon-dot"></div><h3>Think Lab</h3><p class="lab-copy">A space for making difficult ideas more usable. It turns psychological, social, and cultural questions into language, prompts, short texts, and formats people can actually work with.</p><button class="action-btn secondary" onclick="showPage('think')">Open lab page</button></article>
+            <article class="lab-card"><div class="icon-dot"></div><h3>Community Lab</h3><p class="lab-copy">A space for practical formats that help people endure, reconnect, and keep going together — through workshops, reflection tools, community exercises, and small usable structures.</p><button class="action-btn secondary" onclick="showPage('community')">Open lab page</button></article>
+            <article class="lab-card"><div class="icon-dot"></div><h3>Creative Lab</h3><p class="lab-copy">A production space for concrete outputs: decks, brochures, PDFs, visual systems, downloadable formats, and other cultural tools that can circulate.</p><button class="action-btn secondary" onclick="showPage('creative')">Open lab page</button></article>
+            <article class="lab-card"><div class="icon-dot"></div><h3>Kapital Zero Lab</h3><p class="lab-copy">A hub for zero-budget entrepreneurship: prompts, tools, starter systems, and practical formats for people who want to begin before they have capital.</p><button class="action-btn secondary" onclick="showPage('kapitalzero')">Open lab page</button></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="tools" class="section tool-section">
+        <div class="container">
+          <div class="section-top">
+            <div><div class="eyebrow">Tools</div><h2>Small structures for thought, relation, and use.</h2></div>
+            <p class="section-copy">The tools area gathers formats that can be used, carried, shared, or returned to. Some are already available as working formats; others are still in development. The emphasis is not speed, but usable form.</p>
+          </div>
+          <div class="feature-box detail-card" style="margin-bottom:24px;">
+            <div class="eyebrow">featured</div>
+            <div class="section-grid" style="margin-top:16px;align-items:end;">
+              <div>
+                <h3>Freud’s Room</h3>
+                <p class="tool-copy">A reflective interface built around FREUD’S TAROT, psychoanalytic prompts, and structured spreads. Designed not for prediction, but for interpretation, reflection, and sustained contact with psychic material.</p>
+                <p class="tool-copy">The current version opens as a separate full-page environment connected to the main Collectividual site.</p>
+              </div>
+              <div class="tool-card">
+                <div class="eyebrow">separate page</div>
+                <p class="tool-copy" style="margin-top:14px;">Open the dedicated reading room from here whenever you want a slower, more focused session.</p>
+                <div class="button-row" style="margin-top:18px;"><a class="btn secondary" href="./freuds_room.html">Open Freud’s Room</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="grid-3">
+            <article class="tool-card"><div class="eyebrow">live</div><h3>Reflection Cards</h3><p class="tool-copy">Portable prompts for reflection, facilitation, and structured conversation. Small enough to use quickly, open enough to return to.</p></article>
+            <article class="tool-card"><div class="eyebrow">live</div><h3>Prompt Kits</h3><p class="tool-copy">Starting structures for sessions, workshops, writing, and group reflection. Built to help thought move when a blank beginning is not enough.</p></article>
+            <article class="tool-card"><div class="eyebrow">live</div><h3>Laboratory Outputs</h3><p class="tool-copy">Downloadable formats, decks, guides, and practical materials that emerge from the laboratories and can circulate in use.</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" class="section">
+        <div class="container">
+          <div class="join-wrap">
+            <div>
+              <div class="eyebrow">Join</div>
+              <h2>Stay close while the language is being built.</h2>
+              <p class="join-copy">Collectividual is still taking form. For now, the join area stays intentionally simple: a calm point of contact for future notes, invitations, laboratory updates, and new tools.</p>
+              <ul class="join-list">
+                <li>Project updates and editorial notes</li>
+                <li>Laboratory openings and tool releases</li>
+                <li>Future workshops, downloadable materials, and archive entries</li>
+              </ul>
+            </div>
+            <div class="join-panel">
+              <div class="eyebrow">Current contact</div>
+              <h3 style="margin-top:16px;">Launch-ready, intentionally minimal.</h3>
+              <p class="join-copy">A full membership flow can be added later. At this stage, the site keeps the invitation clear and professional without adding unnecessary infrastructure.</p>
+              <div class="button-row" style="margin-top:22px;"><a class="btn primary" href="mailto:hello@collectividual.com">Contact Collectividual</a></div>
+              <p class="join-note">Replace the email address with your preferred contact when you are ready.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="think-page" class="page"><section class="section"><div class="container"><button class="back-btn" onclick="showPage('home')">← Back to home</button><div class="eyebrow" style="margin-top:20px;">Laboratory</div><div class="section-grid" style="margin-top:18px;"><div><h1 class="page-title">Think Lab</h1><p class="hero-copy" style="margin-top:10px;">Ideas that can be used, not only admired.</p><p class="body-copy">Think Lab is where Collectividual turns difficult ideas into language people can work with. It focuses on naming, framing, clarifying, and reshaping psychological, social, and cultural questions so they become usable in writing, dialogue, and shared reflection.</p></div><div class="detail-card soft-box"><div class="eyebrow">Current logic</div><div class="manifesto-fragment">Each lab is a question given structure, rhythm, and output.</div></div></div></div></section></div>
+    <div id="community-page" class="page"><section class="section"><div class="container"><button class="back-btn" onclick="showPage('home')">← Back to home</button><div class="eyebrow" style="margin-top:20px;">Laboratory</div><div class="section-grid" style="margin-top:18px;"><div><h1 class="page-title">Community Lab</h1><p class="hero-copy" style="margin-top:10px;">Practical formats for getting through things together.</p><p class="body-copy">Community Lab focuses on small but usable formats that help people endure, reconnect, and keep going together. It is less about abstract theory and more about exercises, prompts, workshop structures, and community-facing tools that can actually be used in real settings.</p></div><div class="detail-card soft-box"><div class="eyebrow">Current logic</div><div class="manifesto-fragment">This is where community-facing support practices take shape.</div></div></div></div></section></div>
+    <div id="creative-page" class="page"><section class="section"><div class="container"><button class="back-btn" onclick="showPage('home')">← Back to home</button><div class="eyebrow" style="margin-top:20px;">Laboratory</div><div class="section-grid" style="margin-top:18px;"><div><h1 class="page-title">Creative Lab</h1><p class="hero-copy" style="margin-top:10px;">Editorial production, symbolic tools, and usable formats.</p><p class="body-copy">Creative Lab is where concepts become forms that can circulate. It works across writing, decks, printable tools, interfaces, and visual systems that people can return to, carry, and use.</p></div><div class="detail-card feature-box"><div class="eyebrow">Connected page</div><h3 style="margin-top:16px;">Freud’s Room</h3><p class="body-copy">Freud’s Room is linked as a separate page rather than embedded inside the main site. This keeps the core website calm while still opening into a deeper interpretive space.</p><div class="button-row" style="margin-top:18px;"><a class="btn secondary" href="./freuds_room.html">Open Freud’s Room</a></div></div></div></div></section></div>
+    <div id="kapitalzero-page" class="page"><section class="section"><div class="container"><button class="back-btn" onclick="showPage('home')">← Back to home</button><div class="eyebrow" style="margin-top:20px;">Laboratory</div><div class="section-grid" style="margin-top:18px;"><div><h1 class="page-title">Kapital Zero Lab</h1><p class="hero-copy" style="margin-top:10px;">Zero-budget entrepreneurship, usable prompts, and starter systems.</p><p class="body-copy">Kapital Zero Lab is a hub for building things before capital arrives. It focuses on low-cost, low-barrier, practical formats for people who want to start, test, improvise, and generate movement with almost nothing in hand.</p></div><div class="detail-card soft-box"><div class="eyebrow">Current logic</div><div class="manifesto-fragment">This is where constraint becomes method rather than excuse.</div></div></div></div></section></div>
+  </main>
+
+  <footer><div class="container"><p class="footer-copy">Collectividual — psycho-social and cultural formats for reflection, experimentation, and shared language.</p></div></footer>
+
+  <script>
+    function showPage(name){document.querySelectorAll('.page').forEach(function(page){page.classList.remove('active')});var target=document.getElementById(name+'-page');if(target){target.classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}}
+    function goToSection(sectionId){showPage('home');setTimeout(function(){var el=document.getElementById(sectionId);if(el){el.scrollIntoView({behavior:'smooth',block:'start'})}},30)}
+    function toggleMobileNav(forceState){var nav=document.getElementById('mobile-nav');var nextState=typeof forceState==='boolean'?forceState:nav.style.display!=='block';nav.style.display=nextState?'block':'none'}
+  </script>
+</body>
+</html>
