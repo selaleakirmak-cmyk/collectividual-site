@@ -1,0 +1,626 @@
+[
+  {
+    "original_file": "1.png",
+    "classic_tarot_name": "The Fool",
+    "freudian_name": "Semptom",
+    "group": "major",
+    "slug": "semptom",
+    "final_file_name": "major_00_semptom.png"
+  },
+  {
+    "original_file": "2.png",
+    "classic_tarot_name": "The Magician",
+    "freudian_name": "Rüya-Yapıcı",
+    "group": "major",
+    "slug": "ruya-yapici",
+    "final_file_name": "major_01_ruya-yapici.png"
+  },
+  {
+    "original_file": "3.png",
+    "classic_tarot_name": "The High Priestess",
+    "freudian_name": "Bastırma",
+    "group": "major",
+    "slug": "bastirma",
+    "final_file_name": "major_02_bastirma.png"
+  },
+  {
+    "original_file": "4.png",
+    "classic_tarot_name": "The Empress",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-empress",
+    "final_file_name": "major_03_the-empress.png"
+  },
+  {
+    "original_file": "5.png",
+    "classic_tarot_name": "The Emperor",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-emperor",
+    "final_file_name": "major_04_the-emperor.png"
+  },
+  {
+    "original_file": "6.png",
+    "classic_tarot_name": "The Hierophant",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-hierophant",
+    "final_file_name": "major_05_the-hierophant.png"
+  },
+  {
+    "original_file": "7.png",
+    "classic_tarot_name": "The Lovers",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-lovers",
+    "final_file_name": "major_06_the-lovers.png"
+  },
+  {
+    "original_file": "8.png",
+    "classic_tarot_name": "The Chariot",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-chariot",
+    "final_file_name": "major_07_the-chariot.png"
+  },
+  {
+    "original_file": "9.png",
+    "classic_tarot_name": "Strength",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "strength",
+    "final_file_name": "major_08_strength.png"
+  },
+  {
+    "original_file": "10.png",
+    "classic_tarot_name": "The Hermit",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-hermit",
+    "final_file_name": "major_09_the-hermit.png"
+  },
+  {
+    "original_file": "11.png",
+    "classic_tarot_name": "Wheel of Fortune",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "wheel-fortune",
+    "final_file_name": "major_10_wheel-fortune.png"
+  },
+  {
+    "original_file": "12.png",
+    "classic_tarot_name": "Justice",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "justice",
+    "final_file_name": "major_11_justice.png"
+  },
+  {
+    "original_file": "13.png",
+    "classic_tarot_name": "The Hanged Man",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-hanged-man",
+    "final_file_name": "major_12_the-hanged-man.png"
+  },
+  {
+    "original_file": "14.png",
+    "classic_tarot_name": "Death",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "death",
+    "final_file_name": "major_13_death.png"
+  },
+  {
+    "original_file": "15.png",
+    "classic_tarot_name": "Temperance",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "temperance",
+    "final_file_name": "major_14_temperance.png"
+  },
+  {
+    "original_file": "16.png",
+    "classic_tarot_name": "The Devil",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-devil",
+    "final_file_name": "major_15_the-devil.png"
+  },
+  {
+    "original_file": "17.png",
+    "classic_tarot_name": "The Tower",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-tower",
+    "final_file_name": "major_16_the-tower.png"
+  },
+  {
+    "original_file": "18.png",
+    "classic_tarot_name": "The Star",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-star",
+    "final_file_name": "major_17_the-star.png"
+  },
+  {
+    "original_file": "19.png",
+    "classic_tarot_name": "The Moon",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-moon",
+    "final_file_name": "major_18_the-moon.png"
+  },
+  {
+    "original_file": "20.png",
+    "classic_tarot_name": "The Sun",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-sun",
+    "final_file_name": "major_19_the-sun.png"
+  },
+  {
+    "original_file": "21.png",
+    "classic_tarot_name": "Judgement",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "judgement",
+    "final_file_name": "major_20_judgement.png"
+  },
+  {
+    "original_file": "22.png",
+    "classic_tarot_name": "The World",
+    "freudian_name": null,
+    "group": "major",
+    "slug": "the-world",
+    "final_file_name": "major_21_the-world.png"
+  },
+  {
+    "original_file": "23.png",
+    "classic_tarot_name": "Ace of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "ace-wands",
+    "final_file_name": "arzu_01_ace-wands.png"
+  },
+  {
+    "original_file": "24.png",
+    "classic_tarot_name": "Two of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "two-wands",
+    "final_file_name": "arzu_02_two-wands.png"
+  },
+  {
+    "original_file": "25.png",
+    "classic_tarot_name": "Three of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "three-wands",
+    "final_file_name": "arzu_03_three-wands.png"
+  },
+  {
+    "original_file": "26.png",
+    "classic_tarot_name": "Four of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "four-wands",
+    "final_file_name": "arzu_04_four-wands.png"
+  },
+  {
+    "original_file": "27.png",
+    "classic_tarot_name": "Five of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "five-wands",
+    "final_file_name": "arzu_05_five-wands.png"
+  },
+  {
+    "original_file": "28.png",
+    "classic_tarot_name": "Six of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "six-wands",
+    "final_file_name": "arzu_06_six-wands.png"
+  },
+  {
+    "original_file": "29.png",
+    "classic_tarot_name": "Seven of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "seven-wands",
+    "final_file_name": "arzu_07_seven-wands.png"
+  },
+  {
+    "original_file": "30.png",
+    "classic_tarot_name": "Eight of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "eight-wands",
+    "final_file_name": "arzu_08_eight-wands.png"
+  },
+  {
+    "original_file": "31.png",
+    "classic_tarot_name": "Nine of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "nine-wands",
+    "final_file_name": "arzu_09_nine-wands.png"
+  },
+  {
+    "original_file": "32.png",
+    "classic_tarot_name": "Ten of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "ten-wands",
+    "final_file_name": "arzu_10_ten-wands.png"
+  },
+  {
+    "original_file": "33.png",
+    "classic_tarot_name": "Page of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "page-wands",
+    "final_file_name": "arzu_11_page-wands.png"
+  },
+  {
+    "original_file": "34.png",
+    "classic_tarot_name": "Knight of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "knight-wands",
+    "final_file_name": "arzu_12_knight-wands.png"
+  },
+  {
+    "original_file": "35.png",
+    "classic_tarot_name": "Queen of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "queen-wands",
+    "final_file_name": "arzu_13_queen-wands.png"
+  },
+  {
+    "original_file": "36.png",
+    "classic_tarot_name": "King of Wands",
+    "freudian_name": null,
+    "group": "arzu",
+    "slug": "king-wands",
+    "final_file_name": "arzu_14_king-wands.png"
+  },
+  {
+    "original_file": "37.png",
+    "classic_tarot_name": "Ace of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "ace-cups",
+    "final_file_name": "fantezi_01_ace-cups.png"
+  },
+  {
+    "original_file": "38.png",
+    "classic_tarot_name": "Two of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "two-cups",
+    "final_file_name": "fantezi_02_two-cups.png"
+  },
+  {
+    "original_file": "39.png",
+    "classic_tarot_name": "Three of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "three-cups",
+    "final_file_name": "fantezi_03_three-cups.png"
+  },
+  {
+    "original_file": "40.png",
+    "classic_tarot_name": "Four of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "four-cups",
+    "final_file_name": "fantezi_04_four-cups.png"
+  },
+  {
+    "original_file": "41.png",
+    "classic_tarot_name": "Five of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "five-cups",
+    "final_file_name": "fantezi_05_five-cups.png"
+  },
+  {
+    "original_file": "42.png",
+    "classic_tarot_name": "Six of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "six-cups",
+    "final_file_name": "fantezi_06_six-cups.png"
+  },
+  {
+    "original_file": "43.png",
+    "classic_tarot_name": "Seven of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "seven-cups",
+    "final_file_name": "fantezi_07_seven-cups.png"
+  },
+  {
+    "original_file": "44.png",
+    "classic_tarot_name": "Eight of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "eight-cups",
+    "final_file_name": "fantezi_08_eight-cups.png"
+  },
+  {
+    "original_file": "45.png",
+    "classic_tarot_name": "Nine of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "nine-cups",
+    "final_file_name": "fantezi_09_nine-cups.png"
+  },
+  {
+    "original_file": "46.png",
+    "classic_tarot_name": "Ten of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "ten-cups",
+    "final_file_name": "fantezi_10_ten-cups.png"
+  },
+  {
+    "original_file": "47.png",
+    "classic_tarot_name": "Page of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "page-cups",
+    "final_file_name": "fantezi_11_page-cups.png"
+  },
+  {
+    "original_file": "48.png",
+    "classic_tarot_name": "Knight of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "knight-cups",
+    "final_file_name": "fantezi_12_knight-cups.png"
+  },
+  {
+    "original_file": "49.png",
+    "classic_tarot_name": "Queen of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "queen-cups",
+    "final_file_name": "fantezi_13_queen-cups.png"
+  },
+  {
+    "original_file": "50.png",
+    "classic_tarot_name": "King of Cups",
+    "freudian_name": null,
+    "group": "fantezi",
+    "slug": "king-cups",
+    "final_file_name": "fantezi_14_king-cups.png"
+  },
+  {
+    "original_file": "51.png",
+    "classic_tarot_name": "Ace of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "ace-swords",
+    "final_file_name": "kaygi_01_ace-swords.png"
+  },
+  {
+    "original_file": "52.png",
+    "classic_tarot_name": "Two of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "two-swords",
+    "final_file_name": "kaygi_02_two-swords.png"
+  },
+  {
+    "original_file": "53.png",
+    "classic_tarot_name": "Three of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "three-swords",
+    "final_file_name": "kaygi_03_three-swords.png"
+  },
+  {
+    "original_file": "54.png",
+    "classic_tarot_name": "Four of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "four-swords",
+    "final_file_name": "kaygi_04_four-swords.png"
+  },
+  {
+    "original_file": "55.png",
+    "classic_tarot_name": "Five of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "five-swords",
+    "final_file_name": "kaygi_05_five-swords.png"
+  },
+  {
+    "original_file": "56.png",
+    "classic_tarot_name": "Six of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "six-swords",
+    "final_file_name": "kaygi_06_six-swords.png"
+  },
+  {
+    "original_file": "57.png",
+    "classic_tarot_name": "Seven of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "seven-swords",
+    "final_file_name": "kaygi_07_seven-swords.png"
+  },
+  {
+    "original_file": "58.png",
+    "classic_tarot_name": "Eight of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "eight-swords",
+    "final_file_name": "kaygi_08_eight-swords.png"
+  },
+  {
+    "original_file": "59.png",
+    "classic_tarot_name": "Nine of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "nine-swords",
+    "final_file_name": "kaygi_09_nine-swords.png"
+  },
+  {
+    "original_file": "60.png",
+    "classic_tarot_name": "Ten of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "ten-swords",
+    "final_file_name": "kaygi_10_ten-swords.png"
+  },
+  {
+    "original_file": "61.png",
+    "classic_tarot_name": "Page of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "page-swords",
+    "final_file_name": "kaygi_11_page-swords.png"
+  },
+  {
+    "original_file": "62.png",
+    "classic_tarot_name": "Knight of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "knight-swords",
+    "final_file_name": "kaygi_12_knight-swords.png"
+  },
+  {
+    "original_file": "63.png",
+    "classic_tarot_name": "Queen of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "queen-swords",
+    "final_file_name": "kaygi_13_queen-swords.png"
+  },
+  {
+    "original_file": "64.png",
+    "classic_tarot_name": "King of Swords",
+    "freudian_name": null,
+    "group": "kaygi",
+    "slug": "king-swords",
+    "final_file_name": "kaygi_14_king-swords.png"
+  },
+  {
+    "original_file": "65.png",
+    "classic_tarot_name": "Ace of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "ace-pentacles",
+    "final_file_name": "gerceklik_01_ace-pentacles.png"
+  },
+  {
+    "original_file": "66.png",
+    "classic_tarot_name": "Two of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "two-pentacles",
+    "final_file_name": "gerceklik_02_two-pentacles.png"
+  },
+  {
+    "original_file": "67.png",
+    "classic_tarot_name": "Three of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "three-pentacles",
+    "final_file_name": "gerceklik_03_three-pentacles.png"
+  },
+  {
+    "original_file": "68.png",
+    "classic_tarot_name": "Four of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "four-pentacles",
+    "final_file_name": "gerceklik_04_four-pentacles.png"
+  },
+  {
+    "original_file": "69.png",
+    "classic_tarot_name": "Five of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "five-pentacles",
+    "final_file_name": "gerceklik_05_five-pentacles.png"
+  },
+  {
+    "original_file": "70.png",
+    "classic_tarot_name": "Six of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "six-pentacles",
+    "final_file_name": "gerceklik_06_six-pentacles.png"
+  },
+  {
+    "original_file": "71.png",
+    "classic_tarot_name": "Seven of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "seven-pentacles",
+    "final_file_name": "gerceklik_07_seven-pentacles.png"
+  },
+  {
+    "original_file": "72.png",
+    "classic_tarot_name": "Eight of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "eight-pentacles",
+    "final_file_name": "gerceklik_08_eight-pentacles.png"
+  },
+  {
+    "original_file": "73.png",
+    "classic_tarot_name": "Nine of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "nine-pentacles",
+    "final_file_name": "gerceklik_09_nine-pentacles.png"
+  },
+  {
+    "original_file": "74.png",
+    "classic_tarot_name": "Ten of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "ten-pentacles",
+    "final_file_name": "gerceklik_10_ten-pentacles.png"
+  },
+  {
+    "original_file": "75.png",
+    "classic_tarot_name": "Page of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "page-pentacles",
+    "final_file_name": "gerceklik_11_page-pentacles.png"
+  },
+  {
+    "original_file": "76.png",
+    "classic_tarot_name": "Knight of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "knight-pentacles",
+    "final_file_name": "gerceklik_12_knight-pentacles.png"
+  },
+  {
+    "original_file": "77.png",
+    "classic_tarot_name": "Queen of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "queen-pentacles",
+    "final_file_name": "gerceklik_13_queen-pentacles.png"
+  },
+  {
+    "original_file": "78.png",
+    "classic_tarot_name": "King of Pentacles",
+    "freudian_name": null,
+    "group": "gerceklik",
+    "slug": "king-pentacles",
+    "final_file_name": "gerceklik_14_king-pentacles.png"
+  }
+]
