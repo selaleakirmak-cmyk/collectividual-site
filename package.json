@@ -1,16 +1,8 @@
 {
   "name": "collectividual-site",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "latest",
-    "react": "^18",
-    "react-dom": "^18"
+    "build": "rm -rf public && mkdir -p public && cp index.html style.css freuds_room.html freuds_room_bilingual_standalone.html README.md public/"
   }
 }
