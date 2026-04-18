@@ -4,20 +4,37 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Collectividual</title>
-  <meta name="description" content="Collectividual is a psycho-social and cultural project for reflection, experimentation, shared language, and symbolic tools.">
+  <meta name="description" content="Collectividual is a psycho-social, cultural, and creative project. Enter through Freud's Room, then continue into the labs.">
   <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    .lang-toggle{display:inline-flex;gap:8px;align-items:center}
+    .lang-toggle button{min-height:36px;padding:0 12px;border-radius:999px;border:1px solid rgba(37,91,84,.18);background:rgba(255,255,255,.45);color:var(--text);cursor:pointer;font:600 12px/1.2 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;letter-spacing:.08em;text-transform:uppercase}
+    .lang-toggle button.active{background:var(--text);color:#f4f1ea;border-color:var(--text)}
+    [data-lang]{display:none}
+    [data-lang].active{display:block}
+    .hero-card{display:grid;gap:16px}
+    .hero-kicker{font:600 12px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+    .mini-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;margin-top:22px}
+    .stat-card{border:1px solid var(--line);border-radius:20px;padding:18px 20px;background:rgba(255,255,255,.48)}
+    .stat-card h4{margin:0 0 8px;font-size:18px;line-height:1.2}
+    .section-intro{max-width:720px}
+    @media (max-width:1060px){.mini-grid{grid-template-columns:1fr}}
+  </style>
 </head>
 <body>
   <header>
     <div class="container header-inner">
       <a href="#" class="brand" onclick="showPage('home'); return false;"><span class="a">c</span><span class="dot"></span><span class="a">llecti</span>vidual</a>
       <nav>
+        <a href="#freuds-room" onclick="goToSection('freuds-room'); return false;">Freud's Room</a>
+        <a href="#laboratories" onclick="goToSection('laboratories'); return false;">Labs</a>
         <a href="#manifesto" onclick="goToSection('manifesto'); return false;">Manifesto</a>
-        <a href="#laboratories" onclick="goToSection('laboratories'); return false;">Laboratories</a>
-        <a href="#tools" onclick="goToSection('tools'); return false;">Tools</a>
-        <a href="#join" onclick="goToSection('join'); return false;">Join</a>
+        <a href="#contact" onclick="goToSection('contact'); return false;">Contact</a>
       </nav>
+      <div class="lang-toggle" aria-label="Language switch">
+        <button id="lang-tr-btn" type="button" class="active" onclick="setLanguage('tr')">TR</button>
+        <button id="lang-en-btn" type="button" onclick="setLanguage('en')">EN</button>
+      </div>
       <button class="menu-toggle" type="button" onclick="toggleMobileNav()">Menu</button>
     </div>
   </header>
@@ -25,43 +42,81 @@
   <div id="mobile-nav" class="container">
     <div class="card" style="padding:16px 18px;">
       <div class="link-row">
+        <a class="btn secondary" href="#freuds-room" onclick="goToSection('freuds-room'); toggleMobileNav(false); return false;">Freud's Room</a>
+        <a class="btn secondary" href="#laboratories" onclick="goToSection('laboratories'); toggleMobileNav(false); return false;">Labs</a>
         <a class="btn secondary" href="#manifesto" onclick="goToSection('manifesto'); toggleMobileNav(false); return false;">Manifesto</a>
-        <a class="btn secondary" href="#laboratories" onclick="goToSection('laboratories'); toggleMobileNav(false); return false;">Laboratories</a>
-        <a class="btn secondary" href="#tools" onclick="goToSection('tools'); toggleMobileNav(false); return false;">Tools</a>
-        <a class="btn secondary" href="#join" onclick="goToSection('join'); toggleMobileNav(false); return false;">Join</a>
+        <a class="btn secondary" href="#contact" onclick="goToSection('contact'); toggleMobileNav(false); return false;">Contact</a>
+      </div>
+      <div class="button-row" style="margin-top:14px;">
+        <button class="btn secondary" type="button" onclick="setLanguage('tr'); toggleMobileNav(false)">TR</button>
+        <button class="btn secondary" type="button" onclick="setLanguage('en'); toggleMobileNav(false)">EN</button>
       </div>
     </div>
   </div>
 
   <main>
     <div id="home-page" class="page active">
-      <section class="hero">
+      <section id="freuds-room" class="hero">
         <div class="orb one"></div><div class="orb two"></div><div class="orb three"></div>
         <div class="container hero-grid">
           <div>
-            <div class="eyebrow">psycho-social · cultural · creative</div>
-            <h1>For the life that refuses to remain private.</h1>
-            <p class="hero-copy">Collectividual is a psycho-social and cultural project for reflection, experimentation, shared language, and symbolic tools. It begins from a simple belief: resilience, meaning, imagination, and livability are not produced alone. They are made in relation, in tension, in memory, and in shared life.</p>
-            <div class="button-row">
-              <a class="btn primary" href="#join" onclick="goToSection('join'); return false;">Join the correspondence</a>
-              <a class="btn secondary" href="#laboratories" onclick="goToSection('laboratories'); return false;">Begin with the labs</a>
+            <div class="eyebrow">Collectividual</div>
+
+            <div data-lang="tr" class="active">
+              <h1>Önce Freud's Room'a gir. Sonra laboratuvarlara geç.</h1>
+              <p class="hero-copy">Collectividual'a giriş kapısı Freud's Room. Yorum, çağrışım, sembolik düşünme ve psikanalitik yakınlık için tasarlanmış ayrı bir alan. Ana site ise bunun etrafındaki laboratuvarları, araçları ve çerçeveyi sunar.</p>
+              <div class="button-row">
+                <a class="btn primary" href="./freuds_room.html">Freud's Room'u aç</a>
+                <a class="btn secondary" href="#laboratories" onclick="goToSection('laboratories'); return false;">Laboratuvarları keşfet</a>
+              </div>
+            </div>
+
+            <div data-lang="en">
+              <h1>Enter through Freud's Room. Then continue into the labs.</h1>
+              <p class="hero-copy">Freud's Room is the entry point into Collectividual: a separate space for reflection, association, symbolic thinking, and psychoanalytic attention. The main site gathers the laboratories, tools, and larger frame around it.</p>
+              <div class="button-row">
+                <a class="btn primary" href="./freuds_room.html">Open Freud's Room</a>
+                <a class="btn secondary" href="#laboratories" onclick="goToSection('laboratories'); return false;">Explore the labs</a>
+              </div>
             </div>
           </div>
-          <div class="card">
-            <div class="eyebrow">manifesto fragment</div>
-            <div class="manifesto-fragment">We are not only individuals. We are not only collectives. We are collectividuals.</div>
-            <p class="body-copy" style="margin-top:18px;">A project about relational resilience, symbolic life, public thinking, and formats that help thought move between people.</p>
+
+          <div class="card hero-card">
+            <div class="eyebrow">Featured space</div>
+            <div data-lang="tr" class="active">
+              <div class="manifesto-fragment">Ayrı bir okuma ve çağrışım odası.</div>
+              <p class="body-copy">Freud's Room, ana sitenin içine gömülü bir modül değil; kendi ritmi olan ayrı bir deneyim. Bu yüzden ilk bakışta görünür olmalı.</p>
+            </div>
+            <div data-lang="en">
+              <div class="manifesto-fragment">A separate room for reading and association.</div>
+              <p class="body-copy">Freud's Room is not an embedded widget inside the site. It is a separate experience with its own rhythm, which is why it appears first.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="manifesto" class="section">
-        <div class="container section-grid">
-          <div><div class="eyebrow">Manifesto</div><h2>Against isolated survival. Toward shared language.</h2></div>
-          <div class="body-copy">
-            <p>Collectividual begins from a simple proposition: much of what we are taught to endure alone is not a private failure. It is a relational wound, a historical condition, a collective difficulty without enough public language.</p>
-            <p>This project turns psychological insight into public language, symbolic tools, experimental forms, and cultural practices people can return to, carry, and share.</p>
-            <p>Not a wellness brand. Not a therapy clinic. Not a corporate language of resilience. A place to think, make, and test forms that resist the pressure to become only an individual.</p>
+      <section class="section">
+        <div class="container">
+          <div class="section-intro">
+            <div class="eyebrow">Orientation</div>
+            <div data-lang="tr" class="active">
+              <h2>Collectividual nedir?</h2>
+              <p class="body-copy">Collectividual; düşünce, topluluk, yaratıcılık ve sembolik araçlar etrafında kurulan psiko-sosyal bir çerçeve. Freud's Room bu yapının yoğunlaşmış giriş alanı; laboratuvarlar ise bu düşüncenin yayıldığı üretim alanlarıdır.</p>
+            </div>
+            <div data-lang="en">
+              <h2>What is Collectividual?</h2>
+              <p class="body-copy">Collectividual is a psycho-social frame for thought, community, creativity, and symbolic tools. Freud's Room is the concentrated entry point; the laboratories are where the project expands into formats, methods, and outputs.</p>
+            </div>
+          </div>
+          <div class="mini-grid">
+            <div class="stat-card">
+              <div data-lang="tr" class="active"><h4>Giriş</h4><p class="body-copy">Freud's Room ilk karşılaşma alanıdır.</p></div>
+              <div data-lang="en"><h4>Entry</h4><p class="body-copy">Freud's Room is the first point of encounter.</p></div>
+            </div>
+            <div class="stat-card">
+              <div data-lang="tr" class="active"><h4>Devam</h4><p class="body-copy">Laboratuvarlar düşüncenin farklı yönlerde açıldığı bölümlerdir.</p></div>
+              <div data-lang="en"><h4>Continuation</h4><p class="body-copy">The labs are where that thought opens into different directions.</p></div>
+            </div>
           </div>
         </div>
       </section>
@@ -69,136 +124,137 @@
       <section id="laboratories" class="section section-soft">
         <div class="container">
           <div class="section-top">
-            <div><div class="eyebrow">Laboratories</div><h2>Questions that need structure, not slogans.</h2></div>
-            <p class="section-copy">Each laboratory takes a question seriously enough to give it form, tempo, method, and output. Labs are where things are developed; the tools area is where some of those forms become usable, portable, and ready to circulate.</p>
+            <div>
+              <div class="eyebrow">Labs</div>
+              <div data-lang="tr" class="active"><h2>Sonra laboratuvarlar gelir.</h2></div>
+              <div data-lang="en"><h2>Then come the laboratories.</h2></div>
+            </div>
+            <div data-lang="tr" class="active"><p class="section-copy">Collectividual tek bir oda değil. Fikirlerin işlendiği, topluluğa döndüğü, biçim kazandığı ve sıfır sermayeyle test edildiği ayrı alanları var.</p></div>
+            <div data-lang="en"><p class="section-copy">Collectividual is not only a room. It also includes spaces where ideas are clarified, returned to community, given form, and tested under conditions of zero capital.</p></div>
           </div>
+
           <div class="grid-4">
-            <article class="lab-card"><div class="icon-dot"></div><h3>Think Lab</h3><p class="lab-copy">A space for making difficult ideas more usable. It turns psychological, social, and cultural questions into language, prompts, short texts, and formats people can actually work with.</p><button class="action-btn secondary" onclick="showPage('think')">Open lab page</button></article>
-            <article class="lab-card"><div class="icon-dot"></div><h3>Community Lab</h3><p class="lab-copy">A space for practical formats that help people endure, reconnect, and keep going together — through workshops, reflection tools, community exercises, and small usable structures.</p><button class="action-btn secondary" onclick="showPage('community')">Open lab page</button></article>
-            <article class="lab-card"><div class="icon-dot"></div><h3>Creative Lab</h3><p class="lab-copy">A production space for concrete outputs: decks, brochures, PDFs, visual systems, downloadable formats, and other cultural tools that can circulate.</p><button class="action-btn secondary" onclick="showPage('creative')">Open lab page</button></article>
-            <article class="lab-card"><div class="icon-dot"></div><h3>Kapital Zero Lab</h3><p class="lab-copy">A hub for zero-budget entrepreneurship: prompts, tools, starter systems, and practical formats for people who want to begin before they have capital.</p><button class="action-btn secondary" onclick="showPage('kapitalzero')">Open lab page</button></article>
+            <article class="lab-card">
+              <div class="icon-dot"></div>
+              <div data-lang="tr" class="active"><h3>Think Lab</h3><p class="lab-copy">Kavramları daha kullanılabilir, daha paylaşılabilir ve daha canlı hale getiren düşünce alanı.</p></div>
+              <div data-lang="en"><h3>Think Lab</h3><p class="lab-copy">A space for making difficult ideas more usable, shareable, and alive.</p></div>
+            </article>
+            <article class="lab-card">
+              <div class="icon-dot"></div>
+              <div data-lang="tr" class="active"><h3>Community Lab</h3><p class="lab-copy">İnsanların birlikte dayanmasına, düşünmesine ve devam etmesine yarayan pratik formatlar.</p></div>
+              <div data-lang="en"><h3>Community Lab</h3><p class="lab-copy">Practical formats that help people continue, reflect, and endure together.</p></div>
+            </article>
+            <article class="lab-card">
+              <div class="icon-dot"></div>
+              <div data-lang="tr" class="active"><h3>Creative Lab</h3><p class="lab-copy">Metinlerin, destelerin, görsel sistemlerin ve kültürel araçların üretildiği alan.</p></div>
+              <div data-lang="en"><h3>Creative Lab</h3><p class="lab-copy">A production space for texts, decks, visual systems, and cultural tools.</p></div>
+            </article>
+            <article class="lab-card">
+              <div class="icon-dot"></div>
+              <div data-lang="tr" class="active"><h3>Kapital Zero Lab</h3><p class="lab-copy">Sıfır sermayeyle başlayan fikirlerin küçük ama gerçek hareketlere dönüştüğü bölüm.</p></div>
+              <div data-lang="en"><h3>Kapital Zero Lab</h3><p class="lab-copy">A lab for turning zero-budget ideas into small but real movement.</p></div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="tools" class="section tool-section">
-        <div class="container">
-          <div class="section-top">
-            <div><div class="eyebrow">Tools</div><h2>Small structures for thought, relation, and use.</h2></div>
-            <p class="section-copy">The tools area gathers formats that can be used, carried, shared, or returned to. Some are already available as working formats; others are still in development. The emphasis is not speed, but usable form.</p>
+      <section id="manifesto" class="section">
+        <div class="container section-grid">
+          <div>
+            <div class="eyebrow">Manifesto</div>
+            <div data-lang="tr" class="active"><h2>Ne yalnızca bireyiz, ne de yalnızca kolektif.</h2></div>
+            <div data-lang="en"><h2>We are neither only individuals nor only collectives.</h2></div>
           </div>
-          <div class="feature-box detail-card" style="margin-bottom:24px;">
-            <div class="eyebrow">featured</div>
-            <div class="section-grid" style="margin-top:16px;align-items:end;">
-              <div>
-                <h3>Freud’s Room</h3>
-                <p class="tool-copy">A reflective interface built around FREUD’S TAROT, psychoanalytic prompts, and structured spreads. Designed not for prediction, but for interpretation, reflection, and sustained contact with psychic material.</p>
-                <p class="tool-copy">The current version opens as a separate full-page environment connected to the main Collectividual site.</p>
-              </div>
-              <div class="tool-card">
-                <div class="eyebrow">separate page</div>
-                <p class="tool-copy" style="margin-top:14px;">Open the dedicated reading room from here whenever you want a slower, more focused session.</p>
-                <div class="button-row" style="margin-top:18px;"><a class="btn secondary" href="./freuds_room.html">Open Freud’s Room</a></div>
-              </div>
+          <div>
+            <div data-lang="tr" class="active">
+              <p class="body-copy">Collectividual, tek başına taşınan şeylerin aslında çoğu zaman ilişkisel, tarihsel ve ortak olduğunu hatırlatır. Psikolojik sezgiyi kamusal dile, simgesel araçlara ve paylaşılabilir biçimlere çevirmeye çalışır.</p>
+            </div>
+            <div data-lang="en">
+              <p class="body-copy">Collectividual begins from the sense that much of what is carried alone is actually relational, historical, and shared. It turns psychological insight into public language, symbolic tools, and forms that can circulate between people.</p>
             </div>
           </div>
+        </div>
+      </section>
+
+      <section class="section tool-section">
+        <div class="container">
+          <div class="section-top">
+            <div>
+              <div class="eyebrow">Tools</div>
+              <div data-lang="tr" class="active"><h2>Odalar, laboratuvarlar ve araçlar.</h2></div>
+              <div data-lang="en"><h2>Rooms, laboratories, and tools.</h2></div>
+            </div>
+            <div data-lang="tr" class="active"><p class="section-copy">Bu yapı yalnızca okumalık değil; geri dönülebilir, kullanılabilir ve paylaşılabilir araçlar üretmek için var.</p></div>
+            <div data-lang="en"><p class="section-copy">This structure does not exist only to be read. It exists to produce formats that can be used, revisited, and shared.</p></div>
+          </div>
+
           <div class="grid-3">
-            <article class="tool-card"><div class="eyebrow">live</div><h3>Reflection Cards</h3><p class="tool-copy">Portable prompts for reflection, facilitation, and structured conversation. Small enough to use quickly, open enough to return to.</p></article>
-            <article class="tool-card"><div class="eyebrow">live</div><h3>Prompt Kits</h3><p class="tool-copy">Starting structures for sessions, workshops, writing, and group reflection. Built to help thought move when a blank beginning is not enough.</p></article>
-            <article class="tool-card"><div class="eyebrow">live</div><h3>Laboratory Outputs</h3><p class="tool-copy">Downloadable formats, decks, guides, and practical materials that emerge from the laboratories and can circulate in use.</p></article>
+            <article class="tool-card">
+              <div class="eyebrow">Freud's Room</div>
+              <div data-lang="tr" class="active"><p class="tool-copy">Yorum ve çağrışım için ayrı alan.</p></div>
+              <div data-lang="en"><p class="tool-copy">A separate space for interpretation and association.</p></div>
+            </article>
+            <article class="tool-card">
+              <div class="eyebrow">Prompts</div>
+              <div data-lang="tr" class="active"><p class="tool-copy">Düşünceyi başlatan veya derinleştiren kısa yapılar.</p></div>
+              <div data-lang="en"><p class="tool-copy">Short structures that begin or deepen thought.</p></div>
+            </article>
+            <article class="tool-card">
+              <div class="eyebrow">Outputs</div>
+              <div data-lang="tr" class="active"><p class="tool-copy">Desteler, metinler, broşürler ve başka dolaşıma girebilir formatlar.</p></div>
+              <div data-lang="en"><p class="tool-copy">Decks, texts, brochures, and other formats made to circulate.</p></div>
+            </article>
           </div>
         </div>
       </section>
 
-      <section id="join" class="section">
+      <section id="contact" class="section">
         <div class="container">
           <div class="join-wrap">
             <div>
-              <div class="eyebrow">Join</div>
-              <h2>Stay close while the language is being built.</h2>
-              <p class="join-copy">Collectividual is still taking form. For now, the join area stays intentionally simple: a calm point of contact for future notes, invitations, laboratory updates, and new tools.</p>
-              <ul class="join-list">
-                <li>Project updates and editorial notes</li>
-                <li>Laboratory openings and tool releases</li>
-                <li>Future workshops, downloadable materials, and archive entries</li>
-              </ul>
+              <div class="eyebrow">Contact</div>
+              <div data-lang="tr" class="active">
+                <h2>Şimdilik en sade haliyle.</h2>
+                <p class="join-copy">Bu ilk sürümde site sakin tutuldu. Daha fazla üyelik, başvuru veya topluluk akışı sonradan eklenebilir. Şimdilik ana davet; Freud's Room'a girmek, laboratuvarları görmek ve temas kurmak.</p>
+              </div>
+              <div data-lang="en">
+                <h2>For now, in its simplest form.</h2>
+                <p class="join-copy">This first version stays deliberately calm. More membership or community flows can come later. For now, the invitation is simple: enter Freud's Room, move through the labs, and get in touch.</p>
+              </div>
             </div>
             <div class="join-panel">
-              <div class="eyebrow">Member access</div>
-              <h3 style="margin-top:16px;">A light membership layer.</h3>
-              <p class="join-copy">Create an account or log in to restore a simple membership flow without changing the calm editorial feel of the site.</p>
-              <div style="margin-top:18px;display:grid;gap:10px;">
-                <input id="auth-email" type="email" placeholder="Email" class="auth-input">
-                <input id="auth-password" type="password" placeholder="Password" class="auth-input">
+              <div class="eyebrow">Email</div>
+              <h3 style="margin-top:16px;">hello@collectividual.com</h3>
+              <div data-lang="tr" class="active"><p class="join-note">İstersen bu e-posta adresini sonra kendi adresinle değiştiririz.</p></div>
+              <div data-lang="en"><p class="join-note">This address can be replaced with your preferred contact later.</p></div>
+              <div class="button-row" style="margin-top:20px;">
+                <a class="btn primary" href="mailto:hello@collectividual.com">Contact</a>
+                <a class="btn secondary" href="./freuds_room.html">Open Freud's Room</a>
               </div>
-              <div class="button-row" style="margin-top:16px;">
-                <button class="btn primary" type="button" onclick="signUp()">Sign up</button>
-                <button class="btn secondary" type="button" onclick="signIn()">Log in</button>
-                <button class="btn secondary" type="button" onclick="logoutUser()">Log out</button>
-              </div>
-              <p id="auth-status" class="join-note">Membership is configured. You can sign up or log in here.</p>
-              <p class="join-note">Optional: replace the old contact email once the membership flow is fully in use.</p>
             </div>
           </div>
         </div>
       </section>
     </div>
-
-    <div id="think-page" class="page"><section class="section"><div class="container"><button class="back-btn" onclick="showPage('home')">← Back to home</button><div class="eyebrow" style="margin-top:20px;">Laboratory</div><div class="section-grid" style="margin-top:18px;"><div><h1 class="page-title">Think Lab</h1><p class="hero-copy" style="margin-top:10px;">Ideas that can be used, not only admired.</p><p class="body-copy">Think Lab is where Collectividual turns difficult ideas into language people can work with. It focuses on naming, framing, clarifying, and reshaping psychological, social, and cultural questions so they become usable in writing, dialogue, and shared reflection.</p></div><div class="detail-card soft-box"><div class="eyebrow">Current logic</div><div class="manifesto-fragment">Each lab is a question given structure, rhythm, and output.</div></div></div></div></section></div>
-    <div id="community-page" class="page"><section class="section"><div class="container"><button class="back-btn" onclick="showPage('home')">← Back to home</button><div class="eyebrow" style="margin-top:20px;">Laboratory</div><div class="section-grid" style="margin-top:18px;"><div><h1 class="page-title">Community Lab</h1><p class="hero-copy" style="margin-top:10px;">Practical formats for getting through things together.</p><p class="body-copy">Community Lab focuses on small but usable formats that help people endure, reconnect, and keep going together. It is less about abstract theory and more about exercises, prompts, workshop structures, and community-facing tools that can actually be used in real settings.</p></div><div class="detail-card soft-box"><div class="eyebrow">Current logic</div><div class="manifesto-fragment">This is where community-facing support practices take shape.</div></div></div></div></section></div>
-    <div id="creative-page" class="page"><section class="section"><div class="container"><button class="back-btn" onclick="showPage('home')">← Back to home</button><div class="eyebrow" style="margin-top:20px;">Laboratory</div><div class="section-grid" style="margin-top:18px;"><div><h1 class="page-title">Creative Lab</h1><p class="hero-copy" style="margin-top:10px;">Editorial production, symbolic tools, and usable formats.</p><p class="body-copy">Creative Lab is where concepts become forms that can circulate. It works across writing, decks, printable tools, interfaces, and visual systems that people can return to, carry, and use.</p></div><div class="detail-card feature-box"><div class="eyebrow">Connected page</div><h3 style="margin-top:16px;">Freud’s Room</h3><p class="body-copy">Freud’s Room is linked as a separate page rather than embedded inside the main site. This keeps the core website calm while still opening into a deeper interpretive space.</p><div class="button-row" style="margin-top:18px;"><a class="btn secondary" href="./freuds_room.html">Open Freud’s Room</a></div></div></div></div></section></div>
-    <div id="kapitalzero-page" class="page"><section class="section"><div class="container"><button class="back-btn" onclick="showPage('home')">← Back to home</button><div class="eyebrow" style="margin-top:20px;">Laboratory</div><div class="section-grid" style="margin-top:18px;"><div><h1 class="page-title">Kapital Zero Lab</h1><p class="hero-copy" style="margin-top:10px;">Zero-budget entrepreneurship, usable prompts, and starter systems.</p><p class="body-copy">Kapital Zero Lab is a hub for building things before capital arrives. It focuses on low-cost, low-barrier, practical formats for people who want to start, test, improvise, and generate movement with almost nothing in hand.</p></div><div class="detail-card soft-box"><div class="eyebrow">Current logic</div><div class="manifesto-fragment">This is where constraint becomes method rather than excuse.</div></div></div></div></section></div>
   </main>
 
-  <footer><div class="container"><p class="footer-copy">Collectividual — psycho-social and cultural formats for reflection, experimentation, and shared language.</p></div></footer>
+  <footer>
+    <div class="container">
+      <p class="footer-copy">Collectividual — Freud's Room first, then the labs.</p>
+    </div>
+  </footer>
 
   <script>
-    const SUPABASE_URL = 'https://qngyhxxxvaueyxqtwkzc.supabase.co';
-    const SUPABASE_ANON_KEY = 'sb_publishable_XDgGxv0CJ2Lr2DyVWlLTVA_E_49_J1L';
-    const authStatusEl = document.getElementById('auth-status');
-    const hasSupabaseConfig = SUPABASE_URL !== 'https://YOUR_PROJECT.supabase.co' && SUPABASE_ANON_KEY !== 'YOUR_ANON_KEY';
-    const supabaseClient = hasSupabaseConfig ? window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY) : null;
-
     function showPage(name){document.querySelectorAll('.page').forEach(function(page){page.classList.remove('active')});var target=document.getElementById(name+'-page');if(target){target.classList.add('active');window.scrollTo({top:0,behavior:'smooth'})}}
     function goToSection(sectionId){showPage('home');setTimeout(function(){var el=document.getElementById(sectionId);if(el){el.scrollIntoView({behavior:'smooth',block:'start'})}},30)}
     function toggleMobileNav(forceState){var nav=document.getElementById('mobile-nav');var nextState=typeof forceState==='boolean'?forceState:nav.style.display!=='block';nav.style.display=nextState?'block':'none'}
-
-    function setAuthStatus(message){if(authStatusEl){authStatusEl.textContent=message}}
-    function getAuthInputs(){return{email:(document.getElementById('auth-email')||{}).value||'',password:(document.getElementById('auth-password')||{}).value||''}}
-    function requireSupabase(){if(!supabaseClient){setAuthStatus('Add your Supabase anon key in index.html to activate sign up and login.');return false}return true}
-
-    async function signUp(){
-      if(!requireSupabase()) return;
-      const creds=getAuthInputs();
-      const email=creds.email.trim();
-      const password=creds.password;
-      if(!email||!password){setAuthStatus('Enter an email and password first.');return}
-      const { error } = await supabaseClient.auth.signUp({ email, password, options:{ data:{ full_name:'' } } });
-      setAuthStatus(error ? error.message : 'Check your email to confirm your account.');
+    function setLanguage(lang){
+      document.querySelectorAll('[data-lang]').forEach(function(el){el.classList.toggle('active', el.getAttribute('data-lang')===lang)});
+      document.getElementById('lang-tr-btn').classList.toggle('active', lang==='tr');
+      document.getElementById('lang-en-btn').classList.toggle('active', lang==='en');
+      document.documentElement.lang = lang === 'tr' ? 'tr' : 'en';
     }
-
-    async function signIn(){
-      if(!requireSupabase()) return;
-      const creds=getAuthInputs();
-      const email=creds.email.trim();
-      const password=creds.password;
-      if(!email||!password){setAuthStatus('Enter an email and password first.');return}
-      const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
-      setAuthStatus(error ? error.message : 'Logged in as ' + data.user.email + '.');
-    }
-
-    async function logoutUser(){
-      if(!requireSupabase()) return;
-      const { error } = await supabaseClient.auth.signOut();
-      setAuthStatus(error ? error.message : 'Logged out.');
-    }
-
-    if(supabaseClient){
-      supabaseClient.auth.getSession().then(function(result){
-        const session = result && result.data ? result.data.session : null;
-        if(session && session.user){setAuthStatus('Logged in as ' + session.user.email + '.')} else {setAuthStatus('No active session yet. You can sign up or log in here.')}
-      });
-    }
+    setLanguage('tr');
   </script>
 </body>
 </html>
