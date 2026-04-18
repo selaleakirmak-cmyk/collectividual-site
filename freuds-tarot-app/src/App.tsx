@@ -1,12 +1,21 @@
 import { useMemo, useState } from 'react';
 import cardsData from './data/cards.json';
+import noticesData from './data/notices.json';
 import spreadsData from './data/spreads.json';
+import { buildReadingBlocks, buildSpreadSummary } from './lib/readingEngine';
 import type { Card, Lang, ReadingBlock, Spread } from './types';
 
 type Screen = 'landing' | 'info' | 'spreads' | 'intention' | 'draw' | 'result' | 'notes';
 
+type Notice = {
+  id: string;
+  title: { tr: string; en: string };
+  body: { tr: string; en: string };
+};
+
 const cards = cardsData as Card[];
 const spreads = spreadsData as Spread[];
+const notices = noticesData as Notice[];
 
 const copy = {
   tr: {
@@ -31,10 +40,9 @@ const copy = {
     reveal: 'Açılım sonucu',
     notes: 'Kendi notun',
     notesPlaceholder: 'Burada sende kalan şeyi yaz…',
-    saveNote: 'Notu kaydet',
+    saveNote: 'Tamamla',
     newReading: 'Yeni açılım',
     restart: 'Başa dön',
-    noSpread: 'Önce bir açılım seçmelisin.',
     noCards: 'Henüz kart çekilmedi.',
     summary: 'Açılım özeti',
     reflection: 'Düşünmeye devam etmek için',
@@ -42,7 +50,9 @@ const copy = {
     inPosition: 'Bu pozisyonda nasıl okunur?',
     positionAsks: 'Bu pozisyon neyi soruyor?',
     openInfoTitle: 'Bu nedir?',
-    openInfoBody: 'Freud’s Tarot, psikanalitik kavramlarla çalışan yapılandırılmış bir yansıtma aracıdır. Kart kesinlik vermez; düşünmek için bir yön sunar.'
+    openInfoBody: 'Freud’s Tarot, psikanalitik kavramlarla çalışan yapılandırılmış bir yansıtma aracıdır. Kart kesinlik vermez; düşünmek için bir yön sunar.',
+    noticesTitle: 'Başlamadan önce',
+    deckReady: 'Desteyi karıştırabilir veya doğrudan kart çekebilirsin.'
   },
   en: {
     appTitle: "Freud's Tarot",
@@ -66,10 +76,9 @@ const copy = {
     reveal: 'Reading result',
     notes: 'Your reflection note',
     notesPlaceholder: 'Write what stayed with you here…',
-    saveNote: 'Save Note',
+    saveNote: 'Finish',
     newReading: 'New Spread',
     restart: 'Start Over',
-    noSpread: 'Choose a spread first.',
     noCards: 'No cards drawn yet.',
     summary: 'Spread summary',
     reflection: 'To continue thinking',
@@ -77,7 +86,9 @@ const copy = {
     inPosition: 'How is it read in this position?',
     positionAsks: 'What does this position ask?',
     openInfoTitle: 'What is this?',
-    openInfoBody: 'Freud’s Tarot is a structured reflective tool built on psychoanalytic concepts. A card does not offer certainty; it offers a direction for thought.'
+    openInfoBody: 'Freud’s Tarot is a structured reflective tool built on psychoanalytic concepts. A card does not offer certainty; it offers a direction for thought.',
+    noticesTitle: 'Before you begin',
+    deckReady: 'You can shuffle the deck or draw directly.'
   }
 } as const;
 
@@ -88,17 +99,6 @@ function shuffleArray<T>(items: T[]) {
     [array[i], array[j]] = [array[j], array[i]];
   }
   return array;
-}
-
-function buildInterpretation(lang: Lang, spread: Spread, card: Card, positionIndex: number) {
-  const position = spread.positions[positionIndex];
-  const positionLabel = position.label[lang];
-  const base = card.meaning[lang];
-  const hint = position.hint[lang];
-  const bridge = card.bridge[lang];
-  const question = card.coreQuestion[lang];
-
-  return `${positionLabel} bu açılımda ${position.functionText[lang].toLowerCase()} ${base} ${hint} ${bridge} ${question}`;
 }
 
 function App() {
@@ -125,21 +125,12 @@ function App() {
 
   const readingBlocks: ReadingBlock[] = useMemo(() => {
     if (!selectedSpread) return [];
-    return drawnCards.map((card, index) => ({
-      position: selectedSpread.positions[index],
-      card,
-      interpretation: buildInterpretation(lang, selectedSpread, card, index)
-    }));
+    return buildReadingBlocks(lang, selectedSpread, drawnCards);
   }, [drawnCards, lang, selectedSpread]);
 
   const spreadSummary = useMemo(() => {
     if (!selectedSpread || !readingBlocks.length) return '';
-    const intro = selectedSpread.intro[lang];
-    const synthesis = readingBlocks
-      .map((block) => `${block.position.label[lang]}: ${block.card.title[lang]}`)
-      .join(' · ');
-    const ending = selectedSpread.closing[lang];
-    return `${intro} ${synthesis}. ${ending}`;
+    return buildSpreadSummary(lang, selectedSpread, readingBlocks);
   }, [lang, readingBlocks, selectedSpread]);
 
   const drawNextCard = () => {
@@ -188,6 +179,14 @@ function App() {
           <h2>{t.openInfoTitle}</h2>
           <p>{t.openInfoBody}</p>
           <p className="subtle">{lang === 'tr' ? 'Bu bir kehanet aracı değil; düşünmek için yapılandırılmış bir alan.' : 'This is not a predictive tool; it is a structured space for thought.'}</p>
+          <div className="summary-box" style={{ marginTop: '20px' }}>
+            <strong>{t.noticesTitle}</strong>
+            <ul>
+              {notices.map((notice) => (
+                <li key={notice.id}><strong>{notice.title[lang]}:</strong> {notice.body[lang]}</li>
+              ))}
+            </ul>
+          </div>
           <div className="actions">
             <button className="primary" onClick={() => setScreen('spreads')}>{t.continue}</button>
             <button className="secondary" onClick={() => setScreen('landing')}>{t.back}</button>
@@ -248,6 +247,7 @@ function App() {
             <span>{selectedSpread.title[lang]}</span>
             <span>{drawnIds.length} / {selectedSpread.cardCount}</span>
           </div>
+          <p className="subtle">{t.deckReady}</p>
           <div className="deck-row">
             {Array.from({ length: selectedSpread.cardCount }).map((_, index) => {
               const card = drawnCards[index];
