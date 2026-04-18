@@ -69,6 +69,52 @@
     }
   },
   {
+    "id": "major_20_yorumlama",
+    "title": { "tr": "Yorumlama", "en": "Interpretation" },
+    "freudianName": { "tr": "Yorumlama", "en": "Interpretation" },
+    "group": "major",
+    "classicName": "Judgement",
+    "meaning": {
+      "tr": "Bir malzeme artık duyulabilir hale geliyor olabilir; mesele yalnızca doğruluk değil, zamanlılıktır.",
+      "en": "Material may be becoming hearable; the issue is not only correctness, but timing."
+    },
+    "psychoanalyticFrame": {
+      "tr": "Yorumun değeri, kişinin onu duyabilecek bir noktaya gelip gelmediğiyle ilgilidir.",
+      "en": "The value of an interpretation depends on whether the person has reached a point where it can be heard."
+    },
+    "coreQuestion": {
+      "tr": "Şu an sana söylenseydi duyabileceğin ama daha önce savunmayla karşıladığın şey ne olabilir?",
+      "en": "What might you be able to hear now that you would have met defensively before?"
+    },
+    "bridge": {
+      "tr": "Bu pozisyonda kart, malzemenin artık biraz daha duyulabilir ve çalışılabilir hale geldiğini düşündürebilir.",
+      "en": "In this position, the card may suggest that the material is becoming more hearable and workable now."
+    }
+  },
+  {
+    "id": "major_21_calisma_yoluyla_gecme",
+    "title": { "tr": "Çalışma-Yoluyla-Geçme", "en": "Working-Through" },
+    "freudianName": { "tr": "Çalışma-Yoluyla-Geçme", "en": "Working-Through" },
+    "group": "major",
+    "classicName": "The World",
+    "meaning": {
+      "tr": "Anlamak tek başına yetmez; aynı malzeme üzerinde yeniden yeniden çalışmak gerekir.",
+      "en": "Understanding alone is not enough; the same material must be worked through again and again."
+    },
+    "psychoanalyticFrame": {
+      "tr": "Direnç tanındıktan sonra onun içinden geçmek, psikanalitik çalışmanın olgunlaşan hareketidir.",
+      "en": "After resistance is recognized, moving through it becomes the maturing motion of analytic work."
+    },
+    "coreQuestion": {
+      "tr": "Şu an yalnızca anlamış değil de gerçekten çalışmakta olduğun şey ne olabilir?",
+      "en": "What might you be not merely understanding, but actually working through now?"
+    },
+    "bridge": {
+      "tr": "Bu pozisyonda kart, tek bir içgörüden çok, tekrar ederek derinleşen bir çalışmaya ihtiyaç olduğunu düşündürebilir.",
+      "en": "In this position, the card may suggest the need for a deepening process of repeated work rather than a single insight."
+    }
+  },
+  {
     "id": "kaygi_02_projection",
     "title": { "tr": "Yansıtma", "en": "Projection" },
     "freudianName": { "tr": "Yansıtma", "en": "Projection" },
