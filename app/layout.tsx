@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, DM_Mono } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/site/Navbar";
 import Footer from "@/components/site/Footer";
 
-const cormorant = Cormorant_Garamond({
+const display = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-display",
   weight: ["400", "500", "600"],
 });
 
-const dmMono = DM_Mono({
+const body = Inter({
   subsets: ["latin"],
   variable: "--font-body",
   weight: ["300", "400", "500"],
@@ -18,13 +18,16 @@ const dmMono = DM_Mono({
 
 export const metadata: Metadata = {
   title: "Collectividual",
-  description: "Structured facilitated products for the moments distributed work gets stuck.",
+  description:
+    "A place where one person can become a whole team. Tools, labs, and formats for ideas that need structure.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${cormorant.variable} ${dmMono.variable} bg-[var(--bg)] text-[var(--text)] antialiased`}>
+      <body
+        className={`${display.variable} ${body.variable} bg-[var(--bg)] text-[var(--text)] antialiased`}
+      >
         <div className="min-h-screen flex flex-col">
           <Navbar />
           <main className="flex-1">{children}</main>
