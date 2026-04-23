@@ -5,80 +5,86 @@ const labs = [
   {
     title: "Think Lab",
     description:
-      "Essays, concepts, guides, and editorial experiments for turning reflection into shared language.",
+      "Concepts, essays, guides, and editorial experiments for turning reflection into shared language.",
     href: "/labs#think-lab",
+    items: ["Essays", "Guides", "Frameworks"],
   },
   {
     title: "Creative Lab",
     description:
-      "Card decks, printable tools, prompt kits, and visual formats that help ideas take form.",
+      "Card decks, prompt kits, printable tools, and visual formats that help ideas take form.",
     href: "/labs#creative-lab",
+    items: ["Card decks", "Prompt kits", "Printable tools"],
   },
   {
     title: "Community Lab",
     description:
-      "Formats for participation, workshops, collective thinking, and small-group cultural work.",
+      "Sessions, workshops, and participation formats for collective thinking and small-group work.",
     href: "/labs#community-lab",
+    items: ["Workshops", "Session formats", "Facilitation tools"],
   },
   {
     title: "Kapital Zero Lab",
     description:
       "Low-budget experiments, playful entrepreneurship, and practical systems for building from almost nothing.",
     href: "/labs#kapital-zero-lab",
+    items: ["Micro systems", "Experiments", "Playable formats"],
   },
 ];
 
-const tools = [
-  "Card-based thinking tools",
-  "Prompt kits for reflection and project development",
-  "Printable formats for workshops and learning",
-  "Small systems for creative production",
-];
+export const metadata = {
+  title: "Collectividual | Labs, Sessions, and Reflective Tools for Ideas",
+  description:
+    "Collectividual helps ideas take form through labs, guided sessions, reflective tools, prompt kits, printable formats, and collective creative systems.",
+};
 
 export default function HomePage() {
   return (
     <>
-      <section className="py-24 md:py-32">
+      <section className="border-b border-[var(--border)] py-20 md:py-28">
         <Container>
-          <p className="mb-5 text-[10px] uppercase tracking-[0.14em] text-[var(--muted)]">
+          <p className="mb-5 text-[11px] font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
             Collectividual
           </p>
-          <h1 className="max-w-5xl text-5xl leading-tight md:text-7xl">
+          <h1 className="max-w-6xl text-[4.6rem] font-semibold leading-[0.88] text-[var(--accent)] md:text-[6.8rem] lg:text-[8rem]">
             Do you have an idea? Let’s give it a life.
           </h1>
-          <p className="mt-6 max-w-3xl text-[14px] leading-8 text-[var(--muted)]">
-            Collectividual is a place where one person can become a whole team: a lab for reflective tools,
-            creative formats, small experiments, and ideas that need structure before they can meet the world.
+          <p className="mt-10 max-w-4xl text-[20px] leading-9 text-[var(--muted)] md:text-[24px] md:leading-10">
+            Collectividual is a lab-based space for reflective tools, guided sessions, creative formats,
+            and practical systems that help ideas become usable without flattening their meaning.
           </p>
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-10 flex flex-wrap gap-4">
             <Link
-              href="/labs"
-              className="border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[12px] tracking-[0.04em] text-white transition hover:bg-[var(--accent-light)]"
+              href="/join"
+              className="rounded-full border border-[var(--accent)] bg-[var(--accent)] px-7 py-4 text-[13px] font-semibold tracking-[0.04em] text-white transition hover:bg-[var(--accent-light)]"
             >
-              Enter the Labs
+              Join the list
             </Link>
             <Link
-              href="/tools"
-              className="border border-[var(--border)] px-5 py-3 text-[12px] tracking-[0.04em] text-[var(--text)]"
+              href="/labs"
+              className="rounded-full border border-[var(--border)] px-7 py-4 text-[13px] font-semibold tracking-[0.04em] text-[var(--accent)]"
             >
-              Explore Tools
+              Explore the labs
             </Link>
           </div>
         </Container>
       </section>
 
-      <section className="pb-20 md:pb-28">
+      <section className="py-16 md:py-24">
         <Container>
-          <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">
+          <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
             What this is
           </p>
-          <div className="grid gap-6 md:grid-cols-3">
+          <div className="grid gap-5 md:grid-cols-3">
             {[
-              "A quiet structure for ideas before they become products.",
-              "A home for tools, decks, prompts, workshops, and printable formats.",
+              "A structure for ideas before they become products, sessions, or public formats.",
+              "A home for labs, tools, decks, prompts, workshops, and printable materials.",
               "A way of building with low resources, high imagination, and collective intelligence.",
             ].map((item) => (
-              <div key={item} className="border border-[var(--border)] p-6 text-[13px] leading-7 text-[var(--text)]">
+              <div
+                key={item}
+                className="rounded-[2rem] border border-[var(--border)] bg-[var(--surface)] p-7 text-[15px] leading-8 text-[var(--text)]"
+              >
                 {item}
               </div>
             ))}
@@ -86,60 +92,70 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="py-20 md:py-28">
+      <section className="border-y border-[var(--border)] py-16 md:py-24">
         <Container>
-          <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">Labs</p>
-          <h2 className="max-w-4xl text-4xl leading-tight md:text-5xl">
-            Four working rooms for thinking, making, gathering, and building from zero.
-          </h2>
-          <div className="mt-10 grid gap-4 md:grid-cols-2">
+          <div className="max-w-4xl">
+            <p className="mb-4 text-[10px] font-semibold uppercase tracking-[0.18em] text-[var(--muted)]">
+              Lab-first architecture
+            </p>
+            <h2 className="text-5xl font-semibold leading-[0.95] text-[var(--accent)] md:text-7xl">
+              Labs come first. Tools and sessions grow from them.
+            </h2>
+            <p className="mt-8 text-[18px] leading-9 text-[var(--muted)]">
+              Each lab is a working room. Inside it, ideas become sessions, card decks, prompt kits,
+              printable tools, workshop formats, essays, and small experiments.
+            </p>
+          </div>
+        </Container>
+      </section>
+
+      <section className="py-16 md:py-24">
+        <Container>
+          <div className="grid gap-6 md:grid-cols-2">
             {labs.map((lab) => (
               <Link
                 key={lab.title}
+                id={lab.href.split("#")[1]}
                 href={lab.href}
-                className="border border-[var(--border)] p-7 transition hover:border-[var(--accent)]"
+                className="rounded-[2.2rem] border border-[var(--border)] bg-[var(--surface)] p-8 transition hover:border-[var(--accent)] hover:bg-white md:p-10"
               >
-                <h3 className="text-3xl leading-tight">{lab.title}</h3>
-                <p className="mt-4 text-[13px] leading-7 text-[var(--muted)]">{lab.description}</p>
+                <p className="mb-5 text-[10px] font-bold uppercase tracking-[0.18em] text-[var(--muted)]">
+                  Lab
+                </p>
+                <h3 className="text-5xl leading-tight text-[var(--accent)]">{lab.title}</h3>
+                <p className="mt-5 text-[15px] leading-8 text-[var(--muted)]">{lab.description}</p>
+                <div className="mt-7 flex flex-wrap gap-2">
+                  {lab.items.map((item) => (
+                    <span
+                      key={item}
+                      className="rounded-full border border-[var(--border)] px-4 py-2 text-[12px] text-[var(--muted)]"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
               </Link>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="py-20 md:py-28">
-        <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
-          <div>
-            <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">Tools layer</p>
-            <h2 className="text-4xl leading-tight md:text-5xl">A growing set of reflective practical instruments.</h2>
-          </div>
-          <div className="grid gap-4">
-            {tools.map((tool) => (
-              <div key={tool} className="border border-[var(--border)] p-5 text-[13px] leading-7 text-[var(--text)]">
-                {tool}
-              </div>
-            ))}
-            <Link href="/tools" className="mt-3 inline-flex text-[12px] tracking-[0.06em] text-[var(--accent)]">
-              Browse the tools →
-            </Link>
-          </div>
-        </Container>
-      </section>
-
-      <section className="py-20 md:py-28">
+      <section className="py-16 md:py-24">
         <Container>
-          <div className="border border-[var(--border)] p-8 md:p-12">
-            <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">Invitation</p>
-            <h2 className="max-w-3xl text-4xl leading-tight md:text-5xl">
-              Bring an idea, a question, a half-shaped format, or a small impossible thing.
+          <div className="rounded-[2.5rem] bg-[var(--accent)] p-8 text-white md:p-12 lg:p-14">
+            <p className="mb-5 text-[11px] font-bold uppercase tracking-[0.22em] text-white/70">
+              Membership
+            </p>
+            <h2 className="max-w-4xl text-5xl font-semibold leading-[0.98] md:text-7xl">
+              Join before the formats become finished products.
             </h2>
-            <p className="mt-5 max-w-2xl text-[13px] leading-7 text-[var(--muted)]">
-              Collectividual is for people who want to make something with meaning but do not want to turn
-              everything into a company, a course, or a performance of productivity.
+            <p className="mt-8 max-w-3xl text-[18px] leading-9 text-white/75">
+              Members get early notes, tool previews, session invitations, printable experiments, and behind-the-scenes
+              development updates from the labs.
             </p>
             <Link
               href="/join"
-              className="mt-8 inline-flex border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[12px] tracking-[0.04em] text-white transition hover:bg-[var(--accent-light)]"
+              className="mt-10 inline-flex rounded-full bg-[#dfe7e2] px-7 py-4 text-[15px] font-bold text-[var(--accent)]"
             >
               Join the list
             </Link>
