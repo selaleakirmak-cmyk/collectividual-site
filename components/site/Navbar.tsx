@@ -10,16 +10,10 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex text-[13px] tracking-[0.03em] text-[var(--muted)]">
-          <Link href="/products">Products</Link>
-          <Link href="/how-we-work">How We Work</Link>
-          <Link href="/results">Results</Link>
-          <Link href="/about">About</Link>
-          <Link
-            href="/book"
-            className="border border-[var(--accent)] bg-[var(--accent)] px-4 py-2 text-white transition hover:bg-[var(--accent-light)]"
-          >
-            Book a Conversation
-          </Link>
+          <Link href="/manifesto">Manifesto</Link>
+          <Link href="/labs">Labs</Link>
+          <Link href="/tools">Tools</Link>
+          <Link href="/join">Join</Link>
         </nav>
       </Container>
     </header>
