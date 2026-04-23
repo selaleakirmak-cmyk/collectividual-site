@@ -1,4 +1,4 @@
 {
-  "outputDirectory": "public",
-  "cleanUrls": true
+  "framework": "nextjs",
+  "buildCommand": "npm run build"
 }
