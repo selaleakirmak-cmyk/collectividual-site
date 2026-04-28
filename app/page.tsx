@@ -29,10 +29,10 @@ const labs = [
 ];
 
 const tools = [
-  "Card-based thinking tools",
-  "Prompt kits for reflection and project development",
-  "Printable formats for workshops and learning",
-  "Small systems for creative production",
+  "Mental health literacy seminars for non-clinicians",
+  "Downloadable checklists and reflective tools",
+  "Assessment formats for organizations and communities",
+  "Card decks, prompt kits, and printable psycho-social resources",
 ];
 
 export default function HomePage() {
@@ -44,30 +44,65 @@ export default function HomePage() {
             Collectividual
           </p>
           <h1 className="max-w-5xl text-5xl leading-tight md:text-7xl">
-            Do you have an idea? Let’s give it a life.
+            Psycho-social tools for more careful collective life.
           </h1>
           <p className="mt-6 max-w-3xl text-[14px] leading-8 text-[var(--muted)]">
             Collectividual is a place where one person can become a whole team: a lab for reflective tools,
-            creative formats, small experiments, and ideas that need structure before they can meet the world.
+            creative formats, public campaigns, and ideas that need structure before they can meet the world.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="/labs"
+              href="/campaigns/good-intentions-are-not-enough"
               className="border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[12px] tracking-[0.04em] text-white transition hover:bg-[var(--accent-light)]"
             >
-              Enter the Labs
+              See current campaign
             </Link>
             <Link
-              href="/tools"
+              href="/tools/mental-health-literacy-checklists"
               className="border border-[var(--border)] px-5 py-3 text-[12px] tracking-[0.04em] text-[var(--text)]"
             >
-              Explore Tools
+              Download free tools
             </Link>
           </div>
         </Container>
       </section>
 
-      <section className="pb-20 md:pb-28">
+      <section className="border-y border-[var(--border)] bg-[var(--surface)] py-20 md:py-28">
+        <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
+          <div>
+            <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">
+              Current public campaign
+            </p>
+            <h2 className="max-w-4xl text-4xl leading-tight md:text-6xl">
+              Good Intentions Are Not Enough
+            </h2>
+          </div>
+          <div>
+            <p className="text-[14px] leading-8 text-[var(--muted)]">
+              Mental health awareness has opened important conversations. But awareness alone does not teach us how to respond when someone is actually struggling.
+            </p>
+            <p className="mt-4 text-[14px] leading-8 text-[var(--muted)]">
+              This campaign helps non-clinicians move from good intentions to careful support: clearer language, better boundaries, less stigma, and more useful next steps.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-4">
+              <Link
+                href="/campaigns/good-intentions-are-not-enough"
+                className="border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[12px] tracking-[0.04em] text-white transition hover:bg-[var(--accent-light)]"
+              >
+                Enter the campaign
+              </Link>
+              <Link
+                href="/assessment/mental-health-literacy"
+                className="border border-[var(--border)] px-5 py-3 text-[12px] tracking-[0.04em] text-[var(--text)]"
+              >
+                Assess your organization
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="pb-20 pt-20 md:pb-28 md:pt-28">
         <Container>
           <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">
             What this is
@@ -75,7 +110,7 @@ export default function HomePage() {
           <div className="grid gap-6 md:grid-cols-3">
             {[
               "A quiet structure for ideas before they become products.",
-              "A home for tools, decks, prompts, workshops, and printable formats.",
+              "A home for tools, decks, prompts, workshops, campaigns, and printable formats.",
               "A way of building with low resources, high imagination, and collective intelligence.",
             ].map((item) => (
               <div key={item} className="border border-[var(--border)] p-6 text-[13px] leading-7 text-[var(--text)]">
@@ -111,7 +146,7 @@ export default function HomePage() {
         <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">Tools layer</p>
-            <h2 className="text-4xl leading-tight md:text-5xl">A growing set of reflective practical instruments.</h2>
+            <h2 className="text-4xl leading-tight md:text-5xl">Useful forms, not generic content.</h2>
           </div>
           <div className="grid gap-4">
             {tools.map((tool) => (
@@ -119,8 +154,8 @@ export default function HomePage() {
                 {tool}
               </div>
             ))}
-            <Link href="/tools" className="mt-3 inline-flex text-[12px] tracking-[0.06em] text-[var(--accent)]">
-              Browse the tools →
+            <Link href="/seminars/mental-health-literacy" className="mt-3 inline-flex text-[12px] tracking-[0.06em] text-[var(--accent)]">
+              View the mental health literacy seminar →
             </Link>
           </div>
         </Container>
@@ -129,20 +164,27 @@ export default function HomePage() {
       <section className="py-20 md:py-28">
         <Container>
           <div className="border border-[var(--border)] p-8 md:p-12">
-            <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">Invitation</p>
+            <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">Start here</p>
             <h2 className="max-w-3xl text-4xl leading-tight md:text-5xl">
-              Bring an idea, a question, a half-shaped format, or a small impossible thing.
+              We are on a mission to spread mental health literacy.
             </h2>
             <p className="mt-5 max-w-2xl text-[13px] leading-7 text-[var(--muted)]">
-              Collectividual is for people who want to make something with meaning but do not want to turn
-              everything into a company, a course, or a performance of productivity.
+              Move beyond shallow awareness toward careful communication, clearer boundaries, and more useful support.
             </p>
-            <Link
-              href="/join"
-              className="mt-8 inline-flex border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[12px] tracking-[0.04em] text-white transition hover:bg-[var(--accent-light)]"
-            >
-              Join the list
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/campaigns/good-intentions-are-not-enough"
+                className="inline-flex border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[12px] tracking-[0.04em] text-white transition hover:bg-[var(--accent-light)]"
+              >
+                Explore the campaign
+              </Link>
+              <Link
+                href="/book/free-consultation"
+                className="inline-flex border border-[var(--border)] px-5 py-3 text-[12px] tracking-[0.04em] text-[var(--text)]"
+              >
+                Book a call
+              </Link>
+            </div>
           </div>
         </Container>
       </section>
