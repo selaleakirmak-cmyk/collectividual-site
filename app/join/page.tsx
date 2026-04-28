@@ -1,9 +1,10 @@
 import Container from "@/components/site/Container";
 
-const defaultFormUrl =
-  "https://docs.google.com/forms/d/1TRBd8dX-XhLamkzQeb8n-mJlG0wFleGRGJQCmw8hcrw/viewform?embedded=true";
+const defaultFormBase = "https://docs.google.com/forms/d/1TRBd8dX-XhLamkzQeb8n-mJlG0wFleGRGJQCmw8hcrw/viewform";
+const defaultEmbedUrl = `${defaultFormBase}?embedded=true`;
 
-const formUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || defaultFormUrl;
+const formUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || defaultEmbedUrl;
+const formOpenUrl = formUrl.replace("?embedded=true", "");
 
 export const metadata = {
   title: "Inquiry | Collectividual",
@@ -61,9 +62,20 @@ export default function JoinPage() {
             <h2 className="text-3xl font-black uppercase leading-tight text-[var(--accent)] md:text-5xl">
               Start here.
             </h2>
+            <p className="mt-4 max-w-2xl text-[15px] font-semibold leading-8 text-[var(--muted)]">
+              If the embedded form does not load on your device, open it directly in a new tab.
+            </p>
+            <a
+              href={formOpenUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-flex border-2 border-[var(--accent)] bg-[var(--accent)] px-6 py-3 text-[13px] font-black uppercase tracking-[0.1em] text-white transition hover:-translate-y-1 hover:shadow-[0_8px_0_var(--text)]"
+            >
+              Open the form
+            </a>
 
             <div className="mt-8 overflow-hidden border-2 border-[var(--accent)] bg-[var(--bg)]">
-              <iframe title="Collectividual inquiry form" src={formUrl} className="h-[820px] w-full" />
+              <iframe title="Collectividual inquiry form" src={formUrl} className="h-[900px] w-full" />
             </div>
           </div>
         </Container>
