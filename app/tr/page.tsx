@@ -3,15 +3,9 @@ import Container from "@/components/site/Container";
 
 const labs = [
   {
-    title: "Think Lab",
-    description:
-      "Kavramları, denemeleri, rehberleri ve düşünceyi ortak dile dönüştüren editoryal deneyleri barındırır.",
-    href: "/tr/labs#think-lab",
-  },
-  {
     title: "Creative Lab",
     description:
-      "Kart desteleri, çıktı alınabilir araçlar, prompt setleri ve fikirlerin forma dönüşmesini sağlayan görsel formatlar.",
+      "Kavramlar, denemeler, kart desteleri, çıktı alınabilir araçlar, prompt setleri ve fikirlerin forma dönüşmesini sağlayan görsel formatlar.",
     href: "/tr/labs#creative-lab",
   },
   {
@@ -19,12 +13,6 @@ const labs = [
     description:
       "Katılım, atölye, kolektif düşünme ve küçük grup çalışmaları için formatlar.",
     href: "/tr/labs#community-lab",
-  },
-  {
-    title: "Kapital Zero Lab",
-    description:
-      "Düşük bütçeli denemeler, yaratıcı girişimcilik ve neredeyse sıfırdan üretme sistemleri.",
-    href: "/tr/labs#kapital-zero-lab",
   },
 ];
 
@@ -117,7 +105,7 @@ export default function TurkishHomePage() {
         <Container>
           <p className="poster-kicker mb-6 bg-[var(--bg)]">Lab’ler</p>
           <h2 className="poster-title poster-title--tr-medium">
-            Düşünmek, üretmek, bir araya gelmek ve sıfırdan kurmak için dört çalışma odası.
+            Fikirleri kullanılabilir hale getirmek ve birlikte öğrenmek için iki çalışma odası.
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {labs.map((lab) => (
