@@ -49,7 +49,7 @@ export default function TurkishHomePage() {
       <section className="poster-section">
         <Container>
           <p className="poster-kicker mb-7">Collectividual / Türkçe</p>
-          <h1 className="poster-title poster-title--wide">
+          <h1 className="poster-title poster-title--tr-wide">
             Ruh sağlığı için bir misyonumuz var.
           </h1>
           <p className="poster-lede mt-9">
@@ -73,7 +73,7 @@ export default function TurkishHomePage() {
         <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
           <div>
             <p className="poster-kicker mb-6">Güncel proje</p>
-            <h2 className="poster-title poster-title--medium">
+            <h2 className="poster-title poster-title--tr-medium">
               İyi Niyet Yetmez
             </h2>
           </div>
@@ -116,7 +116,7 @@ export default function TurkishHomePage() {
       <section className="poster-section bg-[var(--surface-soft)]">
         <Container>
           <p className="poster-kicker mb-6 bg-[var(--bg)]">Lab’ler</p>
-          <h2 className="poster-title poster-title--medium">
+          <h2 className="poster-title poster-title--tr-medium">
             Düşünmek, üretmek, bir araya gelmek ve sıfırdan kurmak için dört çalışma odası.
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-2">
@@ -138,7 +138,7 @@ export default function TurkishHomePage() {
         <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="poster-kicker mb-6">Araçlar & Kaynaklar</p>
-            <h2 className="poster-title poster-title--medium">Generic içerik değil, kullanılabilir formlar.</h2>
+            <h2 className="poster-title poster-title--tr-medium">Generic içerik değil, kullanılabilir formlar.</h2>
           </div>
           <div className="grid gap-4">
             {tools.map((tool) => (
@@ -176,7 +176,7 @@ export default function TurkishHomePage() {
         <Container>
           <div className="border-2 border-[var(--accent)] bg-[var(--surface)] p-7 md:p-12">
             <p className="poster-kicker mb-6">Buradan başla</p>
-            <h2 className="poster-title poster-title--medium">
+            <h2 className="poster-title poster-title--tr-medium">
               Ruh sağlığı okuryazarlığını yaymak istiyoruz.
             </h2>
             <p className="poster-lede mt-8">
