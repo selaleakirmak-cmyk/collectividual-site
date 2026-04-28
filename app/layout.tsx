@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import { Archivo_Black, Space_Grotesk } from "next/font/google";
+import { Noto_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/site/Navbar";
 import Footer from "@/components/site/Footer";
 
-const display = Archivo_Black({
+const display = Noto_Sans({
   subsets: ["latin", "latin-ext"],
   variable: "--font-display",
-  weight: "400",
+  weight: ["800", "900"],
 });
 
 const body = Space_Grotesk({
