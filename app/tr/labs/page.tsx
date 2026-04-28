@@ -3,34 +3,24 @@ import Container from "@/components/site/Container";
 
 const labs = [
   {
-    id: "think-lab",
-    title: "Think Lab",
-    description: "Fikirlerin ürüne dönüşmeden önce forma ihtiyaç duyduğu yerde editoryal düşünme, deneme, kavram, çerçeve ve kamusal dil üretimi.",
-    outputs: ["Denemeler", "Kavram haritaları", "Editoryal rehberler", "Kamusal öğrenme formatları"],
-  },
-  {
     id: "creative-lab",
     title: "Creative Lab",
-    description: "Kart desteleri, çıktı alınabilir araçlar, prompt kitleri, görsel formatlar ve somut psiko-sosyal kaynaklar için üretim odası.",
-    outputs: ["Kart desteleri", "Çıktı alınabilir araçlar", "Prompt kitleri", "Görsel sistemler"],
+    description:
+      "Editoryal düşünme ile somut üretimi birleştiren çalışma odası: denemeler, kavramlar, kart desteleri, çıktı alınabilir araçlar, prompt kitleri, görsel formatlar ve psiko-sosyal kaynaklar.",
+    outputs: ["Denemeler", "Kavram haritaları", "Kart desteleri", "Çıktı alınabilir araçlar", "Prompt kitleri", "Görsel sistemler"],
   },
   {
     id: "community-lab",
     title: "Community Lab",
-    description: "Atölyeler, küçük gruplar, kolektif düşünme ve birlikte öğrenmeyi destekleyen paylaşımlı pratikler için katılımcı formatlar.",
+    description:
+      "Atölyeler, küçük gruplar, kolektif düşünme ve birlikte öğrenmeyi destekleyen paylaşımlı pratikler için katılımcı formatlar.",
     outputs: ["Atölyeler", "Grup formatları", "Refleksiyon oturumları", "Topluluk araçları"],
-  },
-  {
-    id: "kapital-zero-lab",
-    title: "Kapital Zero Lab",
-    description: "Neredeyse sıfır sermayeyi küçük, test edilebilir ve anlamlı girişimlere dönüştürmek için düşük bütçeli deneyler ve pratik sistemler.",
-    outputs: ["Sıfır bütçe deneyleri", "Mikro-ürünler", "Girişim oyunları", "Başlangıç sistemleri"],
   },
 ];
 
 export const metadata = {
   title: "Lab’ler | Collectividual",
-  description: "Düşünmek, üretmek, bir araya gelmek ve pratik psiko-sosyal araçlar kurmak için Collectividual lab’leri.",
+  description: "Fikirleri kullanılabilir hale getirmek ve birlikte öğrenmek için Collectividual lab’leri.",
 };
 
 export default function TurkishLabsPage() {
@@ -39,8 +29,8 @@ export default function TurkishLabsPage() {
       <section className="poster-section border-b border-[var(--border)]">
         <Container>
           <p className="poster-kicker mb-7">Lab’ler</p>
-          <h1 className="poster-title poster-title--tr-wide">Yapıya ihtiyaç duyan fikirler için çalışma odaları.</h1>
-          <p className="poster-lede mt-9">Collectividual Lab’leri departman değil, çalışma kipleridir: fikirleri düşünmenin, üretmenin, bir araya getirmenin ve kullanılabilir forma dönüşene kadar test etmenin yolları.</p>
+          <h1 className="poster-title poster-title--tr-wide">Forma ihtiyaç duyan fikirler için iki çalışma odası.</h1>
+          <p className="poster-lede mt-9">Collectividual Lab’leri departman değildir. Biri fikirleri kullanılabilir formlara dönüştürmek, diğeri birlikte öğrenmek, bir araya gelmek ve pratik etmek için çalışan iki üretim kipidir.</p>
         </Container>
       </section>
 
