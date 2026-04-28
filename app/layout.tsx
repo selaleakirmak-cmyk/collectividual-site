@@ -5,13 +5,13 @@ import Navbar from "@/components/site/Navbar";
 import Footer from "@/components/site/Footer";
 
 const display = Archivo_Black({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-display",
   weight: "400",
 });
 
 const body = Space_Grotesk({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
   variable: "--font-body",
   weight: ["400", "500", "600", "700"],
 });
