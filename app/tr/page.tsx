@@ -31,7 +31,7 @@ const labs = [
 const tools = [
   "Klinisyen olmayanlar için ruh sağlığı okuryazarlığı seminerleri",
   "İndirilebilir checklistler ve reflektif araçlar",
-  "Kurumlar ve topluluklar için assessment formatları",
+  "Kurumlar ve topluluklar için değerlendirme formatları",
   "Kart desteleri, prompt kitleri ve printable psiko-sosyal kaynaklar",
 ];
 
@@ -53,11 +53,11 @@ export default function TurkishHomePage() {
             Ruh sağlığı için bir misyonumuz var.
           </h1>
           <p className="poster-lede mt-9">
-            Collectividual; ruh sağlığı okuryazarlığı, dikkatli iletişim, daha net sınırlar ve daha işe yarar destek pratikleri için psiko-sosyal araçlar, kampanyalar, seminerler ve printable kaynaklar üretir.
+            Collectividual; ruh sağlığı okuryazarlığı, dikkatli iletişim, daha net sınırlar ve daha işe yarar destek pratikleri için psiko-sosyal araçlar, projeler, seminerler ve printable kaynaklar üretir.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
-              Kampanyayı incele
+              Projeyi incele
             </Link>
             <Link href="/tools/mental-health-literacy-checklists" className="poster-button poster-button--secondary">
               Araçları indir
@@ -72,7 +72,7 @@ export default function TurkishHomePage() {
       <section className="border-y border-[var(--border)] bg-[var(--surface)] poster-section">
         <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
           <div>
-            <p className="poster-kicker mb-6">Güncel kampanya</p>
+            <p className="poster-kicker mb-6">Güncel proje</p>
             <h2 className="poster-title poster-title--medium">
               İyi Niyet Yetmez
             </h2>
@@ -82,14 +82,14 @@ export default function TurkishHomePage() {
               Ruh sağlığı farkındalığı önemli konuşmaları açtı. Ama farkındalık tek başına, biri gerçekten zorlandığında nasıl karşılık vereceğimizi öğretmez.
             </p>
             <p className="mt-4 text-[15px] leading-8 text-[var(--muted)] md:text-[17px] md:leading-9">
-              Bu kampanya, klinisyen olmayanların iyi niyetten dikkatli desteğe geçmesine yardım eder: daha net dil, daha iyi sınırlar, daha az stigma ve daha işe yarar sonraki adımlar.
+              Bu proje, klinisyen olmayanların iyi niyetten dikkatli desteğe geçmesine yardım eder: daha net dil, daha iyi sınırlar, daha az stigma ve daha işe yarar sonraki adımlar.
             </p>
             <div className="mt-7 flex flex-wrap gap-4">
               <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
-                Kampanyaya git
+                Projeye git
               </Link>
               <Link href="/assessment/mental-health-literacy" className="poster-button poster-button--secondary">
-                Assessment yap
+                Değerlendirme yap
               </Link>
             </div>
           </div>
@@ -101,8 +101,8 @@ export default function TurkishHomePage() {
           <p className="poster-kicker mb-8">Bu nedir?</p>
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              "Farkındalıktan okuryazarlığa geçiş için kamusal bir kampanya.",
-              "Araçlar, seminerler, assessmentlar, kampanyalar ve printable formatlar için bir üretim alanı.",
+              "Farkındalıktan okuryazarlığa geçiş için kamusal bir proje.",
+              "Araçlar, seminerler, değerlendirmeler, projeler ve printable formatlar için bir üretim alanı.",
               "Psikolojik bilgiyi gündelik hayatta daha dikkatli pratiklere dönüştürmenin bir yolu.",
             ].map((item) => (
               <div key={item} className="border-2 border-[var(--accent)] p-6 text-[15px] font-semibold leading-8 text-[var(--text)] md:text-[17px]">
@@ -184,7 +184,7 @@ export default function TurkishHomePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
-                Kampanyayı incele
+                Projeyi incele
               </Link>
               <Link href="/join" className="poster-button poster-button--secondary">
                 İletişime geç
