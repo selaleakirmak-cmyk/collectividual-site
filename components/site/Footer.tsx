@@ -16,9 +16,14 @@ export default function Footer() {
         workshops: "Atölyeler",
         tools: "Araçlar",
         assessment: "Değerlendirme",
+        about: "Hakkında",
         inquiry: "İletişim",
-        projectHref: "/campaigns/good-intentions-are-not-enough",
+        projectHref: "/tr/campaigns/good-intentions-are-not-enough",
         workshopsHref: "/tr/workshops",
+        toolsHref: "/tr/tools/mental-health-literacy-checklists",
+        assessmentHref: "/tr/assessment/mental-health-literacy",
+        aboutHref: "/tr/about",
+        inquiryHref: "/tr/join",
       }
     : {
         description:
@@ -27,9 +32,14 @@ export default function Footer() {
         workshops: "Workshops",
         tools: "Free Tools",
         assessment: "Assessment",
+        about: "About",
         inquiry: "Inquiry",
         projectHref: "/campaigns/good-intentions-are-not-enough",
         workshopsHref: "/workshops",
+        toolsHref: "/tools/mental-health-literacy-checklists",
+        assessmentHref: "/assessment/mental-health-literacy",
+        aboutHref: "/about",
+        inquiryHref: "/join",
       };
 
   return (
@@ -45,9 +55,10 @@ export default function Footer() {
         <nav className="flex flex-wrap gap-x-6 gap-y-3 text-[13px] text-[var(--muted)] md:justify-end">
           <Link href={copy.projectHref}>{copy.project}</Link>
           <Link href={copy.workshopsHref}>{copy.workshops}</Link>
-          <Link href="/tools/mental-health-literacy-checklists">{copy.tools}</Link>
-          <Link href="/assessment/mental-health-literacy">{copy.assessment}</Link>
-          <Link href="/join">{copy.inquiry}</Link>
+          <Link href={copy.toolsHref}>{copy.tools}</Link>
+          <Link href={copy.assessmentHref}>{copy.assessment}</Link>
+          <Link href={copy.aboutHref}>{copy.about}</Link>
+          <Link href={copy.inquiryHref}>{copy.inquiry}</Link>
         </nav>
       </Container>
     </footer>
