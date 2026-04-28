@@ -35,8 +35,6 @@ const tools = [
   "Card decks, prompt kits, and printable psycho-social resources",
 ];
 
-const spotifyUrl = "https://open.spotify.com/show/3gT7ckVNmUhjfaDjIIJpUX?si=ec02353c530f483a";
-
 export default function HomePage() {
   return (
     <>
@@ -55,6 +53,9 @@ export default function HomePage() {
             </Link>
             <Link href="/tools/mental-health-literacy-checklists" className="poster-button poster-button--secondary">
               Download free tools
+            </Link>
+            <Link href="/tr" className="poster-button poster-button--secondary">
+              Türkçe site
             </Link>
           </div>
         </Container>
@@ -137,25 +138,17 @@ export default function HomePage() {
                 {tool}
               </div>
             ))}
-            <a
-              href={spotifyUrl}
-              target="_blank"
-              rel="noreferrer"
-              className="border-2 border-[var(--accent)] bg-[var(--surface)] p-6 transition hover:-translate-y-1 hover:shadow-[0_10px_0_var(--accent)]"
-            >
+            <div className="border-2 border-dashed border-[var(--accent)] bg-[var(--surface)] p-6">
               <p className="mb-3 text-[10px] font-black uppercase tracking-[0.18em] text-[var(--muted)]">
-                Audio Library / Access to Knowledge
+                Audio Library / Coming Soon
               </p>
               <h3 className="text-4xl leading-none text-[var(--accent)] md:text-5xl">
-                Psikanalizin 30 Günü
+                English audio channel
               </h3>
               <p className="mt-4 text-[14px] font-semibold leading-7 text-[var(--muted)] md:text-[15px]">
-                Psikanalitik düşünceyi daha erişilebilir, dinlenebilir ve kamusal hale getiren bir Collectividual ses serisi.
+                A future English-language audio resource for psychological knowledge, public learning, and reflective psycho-social thinking.
               </p>
-              <p className="mt-5 text-[13px] font-bold text-[var(--accent)]">
-                Spotify’da dinle →
-              </p>
-            </a>
+            </div>
             <Link href="/seminars/mental-health-literacy" className="mt-3 inline-flex text-[13px] font-bold tracking-[0.02em] text-[var(--accent)]">
               View the mental health literacy seminar →
             </Link>
