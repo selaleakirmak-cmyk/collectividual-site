@@ -1,6 +1,9 @@
 import Container from "@/components/site/Container";
 
-const formUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || "";
+const defaultFormUrl =
+  "https://docs.google.com/forms/d/1TRBd8dX-XhLamkzQeb8n-mJlG0wFleGRGJQCmw8hcrw/viewform?embedded=true";
+
+const formUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || defaultFormUrl;
 
 export const metadata = {
   title: "Inquiry | Collectividual",
@@ -59,17 +62,9 @@ export default function JoinPage() {
               Start here.
             </h2>
 
-            {formUrl ? (
-              <div className="mt-8 overflow-hidden border-2 border-[var(--accent)] bg-[var(--bg)]">
-                <iframe title="Collectividual inquiry form" src={formUrl} className="h-[820px] w-full" />
-              </div>
-            ) : (
-              <div className="mt-8 border-2 border-[var(--accent)] bg-[var(--bg)] p-8">
-                <p className="text-[15px] font-semibold leading-8 text-[var(--text)]">
-                  Add your Google Form embed URL as NEXT_PUBLIC_GOOGLE_FORM_URL in Vercel to show the form here.
-                </p>
-              </div>
-            )}
+            <div className="mt-8 overflow-hidden border-2 border-[var(--accent)] bg-[var(--bg)]">
+              <iframe title="Collectividual inquiry form" src={formUrl} className="h-[820px] w-full" />
+            </div>
           </div>
         </Container>
       </section>
