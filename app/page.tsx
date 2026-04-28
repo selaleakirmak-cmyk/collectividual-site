@@ -1,210 +1,190 @@
 import Link from "next/link";
 import Container from "@/components/site/Container";
 
-const layers = [
-  {
-    number: "01",
-    title: "Question",
-    description:
-      "A live question is named with enough precision to be workable and enough openness to stay alive.",
-  },
-  {
-    number: "02",
-    title: "Practice",
-    description:
-      "A session, tool, or group format gives the question a structure to move through.",
-  },
-  {
-    number: "03",
-    title: "Create",
-    description:
-      "Something is made: a text, deck, worksheet, guide, object, or document that remains.",
-  },
-];
-
 const labs = [
   {
-    title: "Question Lab",
-    description: "Live questions, editorial frames, prompts, and guides.",
-    items: ["Questions", "Guides", "Frameworks"],
+    title: "Think Lab",
+    description:
+      "Essays, concepts, guides, and editorial experiments for turning reflection into shared language.",
+    href: "/labs#think-lab",
   },
   {
-    title: "Practice Lab",
-    description: "Sessions, workshops, facilitation tools, and structured encounters.",
-    items: ["Sessions", "Workshops", "Practices"],
+    title: "Creative Lab",
+    description:
+      "Card decks, printable tools, prompt kits, and visual formats that help ideas take form.",
+    href: "/labs#creative-lab",
   },
   {
-    title: "Artifact Lab",
-    description: "Card decks, printable tools, prompt kits, documents, and designed outputs.",
-    items: ["Decks", "Printables", "Toolkits"],
+    title: "Community Lab",
+    description:
+      "Formats for participation, workshops, collective thinking, and small-group cultural work.",
+    href: "/labs#community-lab",
+  },
+  {
+    title: "Kapital Zero Lab",
+    description:
+      "Low-budget experiments, playful entrepreneurship, and practical systems for building from almost nothing.",
+    href: "/labs#kapital-zero-lab",
   },
 ];
 
-const products = [
-  "Card decks for reflection, facilitation, and creative development",
-  "Prompt kits that turn vague ideas into workable directions",
-  "Printable tools and worksheets for sessions, workshops, and learning",
-  "Guided session formats for small groups and collective thinking",
+const tools = [
+  "Mental health literacy seminars for non-clinicians",
+  "Downloadable checklists and reflective tools",
+  "Assessment formats for organizations and communities",
+  "Card decks, prompt kits, and printable psycho-social resources",
 ];
-
-export const metadata = {
-  title: "Collectividual | Question Practice Create",
-  description:
-    "Collectividual creates labs, tools, sessions, card decks, prompt kits, and artifacts that help ideas take form.",
-};
 
 export default function HomePage() {
   return (
     <>
-      <section className="border-b-2 border-[var(--accent)] bg-[var(--bg)] py-16 md:py-24">
+      <section className="py-24 md:py-32">
         <Container>
-          <p className="mb-6 inline-flex border-2 border-[var(--accent)] px-4 py-2 text-[11px] font-black uppercase tracking-[0.22em] text-[var(--accent)]">
+          <p className="mb-5 text-[10px] uppercase tracking-[0.14em] text-[var(--muted)]">
             Collectividual
           </p>
-          <h1 className="max-w-6xl text-[4.3rem] font-black uppercase leading-[0.82] tracking-[-0.05em] text-[var(--accent)] md:text-[7rem] lg:text-[9rem]">
-            Question. Practice. Create.
+          <h1 className="max-w-5xl text-5xl leading-tight md:text-7xl">
+            Psycho-social tools for more careful collective life.
           </h1>
-          <p className="mt-10 max-w-4xl border-l-4 border-[var(--accent)] pl-6 text-[20px] font-medium leading-9 text-[var(--text)] md:text-[24px] md:leading-10">
-            Collectividual is a lab-based system for turning live questions into sessions, tools,
-            and designed artifacts that remain after the encounter ends.
+          <p className="mt-6 max-w-3xl text-[14px] leading-8 text-[var(--muted)]">
+            Collectividual is a place where one person can become a whole team: a lab for reflective tools,
+            creative formats, public campaigns, and ideas that need structure before they can meet the world.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
+          <div className="mt-8 flex flex-wrap gap-4">
             <Link
-              href="/join"
-              className="border-2 border-[var(--accent)] bg-[var(--accent)] px-7 py-4 text-[13px] font-black uppercase tracking-[0.12em] text-white transition hover:-translate-y-1 hover:shadow-[0_8px_0_var(--text)]"
+              href="/campaigns/good-intentions-are-not-enough"
+              className="border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[12px] tracking-[0.04em] text-white transition hover:bg-[var(--accent-light)]"
             >
-              Signal interest
+              See current campaign
             </Link>
             <Link
-              href="/labs"
-              className="border-2 border-[var(--accent)] bg-[var(--surface)] px-7 py-4 text-[13px] font-black uppercase tracking-[0.12em] text-[var(--accent)] transition hover:-translate-y-1 hover:shadow-[0_8px_0_var(--accent)]"
+              href="/tools/mental-health-literacy-checklists"
+              className="border border-[var(--border)] px-5 py-3 text-[12px] tracking-[0.04em] text-[var(--text)]"
             >
-              Explore the system
+              Download free tools
             </Link>
           </div>
         </Container>
       </section>
 
-      <section className="border-b-2 border-[var(--accent)] bg-[var(--accent)] py-16 text-white md:py-24">
+      <section className="border-y border-[var(--border)] bg-[var(--surface)] py-20 md:py-28">
+        <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
+          <div>
+            <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">
+              Current public campaign
+            </p>
+            <h2 className="max-w-4xl text-4xl leading-tight md:text-6xl">
+              Good Intentions Are Not Enough
+            </h2>
+          </div>
+          <div>
+            <p className="text-[14px] leading-8 text-[var(--muted)]">
+              Mental health awareness has opened important conversations. But awareness alone does not teach us how to respond when someone is actually struggling.
+            </p>
+            <p className="mt-4 text-[14px] leading-8 text-[var(--muted)]">
+              This campaign helps non-clinicians move from good intentions to careful support: clearer language, better boundaries, less stigma, and more useful next steps.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-4">
+              <Link
+                href="/campaigns/good-intentions-are-not-enough"
+                className="border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[12px] tracking-[0.04em] text-white transition hover:bg-[var(--accent-light)]"
+              >
+                Enter the campaign
+              </Link>
+              <Link
+                href="/assessment/mental-health-literacy"
+                className="border border-[var(--border)] px-5 py-3 text-[12px] tracking-[0.04em] text-[var(--text)]"
+              >
+                Assess your organization
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="pb-20 pt-20 md:pb-28 md:pt-28">
         <Container>
-          <p className="mb-6 inline-flex border-2 border-white/70 px-4 py-2 text-[10px] font-black uppercase tracking-[0.22em] text-white/80">
-            The operating format
+          <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">
+            What this is
           </p>
-          <div className="grid gap-5 md:grid-cols-3">
-            {layers.map((layer) => (
-              <div key={layer.title} className="border-2 border-white/70 p-7 md:p-8">
-                <div className="mb-7 flex items-center justify-between border-b-2 border-white/70 pb-5">
-                  <p className="text-[10px] font-black uppercase tracking-[0.22em] text-white/70">
-                    Layer
-                  </p>
-                  <span className="font-serif text-5xl leading-none text-white">{layer.number}</span>
-                </div>
-                <h2 className="text-5xl font-black uppercase leading-[0.9] tracking-[-0.04em] text-white">
-                  {layer.title}
-                </h2>
-                <p className="mt-6 text-[16px] font-medium leading-8 text-white/78">
-                  {layer.description}
-                </p>
+          <div className="grid gap-6 md:grid-cols-3">
+            {[
+              "A quiet structure for ideas before they become products.",
+              "A home for tools, decks, prompts, workshops, campaigns, and printable formats.",
+              "A way of building with low resources, high imagination, and collective intelligence.",
+            ].map((item) => (
+              <div key={item} className="border border-[var(--border)] p-6 text-[13px] leading-7 text-[var(--text)]">
+                {item}
               </div>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="border-b-2 border-[var(--accent)] bg-[var(--surface-soft)] py-14 md:py-20">
+      <section className="py-20 md:py-28">
         <Container>
-          <div className="mb-10 max-w-4xl">
-            <p className="mb-5 inline-flex border-2 border-[var(--accent)] bg-[var(--bg)] px-4 py-2 text-[10px] font-black uppercase tracking-[0.22em] text-[var(--accent)]">
-              Labs
-            </p>
-            <h2 className="text-5xl font-black uppercase leading-[0.88] tracking-[-0.04em] text-[var(--accent)] md:text-7xl">
-              The labs hold the system.
-            </h2>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            {labs.map((lab, index) => (
+          <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">Labs</p>
+          <h2 className="max-w-4xl text-4xl leading-tight md:text-5xl">
+            Four working rooms for thinking, making, gathering, and building from zero.
+          </h2>
+          <div className="mt-10 grid gap-4 md:grid-cols-2">
+            {labs.map((lab) => (
               <Link
                 key={lab.title}
-                href="/labs"
-                className="group border-2 border-[var(--accent)] bg-[var(--surface)] p-8 transition hover:-translate-y-1 hover:bg-white hover:shadow-[0_14px_0_var(--accent)]"
+                href={lab.href}
+                className="border border-[var(--border)] p-7 transition hover:border-[var(--accent)]"
               >
-                <div className="mb-8 flex items-center justify-between border-b-2 border-[var(--accent)] pb-5">
-                  <p className="text-[10px] font-black uppercase tracking-[0.22em] text-[var(--accent)]">
-                    Lab
-                  </p>
-                  <span className="font-serif text-5xl leading-none text-[var(--accent)]">
-                    0{index + 1}
-                  </span>
-                </div>
-                <h3 className="text-5xl font-black uppercase leading-[0.9] tracking-[-0.04em] text-[var(--accent)]">
-                  {lab.title}
-                </h3>
-                <p className="mt-6 text-[16px] font-medium leading-8 text-[var(--text)]">{lab.description}</p>
-                <div className="mt-8 flex flex-wrap gap-2">
-                  {lab.items.map((item) => (
-                    <span
-                      key={item}
-                      className="border border-[var(--accent)] bg-[var(--surface-soft)] px-4 py-2 text-[11px] font-black uppercase tracking-[0.08em] text-[var(--accent)]"
-                    >
-                      {item}
-                    </span>
-                  ))}
-                </div>
+                <h3 className="text-3xl leading-tight">{lab.title}</h3>
+                <p className="mt-4 text-[13px] leading-7 text-[var(--muted)]">{lab.description}</p>
               </Link>
             ))}
           </div>
         </Container>
       </section>
 
-      <section className="border-b-2 border-[var(--accent)] bg-[var(--bg)] py-14 md:py-20">
+      <section className="py-20 md:py-28">
         <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="mb-5 inline-flex border-2 border-[var(--accent)] px-4 py-2 text-[10px] font-black uppercase tracking-[0.22em] text-[var(--accent)]">
-              Tools and products
-            </p>
-            <h2 className="text-5xl font-black uppercase leading-[0.88] tracking-[-0.04em] text-[var(--accent)] md:text-7xl">
-              Useful forms, not generic content.
-            </h2>
-            <Link
-              href="/tools"
-              className="mt-8 inline-flex border-2 border-[var(--accent)] bg-[var(--accent)] px-6 py-3 text-[12px] font-black uppercase tracking-[0.12em] text-white transition hover:-translate-y-1 hover:shadow-[0_8px_0_var(--text)]"
-            >
-              Browse tools
-            </Link>
+            <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">Tools layer</p>
+            <h2 className="text-4xl leading-tight md:text-5xl">Useful forms, not generic content.</h2>
           </div>
           <div className="grid gap-4">
-            {products.map((product) => (
-              <div
-                key={product}
-                className="border-2 border-[var(--accent)] bg-[var(--surface)] p-6 text-[16px] font-semibold leading-8 text-[var(--text)] transition hover:-translate-y-1 hover:shadow-[0_10px_0_var(--accent)]"
-              >
-                {product}
+            {tools.map((tool) => (
+              <div key={tool} className="border border-[var(--border)] p-5 text-[13px] leading-7 text-[var(--text)]">
+                {tool}
               </div>
             ))}
+            <Link href="/seminars/mental-health-literacy" className="mt-3 inline-flex text-[12px] tracking-[0.06em] text-[var(--accent)]">
+              View the mental health literacy seminar →
+            </Link>
           </div>
         </Container>
       </section>
 
-      <section className="bg-[var(--surface-soft)] py-16 md:py-24">
+      <section className="py-20 md:py-28">
         <Container>
-          <div className="border-2 border-[var(--accent)] bg-[var(--accent)] p-8 text-white shadow-[0_18px_0_var(--text)] md:p-12 lg:p-14">
-            <p className="mb-5 inline-flex border-2 border-white/70 px-4 py-2 text-[11px] font-black uppercase tracking-[0.22em] text-white/80">
-              Participate
-            </p>
-            <h2 className="max-w-4xl text-5xl font-black uppercase leading-[0.88] tracking-[-0.04em] md:text-7xl lg:text-8xl">
-              Join before the formats become finished products.
+          <div className="border border-[var(--border)] p-8 md:p-12">
+            <p className="mb-4 text-[10px] uppercase tracking-[0.12em] text-[var(--muted)]">Start here</p>
+            <h2 className="max-w-3xl text-4xl leading-tight md:text-5xl">
+              We are on a mission to spread mental health literacy.
             </h2>
-            <p className="mt-8 max-w-3xl border-l-4 border-white/70 pl-6 text-[18px] font-medium leading-9 text-white/75">
-              Signal interest if you want early notes, tool previews, session invitations, printable experiments,
-              and unfinished questions before they become public artifacts.
+            <p className="mt-5 max-w-2xl text-[13px] leading-7 text-[var(--muted)]">
+              Move beyond shallow awareness toward careful communication, clearer boundaries, and more useful support.
             </p>
-            <Link
-              href="/join"
-              className="mt-10 inline-flex border-2 border-white bg-[#dfe7e2] px-7 py-4 text-[15px] font-black uppercase tracking-[0.1em] text-[var(--accent)] transition hover:-translate-y-1 hover:shadow-[0_8px_0_white]"
-            >
-              Signal interest
-            </Link>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/campaigns/good-intentions-are-not-enough"
+                className="inline-flex border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[12px] tracking-[0.04em] text-white transition hover:bg-[var(--accent-light)]"
+              >
+                Explore the campaign
+              </Link>
+              <Link
+                href="/book/free-consultation"
+                className="inline-flex border border-[var(--border)] px-5 py-3 text-[12px] tracking-[0.04em] text-[var(--text)]"
+              >
+                Book a call
+              </Link>
+            </div>
           </div>
         </Container>
       </section>
