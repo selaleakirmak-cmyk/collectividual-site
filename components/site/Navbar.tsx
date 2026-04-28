@@ -16,10 +16,10 @@ export default function Navbar() {
           <Link href="/assessment/mental-health-literacy">Assessment</Link>
           <Link href="/about">About</Link>
           <Link
-            href="/book/free-consultation"
+            href="/join"
             className="border border-[var(--accent)] px-4 py-2 text-[11px] font-black uppercase tracking-[0.12em] text-[var(--accent)] transition hover:bg-[var(--accent)] hover:text-white"
           >
-            Book a call
+            Join
           </Link>
         </nav>
       </Container>
