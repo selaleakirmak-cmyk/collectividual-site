@@ -28,9 +28,9 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display), sans-serif;
-  letter-spacing: -0.045em;
-  line-height: 0.94;
-  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  line-height: 1;
 }
 
 h1,
@@ -51,55 +51,54 @@ a {
   display: inline-flex;
   border: 2px solid var(--accent);
   padding: 0.7rem 0.9rem;
-  font-size: clamp(0.68rem, 2.1vw, 0.82rem);
+  font-size: clamp(0.66rem, 1.8vw, 0.78rem);
   font-weight: 900;
   line-height: 1;
-  letter-spacing: -0.01em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
   color: var(--accent);
 }
 
 .poster-title {
-  max-width: min(100%, 86rem);
+  max-width: min(100%, 76rem);
   color: var(--accent);
   font-family: var(--font-display), sans-serif;
-  font-size: clamp(2.85rem, 11.5vw, 8.8rem);
-  line-height: 0.86;
-  letter-spacing: -0.065em;
-  text-transform: uppercase;
+  font-weight: 900;
+  font-size: clamp(2.35rem, 8.2vw, 6.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
   text-wrap: balance;
 }
 
 .poster-title--wide {
   max-width: 100%;
-  font-size: clamp(3rem, 12vw, 9.8rem);
-  line-height: 0.84;
+  font-size: clamp(2.45rem, 8.8vw, 7.25rem);
+  line-height: 0.96;
 }
 
 .poster-title--medium {
-  font-size: clamp(2.7rem, 9.2vw, 6.8rem);
-  line-height: 0.88;
+  font-size: clamp(2.2rem, 6.8vw, 5.15rem);
+  line-height: 1;
 }
 
 .poster-title--tr-wide {
   max-width: 100%;
-  font-size: clamp(2.35rem, 8.8vw, 6.9rem);
-  line-height: 0.92;
-  letter-spacing: -0.052em;
+  font-size: clamp(2.1rem, 6.9vw, 5.45rem);
+  line-height: 1.02;
+  letter-spacing: -0.044em;
 }
 
 .poster-title--tr-medium {
-  font-size: clamp(2.15rem, 7.2vw, 5.2rem);
-  line-height: 0.95;
-  letter-spacing: -0.048em;
+  font-size: clamp(1.95rem, 5.8vw, 4.35rem);
+  line-height: 1.04;
+  letter-spacing: -0.04em;
 }
 
 .poster-lede {
   max-width: 50rem;
   border-left: 4px solid var(--accent);
   padding-left: 1.15rem;
-  font-size: clamp(0.98rem, 3.3vw, 1.28rem);
-  line-height: 1.58;
+  font-size: clamp(0.96rem, 2.7vw, 1.2rem);
+  line-height: 1.62;
   font-weight: 650;
   color: var(--text);
 }
@@ -129,7 +128,7 @@ a {
 }
 
 .poster-section {
-  padding-block: clamp(4rem, 10vw, 7rem);
+  padding-block: clamp(3.6rem, 8vw, 6.2rem);
 }
 
 @media (max-width: 640px) {
@@ -138,18 +137,29 @@ a {
   .poster-title--medium,
   .poster-title--tr-wide,
   .poster-title--tr-medium {
-    word-spacing: -0.04em;
-    letter-spacing: -0.052em;
+    word-spacing: -0.02em;
+    letter-spacing: -0.038em;
+  }
+
+  .poster-title,
+  .poster-title--wide {
+    font-size: clamp(2.15rem, 10.4vw, 3.75rem);
+    line-height: 1;
+  }
+
+  .poster-title--medium {
+    font-size: clamp(2rem, 9.4vw, 3.35rem);
+    line-height: 1.02;
   }
 
   .poster-title--tr-wide {
-    font-size: clamp(2.2rem, 12vw, 3.65rem);
-    line-height: 0.96;
+    font-size: clamp(1.9rem, 9.6vw, 3.25rem);
+    line-height: 1.06;
   }
 
   .poster-title--tr-medium {
-    font-size: clamp(2rem, 10vw, 3.15rem);
-    line-height: 0.98;
+    font-size: clamp(1.8rem, 8.4vw, 2.9rem);
+    line-height: 1.08;
   }
 
   .poster-lede {
