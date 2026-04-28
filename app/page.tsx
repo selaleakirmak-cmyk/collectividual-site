@@ -29,7 +29,7 @@ const labs = [
 ];
 
 const tools = [
-  "Mental health literacy seminars for non-clinicians",
+  "Mental health literacy workshops for non-clinicians",
   "Downloadable checklists and reflective tools",
   "Assessment formats for organizations and communities",
   "Card decks, prompt kits, and printable psycho-social resources",
@@ -45,14 +45,14 @@ export default function HomePage() {
             We are on a mission for mental health.
           </h1>
           <p className="poster-lede mt-9">
-            Collectividual creates psycho-social tools, public projects, seminars, and printable resources that help people move beyond shallow awareness toward careful communication, clearer boundaries, and more useful support.
+            Collectividual creates psycho-social tools, public projects, workshops, and printable resources that help people move beyond shallow awareness toward careful communication, clearer boundaries, and more useful support.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
               See current project
             </Link>
-            <Link href="/tools/mental-health-literacy-checklists" className="poster-button poster-button--secondary">
-              Download free tools
+            <Link href="/workshops" className="poster-button poster-button--secondary">
+              Explore workshops
             </Link>
             <Link href="/tr" className="poster-button poster-button--secondary">
               Türkçe site
@@ -94,7 +94,7 @@ export default function HomePage() {
           <div className="grid gap-6 md:grid-cols-3">
             {[
               "A public project for moving from awareness to literacy.",
-              "A home for tools, seminars, assessments, projects, and printable formats.",
+              "A home for tools, workshops, assessments, projects, and printable formats.",
               "A way of turning psychological knowledge into careful everyday practice.",
             ].map((item) => (
               <div key={item} className="border-2 border-[var(--accent)] p-6 text-[15px] font-semibold leading-8 text-[var(--text)] md:text-[17px]">
@@ -149,8 +149,8 @@ export default function HomePage() {
                 A future English-language audio resource for psychological knowledge, public learning, and reflective psycho-social thinking.
               </p>
             </div>
-            <Link href="/seminars/mental-health-literacy" className="mt-3 inline-flex text-[13px] font-bold tracking-[0.02em] text-[var(--accent)]">
-              View the mental health literacy seminar →
+            <Link href="/workshops" className="mt-3 inline-flex text-[13px] font-bold tracking-[0.02em] text-[var(--accent)]">
+              View the workshops →
             </Link>
           </div>
         </Container>
@@ -167,8 +167,8 @@ export default function HomePage() {
               Move beyond shallow awareness toward careful communication, clearer boundaries, and more useful support.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
-                Explore the project
+              <Link href="/workshops" className="poster-button">
+                Explore workshops
               </Link>
               <Link href="/join" className="poster-button poster-button--secondary">
                 Send inquiry
