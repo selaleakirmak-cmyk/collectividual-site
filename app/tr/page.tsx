@@ -11,7 +11,7 @@ const labs = [
   {
     title: "Creative Lab",
     description:
-      "Kart desteleri, printable araçlar, prompt setleri ve fikirlerin forma dönüşmesini sağlayan görsel formatlar.",
+      "Kart desteleri, çıktı alınabilir araçlar, prompt setleri ve fikirlerin forma dönüşmesini sağlayan görsel formatlar.",
     href: "/labs#creative-lab",
   },
   {
@@ -29,10 +29,10 @@ const labs = [
 ];
 
 const tools = [
-  "Klinisyen olmayanlar için ruh sağlığı okuryazarlığı seminerleri",
-  "İndirilebilir checklistler ve reflektif araçlar",
+  "Klinisyen olmayanlar için ruh sağlığı okuryazarlığı atölyeleri",
+  "İndirilebilir kontrol listeleri ve reflektif araçlar",
   "Kurumlar ve topluluklar için değerlendirme formatları",
-  "Kart desteleri, prompt kitleri ve printable psiko-sosyal kaynaklar",
+  "Kart desteleri, prompt kitleri ve çıktı alınabilir psiko-sosyal kaynaklar",
 ];
 
 const spotifyUrl = "https://open.spotify.com/show/3gT7ckVNmUhjfaDjIIJpUX?si=ec02353c530f483a";
@@ -40,7 +40,7 @@ const spotifyUrl = "https://open.spotify.com/show/3gT7ckVNmUhjfaDjIIJpUX?si=ec02
 export const metadata = {
   title: "Collectividual | Türkçe",
   description:
-    "Collectividual, ruh sağlığı okuryazarlığı, psiko-sosyal araçlar, seminerler ve psikolojik bilgiye erişim kaynakları üretir.",
+    "Collectividual, ruh sağlığı okuryazarlığı, psiko-sosyal araçlar, atölyeler ve psikolojik bilgiye erişim kaynakları üretir.",
 };
 
 export default function TurkishHomePage() {
@@ -53,7 +53,7 @@ export default function TurkishHomePage() {
             Ruh sağlığı için bir misyonumuz var.
           </h1>
           <p className="poster-lede mt-9">
-            Collectividual; ruh sağlığı okuryazarlığı, dikkatli iletişim, daha net sınırlar ve daha işe yarar destek pratikleri için psiko-sosyal araçlar, projeler, seminerler ve printable kaynaklar üretir.
+            Collectividual; ruh sağlığı okuryazarlığı, dikkatli iletişim, daha net sınırlar ve daha işe yarar destek pratikleri için psiko-sosyal araçlar, projeler, atölyeler ve çıktı alınabilir kaynaklar üretir.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
@@ -102,7 +102,7 @@ export default function TurkishHomePage() {
           <div className="grid gap-6 md:grid-cols-3">
             {[
               "Farkındalıktan okuryazarlığa geçiş için kamusal bir proje.",
-              "Araçlar, seminerler, değerlendirmeler, projeler ve printable formatlar için bir üretim alanı.",
+              "Araçlar, atölyeler, değerlendirmeler, projeler ve çıktı alınabilir formatlar için bir üretim alanı.",
               "Psikolojik bilgiyi gündelik hayatta daha dikkatli pratiklere dönüştürmenin bir yolu.",
             ].map((item) => (
               <div key={item} className="border-2 border-[var(--accent)] p-6 text-[15px] font-semibold leading-8 text-[var(--text)] md:text-[17px]">
@@ -138,7 +138,7 @@ export default function TurkishHomePage() {
         <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
           <div>
             <p className="poster-kicker mb-6">Araçlar & Kaynaklar</p>
-            <h2 className="poster-title poster-title--tr-medium">Generic içerik değil, kullanılabilir formlar.</h2>
+            <h2 className="poster-title poster-title--tr-medium">Genel içerik değil, kullanılabilir formlar.</h2>
           </div>
           <div className="grid gap-4">
             {tools.map((tool) => (
@@ -165,8 +165,8 @@ export default function TurkishHomePage() {
                 Spotify’da dinle →
               </p>
             </a>
-            <Link href="/seminars/mental-health-literacy" className="mt-3 inline-flex text-[13px] font-bold tracking-[0.02em] text-[var(--accent)]">
-              Ruh sağlığı okuryazarlığı seminerini incele →
+            <Link href="/tr/workshops" className="mt-3 inline-flex text-[13px] font-bold tracking-[0.02em] text-[var(--accent)]">
+              Atölyeleri incele →
             </Link>
           </div>
         </Container>
