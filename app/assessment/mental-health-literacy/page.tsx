@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Container from "@/components/site/Container";
+import AssessmentTool from "@/components/site/AssessmentTool";
 
 const domains = [
   "Awareness vs literacy",
@@ -10,21 +11,6 @@ const domains = [
   "Communication norms",
   "Crisis readiness",
   "Inclusion and structural context",
-];
-
-const prompts = [
-  "People here understand that mental health literacy is more than awareness or positive messaging.",
-  "We have shared language for talking about distress without reducing people to labels.",
-  "We avoid casual diagnostic language as shorthand for difficult behavior.",
-  "People know the difference between listening, supporting, advising, referring, and treating.",
-  "No one is implicitly expected to become the therapist of the group.",
-  "People know what to do when someone needs more support than one person can provide.",
-  "We have visible and realistic support pathways for different levels of concern.",
-  "People can express difficulty without gossip, minimization, or pressure to disclose more.",
-  "We do not confuse psychological safety with unlimited emotional availability.",
-  "People are encouraged to validate before giving advice.",
-  "We have norms for responding to worrying messages, emotional disclosures, absences, or conflict.",
-  "We understand that distress is shaped by social, economic, cultural, institutional, and relational conditions.",
 ];
 
 export const metadata = {
@@ -68,15 +54,7 @@ export default function AssessmentPage() {
         <Container>
           <h2 className="max-w-4xl text-4xl leading-tight md:text-5xl">Use a 1–5 scale.</h2>
           <p className="mt-5 max-w-2xl text-[13px] leading-7 text-[var(--muted)]">1 = Not yet true. 2 = Somewhat true. 3 = Mostly true. 4 = Strongly true. 5 = Clearly embedded in practice.</p>
-          <div className="mt-10 space-y-4">
-            {prompts.map((prompt, index) => (
-              <div key={prompt} className="grid gap-4 border border-[var(--border)] bg-[var(--bg)] p-5 md:grid-cols-[60px_1fr_170px] md:items-center">
-                <p className="font-serif text-3xl text-[var(--accent)]">{index + 1}</p>
-                <p className="text-[13px] leading-7 text-[var(--text)]">{prompt}</p>
-                <div className="flex gap-2">{[1,2,3,4,5].map((score) => <span key={score} className="flex h-7 w-7 items-center justify-center border border-[var(--border)] text-[11px]">{score}</span>)}</div>
-              </div>
-            ))}
-          </div>
+          <AssessmentTool />
         </Container>
       </section>
 
@@ -86,7 +64,7 @@ export default function AssessmentPage() {
             <h2 className="max-w-3xl text-4xl leading-tight md:text-5xl">Turn the result into a next step.</h2>
             <p className="mt-5 max-w-2xl text-[13px] leading-7 text-[var(--muted)]">The useful question is not only whether your organization cares. It is whether care has language, boundaries, and pathways.</p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/book/free-consultation" className="border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[12px] tracking-[0.04em] text-white">Book a consultation</Link>
+              <Link href="/join" className="border border-[var(--accent)] bg-[var(--accent)] px-5 py-3 text-[12px] tracking-[0.04em] text-white">Send an inquiry</Link>
               <Link href="/seminars/mental-health-literacy" className="border border-[var(--border)] px-5 py-3 text-[12px] tracking-[0.04em] text-[var(--text)]">View the seminar</Link>
             </div>
           </div>
