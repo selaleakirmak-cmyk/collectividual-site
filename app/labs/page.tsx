@@ -3,34 +3,24 @@ import Container from "@/components/site/Container";
 
 const labs = [
   {
-    id: "think-lab",
-    title: "Think Lab",
-    description: "Editorial thinking, essays, concepts, frameworks, and public language for ideas that need form before they become products.",
-    outputs: ["Essays", "Concept maps", "Editorial guides", "Public learning formats"],
-  },
-  {
     id: "creative-lab",
     title: "Creative Lab",
-    description: "A production room for card decks, printable tools, prompt kits, visual formats, and tangible psycho-social resources.",
-    outputs: ["Card decks", "Printable tools", "Prompt kits", "Visual systems"],
+    description:
+      "A working room for editorial thinking and tangible production: essays, concepts, card decks, printable tools, prompt kits, visual formats, and psycho-social resources.",
+    outputs: ["Essays", "Concept maps", "Card decks", "Printable tools", "Prompt kits", "Visual systems"],
   },
   {
     id: "community-lab",
     title: "Community Lab",
-    description: "Participatory formats for workshops, small groups, collective thinking, and shared practices that help people learn together.",
+    description:
+      "Participatory formats for workshops, small groups, collective thinking, and shared practices that help people learn together.",
     outputs: ["Workshops", "Group formats", "Reflection sessions", "Community tools"],
-  },
-  {
-    id: "kapital-zero-lab",
-    title: "Kapital Zero Lab",
-    description: "Low-budget experiments and practical systems for turning almost no capital into small, testable, meaningful ventures.",
-    outputs: ["Zero-budget experiments", "Micro-products", "Business games", "Starter systems"],
   },
 ];
 
 export const metadata = {
   title: "Labs | Collectividual",
-  description: "Collectividual labs for thinking, making, gathering, and building practical psycho-social tools.",
+  description: "Collectividual labs for making ideas usable and learning together through practical psycho-social tools.",
 };
 
 export default function LabsPage() {
@@ -39,8 +29,8 @@ export default function LabsPage() {
       <section className="poster-section border-b border-[var(--border)]">
         <Container>
           <p className="poster-kicker mb-7">Labs</p>
-          <h1 className="poster-title poster-title--wide">Working rooms for ideas that need structure.</h1>
-          <p className="poster-lede mt-9">Collectividual Labs are not departments. They are working modes: ways of thinking, making, gathering, and testing ideas until they become usable forms.</p>
+          <h1 className="poster-title poster-title--wide">Two working rooms for ideas that need form.</h1>
+          <p className="poster-lede mt-9">Collectividual Labs are not departments. They are working modes: one for turning ideas into usable forms, and one for learning, gathering, and practicing together.</p>
         </Container>
       </section>
 
