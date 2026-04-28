@@ -5,35 +5,37 @@ const labs = [
   {
     title: "Think Lab",
     description:
-      "Essays, concepts, guides, and editorial experiments for turning reflection into shared language.",
+      "Kavramları, denemeleri, rehberleri ve düşünceyi ortak dile dönüştüren editoryal deneyleri barındırır.",
     href: "/labs#think-lab",
   },
   {
     title: "Creative Lab",
     description:
-      "Card decks, printable tools, prompt kits, and visual formats that help ideas take form.",
+      "Kart desteleri, printable araçlar, prompt setleri ve fikirlerin forma dönüşmesini sağlayan görsel formatlar.",
     href: "/labs#creative-lab",
   },
   {
     title: "Community Lab",
     description:
-      "Formats for participation, workshops, collective thinking, and small-group cultural work.",
+      "Katılım, atölye, kolektif düşünme ve küçük grup çalışmaları için formatlar.",
     href: "/labs#community-lab",
   },
   {
     title: "Kapital Zero Lab",
     description:
-      "Low-budget experiments, playful entrepreneurship, and practical systems for building from almost nothing.",
+      "Düşük bütçeli denemeler, yaratıcı girişimcilik ve neredeyse sıfırdan üretme sistemleri.",
     href: "/labs#kapital-zero-lab",
   },
 ];
 
 const tools = [
-  "Mental health literacy seminars for non-clinicians",
-  "Downloadable checklists and reflective tools",
-  "Assessment formats for organizations and communities",
-  "Card decks, prompt kits, and printable psycho-social resources",
+  "Klinisyen olmayanlar için ruh sağlığı okuryazarlığı seminerleri",
+  "İndirilebilir checklistler ve reflektif araçlar",
+  "Kurumlar ve topluluklar için assessment formatları",
+  "Kart desteleri, prompt kitleri ve printable psiko-sosyal kaynaklar",
 ];
+
+const spotifyUrl = "https://open.spotify.com/show/3gT7ckVNmUhjfaDjIIJpUX?si=ec02353c530f483a";
 
 export default function HomePage() {
   return (
@@ -42,20 +44,17 @@ export default function HomePage() {
         <Container>
           <p className="poster-kicker mb-7">Collectividual</p>
           <h1 className="poster-title poster-title--wide">
-            We are on a mission for mental health.
+            Ruh sağlığı için bir misyonumuz var.
           </h1>
           <p className="poster-lede mt-9">
-            Collectividual creates psycho-social tools, public campaigns, seminars, and printable resources that help people move beyond shallow awareness toward careful communication, clearer boundaries, and more useful support.
+            Collectividual; ruh sağlığı okuryazarlığı, dikkatli iletişim, daha net sınırlar ve daha işe yarar destek pratikleri için psiko-sosyal araçlar, kampanyalar, seminerler ve printable kaynaklar üretir.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
-              See current campaign
+              Kampanyayı incele
             </Link>
             <Link href="/tools/mental-health-literacy-checklists" className="poster-button poster-button--secondary">
-              Download free tools
-            </Link>
-            <Link href="/tr" className="poster-button poster-button--secondary">
-              Türkçe site
+              Araçları indir
             </Link>
           </div>
         </Container>
@@ -64,24 +63,24 @@ export default function HomePage() {
       <section className="border-y border-[var(--border)] bg-[var(--surface)] poster-section">
         <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
           <div>
-            <p className="poster-kicker mb-6">Current public campaign</p>
+            <p className="poster-kicker mb-6">Güncel kampanya</p>
             <h2 className="poster-title poster-title--medium">
-              Good Intentions Are Not Enough
+              İyi Niyet Yetmez
             </h2>
           </div>
           <div>
             <p className="text-[15px] leading-8 text-[var(--muted)] md:text-[17px] md:leading-9">
-              Mental health awareness has opened important conversations. But awareness alone does not teach us how to respond when someone is actually struggling.
+              Ruh sağlığı farkındalığı önemli konuşmaları açtı. Ama farkındalık tek başına, biri gerçekten zorlandığında nasıl karşılık vereceğimizi öğretmez.
             </p>
             <p className="mt-4 text-[15px] leading-8 text-[var(--muted)] md:text-[17px] md:leading-9">
-              This campaign helps non-clinicians move from good intentions to careful support: clearer language, better boundaries, less stigma, and more useful next steps.
+              Bu kampanya, klinisyen olmayanların iyi niyetten dikkatli desteğe geçmesine yardım eder: daha net dil, daha iyi sınırlar, daha az stigma ve daha işe yarar sonraki adımlar.
             </p>
             <div className="mt-7 flex flex-wrap gap-4">
               <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
-                Enter the campaign
+                Kampanyaya git
               </Link>
               <Link href="/assessment/mental-health-literacy" className="poster-button poster-button--secondary">
-                Assess your organization
+                Assessment yap
               </Link>
             </div>
           </div>
@@ -90,12 +89,12 @@ export default function HomePage() {
 
       <section className="poster-section">
         <Container>
-          <p className="poster-kicker mb-8">What this is</p>
+          <p className="poster-kicker mb-8">Bu nedir?</p>
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              "A public campaign for moving from awareness to literacy.",
-              "A home for tools, seminars, assessments, campaigns, and printable formats.",
-              "A way of turning psychological knowledge into careful everyday practice.",
+              "Farkındalıktan okuryazarlığa geçiş için kamusal bir kampanya.",
+              "Araçlar, seminerler, assessmentlar, kampanyalar ve printable formatlar için bir üretim alanı.",
+              "Psikolojik bilgiyi gündelik hayatta daha dikkatli pratiklere dönüştürmenin bir yolu.",
             ].map((item) => (
               <div key={item} className="border-2 border-[var(--accent)] p-6 text-[15px] font-semibold leading-8 text-[var(--text)] md:text-[17px]">
                 {item}
@@ -107,9 +106,9 @@ export default function HomePage() {
 
       <section className="poster-section bg-[var(--surface-soft)]">
         <Container>
-          <p className="poster-kicker mb-6 bg-[var(--bg)]">Labs</p>
+          <p className="poster-kicker mb-6 bg-[var(--bg)]">Lab’ler</p>
           <h2 className="poster-title poster-title--medium">
-            Four working rooms for thinking, making, gathering, and building from zero.
+            Düşünmek, üretmek, bir araya gelmek ve sıfırdan kurmak için dört çalışma odası.
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {labs.map((lab) => (
@@ -129,8 +128,8 @@ export default function HomePage() {
       <section className="poster-section">
         <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="poster-kicker mb-6">Tools & Resources</p>
-            <h2 className="poster-title poster-title--medium">Useful forms, not generic content.</h2>
+            <p className="poster-kicker mb-6">Araçlar & Kaynaklar</p>
+            <h2 className="poster-title poster-title--medium">Generic içerik değil, kullanılabilir formlar.</h2>
           </div>
           <div className="grid gap-4">
             {tools.map((tool) => (
@@ -138,19 +137,27 @@ export default function HomePage() {
                 {tool}
               </div>
             ))}
-            <div className="border-2 border-dashed border-[var(--accent)] bg-[var(--surface)] p-6">
+            <a
+              href={spotifyUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="border-2 border-[var(--accent)] bg-[var(--surface)] p-6 transition hover:-translate-y-1 hover:shadow-[0_10px_0_var(--accent)]"
+            >
               <p className="mb-3 text-[10px] font-black uppercase tracking-[0.18em] text-[var(--muted)]">
-                Audio Library / Coming Soon
+                Ses Kütüphanesi / Bilgiye Erişim
               </p>
               <h3 className="text-4xl leading-none text-[var(--accent)] md:text-5xl">
-                English audio channel
+                Psikanalizin 30 Günü
               </h3>
               <p className="mt-4 text-[14px] font-semibold leading-7 text-[var(--muted)] md:text-[15px]">
-                A future English-language audio resource for psychological knowledge, public learning, and reflective psycho-social thinking.
+                Psikanalitik düşünceyi daha erişilebilir, dinlenebilir ve kamusal hale getiren bir Collectividual ses serisi.
               </p>
-            </div>
+              <p className="mt-5 text-[13px] font-bold text-[var(--accent)]">
+                Spotify’da dinle →
+              </p>
+            </a>
             <Link href="/seminars/mental-health-literacy" className="mt-3 inline-flex text-[13px] font-bold tracking-[0.02em] text-[var(--accent)]">
-              View the mental health literacy seminar →
+              Ruh sağlığı okuryazarlığı seminerini incele →
             </Link>
           </div>
         </Container>
@@ -159,19 +166,19 @@ export default function HomePage() {
       <section className="poster-section">
         <Container>
           <div className="border-2 border-[var(--accent)] bg-[var(--surface)] p-7 md:p-12">
-            <p className="poster-kicker mb-6">Start here</p>
+            <p className="poster-kicker mb-6">Buradan başla</p>
             <h2 className="poster-title poster-title--medium">
-              We are on a mission to spread mental health literacy.
+              Ruh sağlığı okuryazarlığını yaymak istiyoruz.
             </h2>
             <p className="poster-lede mt-8">
-              Move beyond shallow awareness toward careful communication, clearer boundaries, and more useful support.
+              Yüzeysel farkındalığın ötesine geçip daha dikkatli iletişim, daha net sınırlar ve daha işe yarar destek pratikleri kurmak için.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
-                Explore the campaign
+                Kampanyayı incele
               </Link>
               <Link href="/join" className="poster-button poster-button--secondary">
-                Send inquiry
+                İletişime geç
               </Link>
             </div>
           </div>
