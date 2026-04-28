@@ -35,6 +35,8 @@ const tools = [
   "Card decks, prompt kits, and printable psycho-social resources",
 ];
 
+const spotifyUrl = "https://open.spotify.com/show/3gT7ckVNmUhjfaDjIIJpUX?si=ec02353c530f483a";
+
 export default function HomePage() {
   return (
     <>
@@ -126,7 +128,7 @@ export default function HomePage() {
       <section className="poster-section">
         <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
           <div>
-            <p className="poster-kicker mb-6">Tools layer</p>
+            <p className="poster-kicker mb-6">Tools & Resources</p>
             <h2 className="poster-title poster-title--medium">Useful forms, not generic content.</h2>
           </div>
           <div className="grid gap-4">
@@ -135,6 +137,25 @@ export default function HomePage() {
                 {tool}
               </div>
             ))}
+            <a
+              href={spotifyUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="border-2 border-[var(--accent)] bg-[var(--surface)] p-6 transition hover:-translate-y-1 hover:shadow-[0_10px_0_var(--accent)]"
+            >
+              <p className="mb-3 text-[10px] font-black uppercase tracking-[0.18em] text-[var(--muted)]">
+                Audio Library / Access to Knowledge
+              </p>
+              <h3 className="text-4xl leading-none text-[var(--accent)] md:text-5xl">
+                Psikanalizin 30 Günü
+              </h3>
+              <p className="mt-4 text-[14px] font-semibold leading-7 text-[var(--muted)] md:text-[15px]">
+                Psikanalitik düşünceyi daha erişilebilir, dinlenebilir ve kamusal hale getiren bir Collectividual ses serisi.
+              </p>
+              <p className="mt-5 text-[13px] font-bold text-[var(--accent)]">
+                Spotify’da dinle →
+              </p>
+            </a>
             <Link href="/seminars/mental-health-literacy" className="mt-3 inline-flex text-[13px] font-bold tracking-[0.02em] text-[var(--accent)]">
               View the mental health literacy seminar →
             </Link>
