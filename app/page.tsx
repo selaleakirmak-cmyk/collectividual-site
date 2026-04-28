@@ -3,15 +3,9 @@ import Container from "@/components/site/Container";
 
 const labs = [
   {
-    title: "Think Lab",
-    description:
-      "Essays, concepts, guides, and editorial experiments for turning reflection into shared language.",
-    href: "/labs#think-lab",
-  },
-  {
     title: "Creative Lab",
     description:
-      "Card decks, printable tools, prompt kits, and visual formats that help ideas take form.",
+      "Editorial thinking, concepts, card decks, printable tools, prompt kits, and visual formats that help ideas take form.",
     href: "/labs#creative-lab",
   },
   {
@@ -19,12 +13,6 @@ const labs = [
     description:
       "Formats for participation, workshops, collective thinking, and small-group cultural work.",
     href: "/labs#community-lab",
-  },
-  {
-    title: "Kapital Zero Lab",
-    description:
-      "Low-budget experiments, playful entrepreneurship, and practical systems for building from almost nothing.",
-    href: "/labs#kapital-zero-lab",
   },
 ];
 
@@ -109,7 +97,7 @@ export default function HomePage() {
         <Container>
           <p className="poster-kicker mb-6 bg-[var(--bg)]">Labs</p>
           <h2 className="poster-title poster-title--medium">
-            Four working rooms for thinking, making, gathering, and building from zero.
+            Two working rooms for making ideas usable and learning together.
           </h2>
           <div className="mt-10 grid gap-4 md:grid-cols-2">
             {labs.map((lab) => (
