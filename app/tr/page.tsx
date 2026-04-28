@@ -6,25 +6,25 @@ const labs = [
     title: "Think Lab",
     description:
       "Kavramları, denemeleri, rehberleri ve düşünceyi ortak dile dönüştüren editoryal deneyleri barındırır.",
-    href: "/labs#think-lab",
+    href: "/tr/labs#think-lab",
   },
   {
     title: "Creative Lab",
     description:
       "Kart desteleri, çıktı alınabilir araçlar, prompt setleri ve fikirlerin forma dönüşmesini sağlayan görsel formatlar.",
-    href: "/labs#creative-lab",
+    href: "/tr/labs#creative-lab",
   },
   {
     title: "Community Lab",
     description:
       "Katılım, atölye, kolektif düşünme ve küçük grup çalışmaları için formatlar.",
-    href: "/labs#community-lab",
+    href: "/tr/labs#community-lab",
   },
   {
     title: "Kapital Zero Lab",
     description:
       "Düşük bütçeli denemeler, yaratıcı girişimcilik ve neredeyse sıfırdan üretme sistemleri.",
-    href: "/labs#kapital-zero-lab",
+    href: "/tr/labs#kapital-zero-lab",
   },
 ];
 
@@ -56,11 +56,11 @@ export default function TurkishHomePage() {
             Collectividual; ruh sağlığı okuryazarlığı, dikkatli iletişim, daha net sınırlar ve daha işe yarar destek pratikleri için psiko-sosyal araçlar, projeler, atölyeler ve çıktı alınabilir kaynaklar üretir.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
+            <Link href="/tr/campaigns/good-intentions-are-not-enough" className="poster-button">
               Projeyi incele
             </Link>
-            <Link href="/tools/mental-health-literacy-checklists" className="poster-button poster-button--secondary">
-              Araçları indir
+            <Link href="/tr/workshops" className="poster-button poster-button--secondary">
+              Atölyeleri incele
             </Link>
             <Link href="/" className="poster-button poster-button--secondary">
               English site
@@ -85,10 +85,10 @@ export default function TurkishHomePage() {
               Bu proje, klinisyen olmayanların iyi niyetten dikkatli desteğe geçmesine yardım eder: daha net dil, daha iyi sınırlar, daha az stigma ve daha işe yarar sonraki adımlar.
             </p>
             <div className="mt-7 flex flex-wrap gap-4">
-              <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
+              <Link href="/tr/campaigns/good-intentions-are-not-enough" className="poster-button">
                 Projeye git
               </Link>
-              <Link href="/assessment/mental-health-literacy" className="poster-button poster-button--secondary">
+              <Link href="/tr/assessment/mental-health-literacy" className="poster-button poster-button--secondary">
                 Değerlendirme yap
               </Link>
             </div>
@@ -183,10 +183,10 @@ export default function TurkishHomePage() {
               Yüzeysel farkındalığın ötesine geçip daha dikkatli iletişim, daha net sınırlar ve daha işe yarar destek pratikleri kurmak için.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
-                Projeyi incele
+              <Link href="/tr/workshops" className="poster-button">
+                Atölyeleri incele
               </Link>
-              <Link href="/join" className="poster-button poster-button--secondary">
+              <Link href="/tr/join" className="poster-button poster-button--secondary">
                 İletişime geç
               </Link>
             </div>
