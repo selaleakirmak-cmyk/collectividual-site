@@ -18,7 +18,7 @@ export default function Navbar() {
         </Link>
 
         <nav className="hidden items-center gap-7 md:flex text-[13px] tracking-[0.03em] text-[var(--muted)]">
-          <Link href="/campaigns/good-intentions-are-not-enough">Campaign</Link>
+          <Link href="/campaigns/good-intentions-are-not-enough">Project</Link>
           <Link href="/seminars/mental-health-literacy">Seminar</Link>
           <Link href="/tools/mental-health-literacy-checklists">Free Tools</Link>
           <Link href="/assessment/mental-health-literacy">Assessment</Link>
