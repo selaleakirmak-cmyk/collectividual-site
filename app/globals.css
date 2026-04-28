@@ -28,8 +28,8 @@ h2,
 h3,
 h4 {
   font-family: var(--font-display), sans-serif;
-  letter-spacing: -0.055em;
-  line-height: 0.88;
+  letter-spacing: -0.045em;
+  line-height: 0.94;
   text-transform: uppercase;
 }
 
@@ -50,43 +50,43 @@ a {
 .poster-kicker {
   display: inline-flex;
   border: 2px solid var(--accent);
-  padding: 0.8rem 1rem;
-  font-size: clamp(0.7rem, 2.6vw, 0.95rem);
+  padding: 0.7rem 0.9rem;
+  font-size: clamp(0.68rem, 2.1vw, 0.82rem);
   font-weight: 900;
   line-height: 1;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
   color: var(--accent);
 }
 
 .poster-title {
-  max-width: min(100%, 92rem);
+  max-width: min(100%, 86rem);
   color: var(--accent);
   font-family: var(--font-display), sans-serif;
-  font-size: clamp(3.7rem, 18vw, 12.5rem);
-  line-height: 0.76;
-  letter-spacing: -0.09em;
+  font-size: clamp(2.85rem, 11.5vw, 8.8rem);
+  line-height: 0.86;
+  letter-spacing: -0.065em;
   text-transform: uppercase;
   text-wrap: balance;
 }
 
 .poster-title--wide {
   max-width: 100%;
-  font-size: clamp(3.7rem, 17vw, 15rem);
-  line-height: 0.74;
+  font-size: clamp(3rem, 12vw, 9.8rem);
+  line-height: 0.84;
 }
 
 .poster-title--medium {
-  font-size: clamp(3.4rem, 13vw, 9.5rem);
-  line-height: 0.78;
+  font-size: clamp(2.7rem, 9.2vw, 6.8rem);
+  line-height: 0.88;
 }
 
 .poster-lede {
-  max-width: 52rem;
+  max-width: 50rem;
   border-left: 4px solid var(--accent);
-  padding-left: 1.25rem;
-  font-size: clamp(1rem, 4.6vw, 1.5rem);
-  line-height: 1.55;
+  padding-left: 1.15rem;
+  font-size: clamp(0.98rem, 3.3vw, 1.28rem);
+  line-height: 1.58;
   font-weight: 650;
   color: var(--text);
 }
@@ -95,8 +95,8 @@ a {
   display: inline-flex;
   border: 2px solid var(--accent);
   background: var(--accent);
-  padding: 0.95rem 1.15rem;
-  font-size: 0.76rem;
+  padding: 0.9rem 1.1rem;
+  font-size: 0.74rem;
   font-weight: 900;
   line-height: 1;
   letter-spacing: 0.04em;
@@ -116,14 +116,15 @@ a {
 }
 
 .poster-section {
-  padding-block: clamp(4.5rem, 12vw, 8rem);
+  padding-block: clamp(4rem, 10vw, 7rem);
 }
 
 @media (max-width: 640px) {
   .poster-title,
   .poster-title--wide,
   .poster-title--medium {
-    word-spacing: -0.08em;
+    word-spacing: -0.04em;
+    letter-spacing: -0.052em;
   }
 
   .poster-lede {
