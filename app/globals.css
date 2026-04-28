@@ -81,6 +81,19 @@ a {
   line-height: 0.88;
 }
 
+.poster-title--tr-wide {
+  max-width: 100%;
+  font-size: clamp(2.35rem, 8.8vw, 6.9rem);
+  line-height: 0.92;
+  letter-spacing: -0.052em;
+}
+
+.poster-title--tr-medium {
+  font-size: clamp(2.15rem, 7.2vw, 5.2rem);
+  line-height: 0.95;
+  letter-spacing: -0.048em;
+}
+
 .poster-lede {
   max-width: 50rem;
   border-left: 4px solid var(--accent);
@@ -122,9 +135,21 @@ a {
 @media (max-width: 640px) {
   .poster-title,
   .poster-title--wide,
-  .poster-title--medium {
+  .poster-title--medium,
+  .poster-title--tr-wide,
+  .poster-title--tr-medium {
     word-spacing: -0.04em;
     letter-spacing: -0.052em;
+  }
+
+  .poster-title--tr-wide {
+    font-size: clamp(2.2rem, 12vw, 3.65rem);
+    line-height: 0.96;
+  }
+
+  .poster-title--tr-medium {
+    font-size: clamp(2rem, 10vw, 3.15rem);
+    line-height: 0.98;
   }
 
   .poster-lede {
