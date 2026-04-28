@@ -45,11 +45,11 @@ export default function HomePage() {
             We are on a mission for mental health.
           </h1>
           <p className="poster-lede mt-9">
-            Collectividual creates psycho-social tools, public campaigns, seminars, and printable resources that help people move beyond shallow awareness toward careful communication, clearer boundaries, and more useful support.
+            Collectividual creates psycho-social tools, public projects, seminars, and printable resources that help people move beyond shallow awareness toward careful communication, clearer boundaries, and more useful support.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
-              See current campaign
+              See current project
             </Link>
             <Link href="/tools/mental-health-literacy-checklists" className="poster-button poster-button--secondary">
               Download free tools
@@ -64,7 +64,7 @@ export default function HomePage() {
       <section className="border-y border-[var(--border)] bg-[var(--surface)] poster-section">
         <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
           <div>
-            <p className="poster-kicker mb-6">Current public campaign</p>
+            <p className="poster-kicker mb-6">Current public project</p>
             <h2 className="poster-title poster-title--medium">
               Good Intentions Are Not Enough
             </h2>
@@ -74,11 +74,11 @@ export default function HomePage() {
               Mental health awareness has opened important conversations. But awareness alone does not teach us how to respond when someone is actually struggling.
             </p>
             <p className="mt-4 text-[15px] leading-8 text-[var(--muted)] md:text-[17px] md:leading-9">
-              This campaign helps non-clinicians move from good intentions to careful support: clearer language, better boundaries, less stigma, and more useful next steps.
+              This project helps non-clinicians move from good intentions to careful support: clearer language, better boundaries, less stigma, and more useful next steps.
             </p>
             <div className="mt-7 flex flex-wrap gap-4">
               <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
-                Enter the campaign
+                Enter the project
               </Link>
               <Link href="/assessment/mental-health-literacy" className="poster-button poster-button--secondary">
                 Assess your organization
@@ -93,8 +93,8 @@ export default function HomePage() {
           <p className="poster-kicker mb-8">What this is</p>
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              "A public campaign for moving from awareness to literacy.",
-              "A home for tools, seminars, assessments, campaigns, and printable formats.",
+              "A public project for moving from awareness to literacy.",
+              "A home for tools, seminars, assessments, projects, and printable formats.",
               "A way of turning psychological knowledge into careful everyday practice.",
             ].map((item) => (
               <div key={item} className="border-2 border-[var(--accent)] p-6 text-[15px] font-semibold leading-8 text-[var(--text)] md:text-[17px]">
@@ -168,7 +168,7 @@ export default function HomePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
-                Explore the campaign
+                Explore the project
               </Link>
               <Link href="/join" className="poster-button poster-button--secondary">
                 Send inquiry
