@@ -12,7 +12,7 @@ export default function Navbar() {
   const labels = isTurkish
     ? {
         project: "Proje",
-        seminar: "Seminer",
+        workshops: "Atölyeler",
         tools: "Araçlar",
         assessment: "Değerlendirme",
         about: "Hakkında",
@@ -21,7 +21,7 @@ export default function Navbar() {
       }
     : {
         project: "Project",
-        seminar: "Seminar",
+        workshops: "Workshops",
         tools: "Free Tools",
         assessment: "Assessment",
         about: "About",
@@ -45,7 +45,7 @@ export default function Navbar() {
 
         <nav className="hidden items-center gap-7 md:flex text-[13px] tracking-[0.03em] text-[var(--muted)]">
           <Link href="/campaigns/good-intentions-are-not-enough">{labels.project}</Link>
-          <Link href="/seminars/mental-health-literacy">{labels.seminar}</Link>
+          <Link href={isTurkish ? "/tr/workshops" : "/workshops"}>{labels.workshops}</Link>
           <Link href="/tools/mental-health-literacy-checklists">{labels.tools}</Link>
           <Link href="/assessment/mental-health-literacy">{labels.assessment}</Link>
           <Link href="/about">{labels.about}</Link>
