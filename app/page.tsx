@@ -44,11 +44,10 @@ export default function HomePage() {
             Collectividual
           </p>
           <h1 className="max-w-5xl text-5xl leading-tight md:text-7xl">
-            Psycho-social tools for more careful collective life.
+            We are on a mission for mental health.
           </h1>
           <p className="mt-6 max-w-3xl text-[14px] leading-8 text-[var(--muted)]">
-            Collectividual is a place where one person can become a whole team: a lab for reflective tools,
-            creative formats, public campaigns, and ideas that need structure before they can meet the world.
+            Collectividual creates psycho-social tools, public campaigns, seminars, and printable resources that help people move beyond shallow awareness toward careful communication, clearer boundaries, and more useful support.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
@@ -109,9 +108,9 @@ export default function HomePage() {
           </p>
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              "A quiet structure for ideas before they become products.",
-              "A home for tools, decks, prompts, workshops, campaigns, and printable formats.",
-              "A way of building with low resources, high imagination, and collective intelligence.",
+              "A public campaign for moving from awareness to literacy.",
+              "A home for tools, seminars, assessments, campaigns, and printable formats.",
+              "A way of turning psychological knowledge into careful everyday practice.",
             ].map((item) => (
               <div key={item} className="border border-[var(--border)] p-6 text-[13px] leading-7 text-[var(--text)]">
                 {item}
