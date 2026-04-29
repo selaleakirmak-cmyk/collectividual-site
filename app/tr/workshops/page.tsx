@@ -15,8 +15,8 @@ const formats = [
       "Rol netliği, sınırlar ve kriz sinyalleri",
       "CARE çerçevesi: Context, Acknowledge, Role, Extend",
     ],
-    href: "/seminars/mental-health-literacy",
-    cta: "Seminer detayını incele",
+    href: "/tr/seminars/mental-health-literacy",
+    cta: "Atölye detayını incele",
   },
   {
     title: "4 oturumluk uygulamalı program",
@@ -31,7 +31,7 @@ const formats = [
       "Kurgusal karakterlerle senaryo bazlı pratik",
       "Katılımcı çalışma kitabı ve pratik destek araçları",
     ],
-    href: "/join",
+    href: "/tr/join",
     cta: "Program için bilgi al",
   },
 ];
@@ -64,10 +64,10 @@ export default function TurkishWorkshopsPage() {
             Collectividual atölyeleri, klinisyen olmayan kişilerin biri zorlandığında daha dikkatli karşılık verebilmesine yardım eder. Katılımcılar terapiste dönüşmez. Neyi fark edeceklerini, ne söyleyeceklerini, ne söylemeyeceklerini, rollerinin nerede bittiğini ve ne zaman daha fazla destek gerektiğini öğrenirler.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Link href="/join" className="poster-button">
+            <Link href="/tr/join" className="poster-button">
               15 dakikalık görüşme planla
             </Link>
-            <Link href="/assessment/mental-health-literacy" className="poster-button poster-button--secondary">
+            <Link href="/tr/assessment/mental-health-literacy" className="poster-button poster-button--secondary">
               Kurumunuzu değerlendirin
             </Link>
           </div>
@@ -156,10 +156,10 @@ export default function TurkishWorkshopsPage() {
               Bu atölyeler tanı koymayı, tedavi etmeyi veya bir başkasının iyileşmesinden sorumlu olmayı öğretmez. Daha dikkatli bir gündelik duruş öğretir: bağlamı görmek, harekete geçmeden önce kabul etmek, rolünü bilmek ve taşıyabildiğini uzatırken taşıyamadığını yönlendirmek.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/join" className="poster-button">
+              <Link href="/tr/join" className="poster-button">
                 Bizimle konuş
               </Link>
-              <Link href="/tools/mental-health-literacy-checklists" className="poster-button poster-button--secondary">
+              <Link href="/tr/tools/mental-health-literacy-checklists" className="poster-button poster-button--secondary">
                 Ücretsiz araçları indir
               </Link>
             </div>
