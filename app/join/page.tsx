@@ -1,6 +1,6 @@
 import Container from "@/components/site/Container";
 
-const defaultFormBase = "https://docs.google.com/forms/d/1TRBd8dX-XhLamkzQeb8n-mJlG0wFleGRGJQCmw8hcrw/viewform";
+const defaultFormBase = "https://docs.google.com/forms/d/e/1FAIpQLSf6FplfzpOPTaelmNrnJf28a0Z8_GW9NkRd23PP01nupW38_Q/viewform";
 const defaultEmbedUrl = `${defaultFormBase}?embedded=true`;
 
 const formUrl = process.env.NEXT_PUBLIC_GOOGLE_FORM_URL || defaultEmbedUrl;
