@@ -36,11 +36,11 @@ export default function HomePage() {
             Collectividual creates psycho-social tools, public projects, workshops, and printable resources that help people move beyond shallow awareness toward careful communication, clearer boundaries, and more useful support.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
-              See current project
+            <Link href="/tools/mental-health-literacy-checklists" className="poster-button">
+              Get the free toolkit
             </Link>
-            <Link href="/workshops" className="poster-button poster-button--secondary">
-              Explore workshops
+            <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button poster-button--secondary">
+              See current project
             </Link>
             <Link href="/tr" className="poster-button poster-button--secondary">
               Türkçe site
@@ -50,6 +50,33 @@ export default function HomePage() {
       </section>
 
       <section className="border-y border-[var(--border)] bg-[var(--surface)] poster-section">
+        <Container className="grid gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-center">
+          <div>
+            <p className="poster-kicker mb-6">Free resource</p>
+            <h2 className="poster-title poster-title--medium">
+              Ultimate Mental Health Literacy Toolkit
+            </h2>
+          </div>
+          <div>
+            <p className="text-[15px] leading-8 text-[var(--muted)] md:text-[17px] md:leading-9">
+              A practical toolkit for non-clinicians who want to respond more carefully when someone is struggling: clearer language, better boundaries, and more useful next steps.
+            </p>
+            <p className="mt-4 text-[15px] leading-8 text-[var(--muted)] md:text-[17px] md:leading-9">
+              Get it by email and start with one tool at a time. It is educational, practical, and designed for ordinary support moments — not therapy, diagnosis, or crisis certification.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-4">
+              <Link href="/tools/mental-health-literacy-checklists" className="poster-button">
+                Download the toolkit
+              </Link>
+              <Link href="/assessment/mental-health-literacy" className="poster-button poster-button--secondary">
+                Assess your organization
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="poster-section border-b border-[var(--border)]">
         <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
           <div>
             <p className="poster-kicker mb-6">Current public project</p>
@@ -68,8 +95,8 @@ export default function HomePage() {
               <Link href="/campaigns/good-intentions-are-not-enough" className="poster-button">
                 Enter the project
               </Link>
-              <Link href="/assessment/mental-health-literacy" className="poster-button poster-button--secondary">
-                Assess your organization
+              <Link href="/workshops" className="poster-button poster-button--secondary">
+                Explore workshops
               </Link>
             </div>
           </div>
@@ -155,8 +182,8 @@ export default function HomePage() {
               Move beyond shallow awareness toward careful communication, clearer boundaries, and more useful support.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/workshops" className="poster-button">
-                Explore workshops
+              <Link href="/tools/mental-health-literacy-checklists" className="poster-button">
+                Get the toolkit
               </Link>
               <Link href="/join" className="poster-button poster-button--secondary">
                 Send inquiry
