@@ -44,11 +44,11 @@ export default function TurkishHomePage() {
             Collectividual; ruh sağlığı okuryazarlığı, dikkatli iletişim, daha net sınırlar ve daha işe yarar destek pratikleri için psiko-sosyal araçlar, projeler, atölyeler ve çıktı alınabilir kaynaklar üretir.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <Link href="/tr/campaigns/good-intentions-are-not-enough" className="poster-button">
-              Projeyi incele
+            <Link href="/tr/tools/mental-health-literacy-checklists" className="poster-button">
+              Ücretsiz toolkit’i al
             </Link>
-            <Link href="/tr/workshops" className="poster-button poster-button--secondary">
-              Atölyeleri incele
+            <Link href="/tr/campaigns/good-intentions-are-not-enough" className="poster-button poster-button--secondary">
+              Projeyi incele
             </Link>
             <Link href="/" className="poster-button poster-button--secondary">
               English site
@@ -58,6 +58,33 @@ export default function TurkishHomePage() {
       </section>
 
       <section className="border-y border-[var(--border)] bg-[var(--surface)] poster-section">
+        <Container className="grid gap-10 md:grid-cols-[0.85fr_1.15fr] md:items-center">
+          <div>
+            <p className="poster-kicker mb-6">Ücretsiz kaynak</p>
+            <h2 className="poster-title poster-title--tr-medium">
+              Ultimate Mental Health Literacy Toolkit
+            </h2>
+          </div>
+          <div>
+            <p className="text-[15px] leading-8 text-[var(--muted)] md:text-[17px] md:leading-9">
+              Biri zorlandığında daha dikkatli karşılık vermek isteyen klinisyen olmayan kişiler için pratik bir toolkit: daha net dil, daha iyi sınırlar ve daha işe yarar sonraki adımlar.
+            </p>
+            <p className="mt-4 text-[15px] leading-8 text-[var(--muted)] md:text-[17px] md:leading-9">
+              E-posta ile alın ve her seferinde tek bir araçla başlayın. Eğitim amaçlıdır; terapi, tanı koyma veya kriz sertifikasyonu değildir.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-4">
+              <Link href="/tr/tools/mental-health-literacy-checklists" className="poster-button">
+                Toolkit’i indir
+              </Link>
+              <Link href="/tr/assessment/mental-health-literacy" className="poster-button poster-button--secondary">
+                Değerlendirme yap
+              </Link>
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="poster-section border-b border-[var(--border)]">
         <Container className="grid gap-10 md:grid-cols-[0.9fr_1.1fr] md:items-end">
           <div>
             <p className="poster-kicker mb-6">Güncel proje</p>
@@ -76,8 +103,8 @@ export default function TurkishHomePage() {
               <Link href="/tr/campaigns/good-intentions-are-not-enough" className="poster-button">
                 Projeye git
               </Link>
-              <Link href="/tr/assessment/mental-health-literacy" className="poster-button poster-button--secondary">
-                Değerlendirme yap
+              <Link href="/tr/workshops" className="poster-button poster-button--secondary">
+                Atölyeleri incele
               </Link>
             </div>
           </div>
@@ -171,8 +198,8 @@ export default function TurkishHomePage() {
               Yüzeysel farkındalığın ötesine geçip daha dikkatli iletişim, daha net sınırlar ve daha işe yarar destek pratikleri kurmak için.
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Link href="/tr/workshops" className="poster-button">
-                Atölyeleri incele
+              <Link href="/tr/tools/mental-health-literacy-checklists" className="poster-button">
+                Toolkit’i al
               </Link>
               <Link href="/tr/join" className="poster-button poster-button--secondary">
                 İletişime geç
