@@ -69,9 +69,9 @@ export default function JoinPage() {
           <p className="poster-kicker mb-8">What to include</p>
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              "Who you are writing as: practitioner, institution, or representative.",
-              "Which project, workshop, tool, assessment, or collaboration you are interested in.",
-              "What kind of next step would be useful: conversation, proposal, workshop, or co-design.",
+              "Choose your role in the form: practitioner, institution, or individual representative.",
+              "Tell us which project, workshop, tool, assessment, or collaboration you are interested in.",
+              "Tell us what kind of next step would be useful: conversation, proposal, workshop, or co-design.",
             ].map((item) => (
               <div key={item} className="border-2 border-[var(--accent)] bg-[var(--surface)] p-6 text-[15px] font-semibold leading-8 transition hover:-translate-y-1 hover:shadow-[0_10px_0_var(--accent)]">
                 {item}
@@ -87,7 +87,7 @@ export default function JoinPage() {
             <p className="poster-kicker mb-6">Inquiry form</p>
             <h2 className="poster-title poster-title--medium">Start here.</h2>
             <p className="mt-6 max-w-2xl text-[15px] font-semibold leading-8 text-[var(--muted)]">
-              If the embedded form does not load on your device, open it directly in a new tab. In the first line, mention whether you are joining as a practitioner, institution, or individual representative.
+              If the embedded form does not load on your device, open it directly in a new tab. In the form, choose whether you are joining as a practitioner, institution, or individual representative.
             </p>
             <a href={formOpenUrl} target="_blank" rel="noreferrer" className="mt-6 inline-flex poster-button">
               Open the form
