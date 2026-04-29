@@ -1,6 +1,8 @@
 import Link from "next/link";
 import Container from "@/components/site/Container";
 
+const mailerLiteAction = "https://assets.mailerlite.com/jsonp/2302300/forms/186075762341709206/subscribe";
+
 const resources = [
   ["Is This Mine to Hold Alone?", "A pause tool for deciding whether a support moment needs more than one person."],
   ["Green / Yellow / Red Support Checklist", "A simple way to distinguish ordinary support, concern, and urgent escalation."],
@@ -10,8 +12,8 @@ const resources = [
 ];
 
 export const metadata = {
-  title: "Free Mental Health Literacy Tools | Collectividual",
-  description: "Download Collectividual resources for mental health literacy, careful communication, and sustainable support.",
+  title: "Ultimate Mental Health Literacy Toolkit | Collectividual",
+  description: "Download the Ultimate Mental Health Literacy Toolkit by Collectividual: practical tools for careful communication, boundaries, and sustainable support.",
 };
 
 export default function ResourcesPage() {
@@ -19,11 +21,11 @@ export default function ResourcesPage() {
     <>
       <section className="poster-section border-b border-[var(--border)]">
         <Container>
-          <p className="poster-kicker mb-7">Free tools</p>
-          <h1 className="poster-title poster-title--wide">Mental Health Literacy Checklists</h1>
-          <p className="poster-lede mt-9">Five practical resources for people and groups who want clearer communication, better boundaries, and more thoughtful support.</p>
+          <p className="poster-kicker mb-7">Free toolkit</p>
+          <h1 className="poster-title poster-title--wide">Ultimate Mental Health Literacy Toolkit</h1>
+          <p className="poster-lede mt-9">Practical resources for people and groups who want clearer communication, better boundaries, and more thoughtful support.</p>
           <div className="mt-8 flex flex-wrap gap-4">
-            <a href="#download" className="poster-button">Get the resources by email</a>
+            <a href="#download" className="poster-button">Get the toolkit by email</a>
             <Link href="/workshops" className="poster-button poster-button--secondary">Explore workshops</Link>
           </div>
         </Container>
@@ -48,14 +50,16 @@ export default function ResourcesPage() {
         <Container>
           <div className="border-2 border-[var(--accent)] bg-[var(--surface)] p-7 md:p-12">
             <p className="poster-kicker mb-6">Download</p>
-            <h2 className="poster-title poster-title--medium">Send me the resources.</h2>
-            <p className="poster-lede mt-8">Enter your email and we’ll send the resources. We may also send occasional Collectividual updates. You can unsubscribe at any time.</p>
-            <form className="mt-8 grid gap-4 md:grid-cols-[1fr_auto]" action="#">
-              <input aria-label="Email address" name="email" type="email" placeholder="you@example.com" className="border-2 border-[var(--accent)] bg-[var(--bg)] px-4 py-3 text-[14px] outline-none" />
-              <button type="submit" className="poster-button">Send me the resources</button>
-              <label className="md:col-span-2 flex gap-3 text-[12px] leading-6 text-[var(--muted)]"><input type="checkbox" required className="mt-1" /><span>I agree to receive these resources and occasional related emails from Collectividual. I understand I can unsubscribe at any time.</span></label>
+            <h2 className="poster-title poster-title--medium">Send me the toolkit.</h2>
+            <p className="poster-lede mt-8">Enter your email and we’ll send the Ultimate Mental Health Literacy Toolkit. We may also send occasional Collectividual updates. You can unsubscribe at any time.</p>
+            <form className="mt-8 grid gap-4 md:grid-cols-[1fr_auto]" action={mailerLiteAction} method="post" target="_blank">
+              <input aria-label="Email address" aria-required="true" name="fields[email]" type="email" placeholder="you@example.com" autoComplete="email" required className="border-2 border-[var(--accent)] bg-[var(--bg)] px-4 py-3 text-[14px] outline-none" />
+              <button type="submit" className="poster-button">Send me the toolkit</button>
+              <label className="md:col-span-2 flex gap-3 text-[12px] leading-6 text-[var(--muted)]"><input type="checkbox" required className="mt-1" /><span>I agree to receive this toolkit and occasional related emails from Collectividual. I understand I can unsubscribe at any time.</span></label>
+              <input type="hidden" name="ml-submit" value="1" />
+              <input type="hidden" name="anticsrf" value="true" />
             </form>
-            <p className="mt-6 text-[12px] leading-6 text-[var(--muted)]">This form is visual for now. Connect it to your chosen email service before launch.</p>
+            <p className="mt-6 text-[12px] leading-6 text-[var(--muted)]">After submitting, check your inbox for an email from Collectividual with the download link.</p>
           </div>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link href="/assessment/mental-health-literacy" className="text-[13px] font-bold tracking-[0.02em] text-[var(--accent)]">Assess your organization →</Link>
