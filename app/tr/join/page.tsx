@@ -73,7 +73,7 @@ export default function TurkishJoinPage() {
           <p className="poster-kicker mb-8">Formda ne belirtmeli?</p>
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              "Hangi rolden yazdığınızı belirtin: uygulayıcı, kurum veya bireysel temsilci.",
+              "Formda rolünüzü seçin: uygulayıcı, kurum veya bireysel temsilci.",
               "Hangi proje, atölye, araç, değerlendirme veya işbirliği ile ilgilendiğinizi yazın.",
               "Sizin için nasıl bir sonraki adımın işe yarayacağını söyleyin: görüşme, teklif, atölye veya birlikte tasarım.",
             ].map((item) => (
@@ -91,7 +91,7 @@ export default function TurkishJoinPage() {
             <p className="poster-kicker mb-6">Başvuru / iletişim formu</p>
             <h2 className="poster-title poster-title--tr-medium">Buradan başlayın.</h2>
             <p className="mt-6 max-w-2xl text-[15px] font-semibold leading-8 text-[var(--muted)]">
-              Gömülü form cihazınızda yüklenmezse formu yeni sekmede açabilirsiniz. Formun ilk satırında uygulayıcı, kurum veya bireysel temsilci olarak yazdığınızı belirtin.
+              Gömülü form cihazınızda yüklenmezse formu yeni sekmede açabilirsiniz. Formda uygulayıcı, kurum veya bireysel temsilci olarak katıldığınızı seçin.
             </p>
             <a href={formOpenUrl} target="_blank" rel="noreferrer" className="mt-6 inline-flex poster-button">
               Formu aç
