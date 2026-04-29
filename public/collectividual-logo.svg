@@ -1,5 +1,6 @@
 <svg width="777" height="161" viewBox="0 0 777 161" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Collectividual logo</title>
-  <desc id="desc">Collectividual wordmark in orange and deep green with a radial symbol inside the letter o.</desc>
-  <image width="777" height="161" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAAXNSR0IArs4c6QAAABNJREFUGFdjZGBg+M+ABMDEgAYAIJQCBYi0DJYAAAAASUVORK5CYII=" preserveAspectRatio="xMidYMid meet"/>
+  <desc id="desc">Collectividual wordmark in orange and deep green.</desc>
+  <text x="0" y="118" fill="#F27A25" font-family="Georgia, 'Times New Roman', serif" font-size="118" font-weight="700" letter-spacing="-7">collect</text>
+  <text x="382" y="118" fill="#1F5B4D" font-family="Georgia, 'Times New Roman', serif" font-size="118" font-weight="700" letter-spacing="-7">ividual</text>
 </svg>
