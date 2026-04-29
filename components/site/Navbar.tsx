@@ -66,8 +66,8 @@ export default function Navbar() {
           <Image
             src="/collectividual-logo.svg"
             alt="Collectividual"
-            width={1200}
-            height={320}
+            width={777}
+            height={161}
             priority
             className="h-auto w-full"
           />
