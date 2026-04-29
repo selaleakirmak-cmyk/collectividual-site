@@ -1,0 +1,3 @@
+Collectividual deploy trigger
+Updated: 2026-04-29
+Purpose: harmless file change to trigger production deployment from main.
